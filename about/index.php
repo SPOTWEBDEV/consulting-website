@@ -26,6 +26,10 @@
     <link rel="stylesheet" href="<?php echo $domain ?>assets/css/default.css">
     <link rel="stylesheet" href="<?php echo $domain ?>assets/css/style.css">
     <link rel="stylesheet" href="<?php echo $domain ?>assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/brands.min.css">
+
+          
 </head>
 
 <body>
@@ -83,67 +87,68 @@
 
         <!-- about-area -->
         <section class="about-area-eight pt-120 pb-120">
-            <div class="container">
-                <div class="row align-items-center justify-content-center">
-                    <div class="col-lg-6 col-md-9">
-                        <div class="about-img-eight">
-                            <img src="<?php echo $domain ?>assets/img/images/inner_about_img03.jpg" alt="">
+    <div class="container">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-lg-6 col-md-9">
+                <div class="about-img-eight">
+                    <img src="<?php echo $domain ?>assets/img/images/inner_about_img03.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="about-content-eight">
+                    <div class="section-title-two mb-30">
+                        <span class="sub-title">Get To Know More</span>
+                        <h2 class="title">BUSINESS & Tax Consulting Group Inc.
+                            (ABSOLUTE HOUSE OF KNOWLEDGE)</h2>
+                    </div>
+                    <p>Business and Tax Consulting Group, Inc. provides consulting services to rescue businesses from business mistakes, struggles, and complex operational requirements.  
+                        Our services are designed to serve entrepreneurs of all sizes who are striving to manage, maintain, and grow their business, as well as effective compliance standards on federal, state, and local government policies.
+                        Our services will enable the small and medium-size business owners and leaders to focus more on their business goals and objectives.</p>
+                    <div class="about-content-inner">
+                        <ul class="list-wrap">
+                            <li>
+                                <div class="icon">
+                                    <i class="fas fa-chart-line"></i> <!-- Changed to Font Awesome -->
+                                </div>
+                                <div class="content">
+                                    <h4 class="title">Growing Business</h4>
+                                    <p>Finance helps you to convert into a strategic asset get.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <i class="fas fa-hand-holding-usd"></i> <!-- Changed to Font Awesome -->
+                                </div>
+                                <div class="content">
+                                    <h4 class="title">Finance Investment</h4>
+                                    <p>Finance helps you to convert into a strategic asset get.</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="right-slide-img">
+                            <img src="<?php echo $domain ?>assets/img/images/inner_about_img04.jpg" alt="">
                         </div>
                     </div>
-                    <div class="col-lg-6">
-                        <div class="about-content-eight">
-                            <div class="section-title-two mb-30">
-                                <span class="sub-title">Get To Know More</span>
-                                <h2 class="title">BUSINESS & Tax Consulting Group Inc.
-                                    (ABSOLUTE HOUSE OF KNOWLEDGE)</h2>
+                    <div class="about-content-bottom">
+                        <div class="services-btn">
+                            <a href="services.html" class="btn">Our Services</a>
+                        </div>
+                        <div class="about-author-info">
+                            <div class="thumb">
+                                <img src="<?php echo $domain ?>assets/img/images/about_author.png" alt="">
                             </div>
-                            <p>Business and Tax Consulting Group, Inc. provides consulting services to rescue businesses from business mistakes, struggles, and complex operational requirements.  
-                                Our services are designed to serve entrepreneurs of all sizes who are striving to manage, maintain, and grow their business, as well as effective compliance standards on federal, state, and local government policies.
-                                Our services will enable the small and medium-size business owners and leaders to focus more on their business goals and objectives.</p>
-                            <div class="about-content-inner">
-                                <ul class="list-wrap">
-                                    <li>
-                                        <div class="icon">
-                                            <i class="flaticon-business-presentation"></i>
-                                        </div>
-                                        <div class="content">
-                                            <h4 class="title">Growing Business</h4>
-                                            <p>Finance helps you to convert into a strategic asset get.</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="icon">
-                                            <i class="flaticon-investment"></i>
-                                        </div>
-                                        <div class="content">
-                                            <h4 class="title">Finance Investment</h4>
-                                            <p>Finance helps you to convert into a strategic asset get.</p>
-                                        </div>
-                                    </li>
-                                </ul>
-                                <div class="right-slide-img">
-                                    <img src="<?php echo $domain ?>assets/img/images/inner_about_img04.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="about-content-bottom">
-                                <div class="services-btn">
-                                    <a href="services.html" class="btn">Our Services</a>
-                                </div>
-                                <div class="about-author-info">
-                                    <div class="thumb">
-                                        <img src="<?php echo $domain ?>assets/img/images/about_author.png" alt="">
-                                    </div>
-                                    <div class="content">
-                                        <h2 class="title">Mark Stranger</h2>
-                                        <span>CEO, Gerow Finance</span>
-                                    </div>
-                                </div>
+                            <div class="content">
+                                <h2 class="title">Mark Stranger</h2>
+                                <span>CEO, Gerow Finance</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </div>
+</section>
+
         <!-- about-area-end -->
 
         <!-- choose-area -->
@@ -256,42 +261,7 @@
         <!-- testimonial-area-end -->
 
         <!-- brand-area -->
-        <div class="brand-area-six pt-80 pb-80">
-            <div class="container">
-                <div class="row brand-active">
-                    <div class="col-lg-12">
-                        <div class="brand-item">
-                            <img src="<?php echo $domain ?>assets/img/brand/brand_img01.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-lg-12">
-                        <div class="brand-item">
-                            <img src="<?php echo $domain ?>assets/img/brand/brand_img02.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-lg-12">
-                        <div class="brand-item">
-                            <img src="<?php echo $domain ?>assets/img/brand/brand_img03.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-lg-12">
-                        <div class="brand-item">
-                            <img src="<?php echo $domain ?>assets/img/brand/brand_img04.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-lg-12">
-                        <div class="brand-item">
-                            <img src="<?php echo $domain ?>assets/img/brand/brand_img05.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-lg-12">
-                        <div class="brand-item">
-                            <img src="<?php echo $domain ?>assets/img/brand/brand_img03.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    
         <!-- brand-area-end -->
 
 

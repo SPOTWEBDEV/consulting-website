@@ -45,8 +45,8 @@
 
     <!-- Scroll-top -->
     <button class="scroll-top scroll-to-target" data-target="html">
-            <i class="fas fa-angle-up"></i>
-        </button>
+        <i class="fas fa-angle-up"></i>
+    </button>
     <!-- Scroll-top-end-->
 
     <!-- header-area -->
@@ -70,13 +70,14 @@
                     </div>
                     <div class="col-lg-5">
                         <div class="banner-content-three">
-                            <h2 class="title" data-aos="fade-right" data-aos-delay="0">Need Business Consultation Today</h2>
-                            <p data-aos="fade-right" data-aos-delay="300">Agilos helps you to convert your data into a strategic asset and get top-notch business insights.</p>
+                            <h2 class="title" data-aos="fade-right" data-aos-delay="0">Need Business Consultation Today?</h2>
+                            <p data-aos="fade-right" data-aos-delay="300">MyBusTaxBookkeeping provides expert insights to help your business overcome challenges and thrive.</p>
                             <form action="#" class="banner-form" data-aos="fade-right" data-aos-delay="600">
                                 <input type="text" placeholder="E-mail Address">
                                 <button type="submit"><i class="flaticon-right-arrow"></i></button>
                             </form>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -148,9 +149,9 @@
                                     <i class="flaticon-inspiration"></i>
                                 </div>
                                 <div class="features-content-three">
-                                    <h2 class="title">Finance Planning</h2>
-                                    <p>Morem ipsum dolor sittemet consectetur adipiscing elitflorai psum dolor.</p>
-                                    <a href="services-details.html" class="link-btn">See Details <img src="<?php echo $domain ?>assets/img/icons/right-arrow.svg" alt=""></a>
+                                    <h2 class="title">Bookkeeping </h2>
+                                    <p>Running a business involves effective decision-making. This may become impossible without accurate bookkeeping or accounting records. We’ll teach your company how to effectively keep records of your business transactions.  </p>
+                                    <a href="#" class="link-btn">See Details <img src="<?php echo $domain ?>assets/img/icons/right-arrow.svg" alt=""></a>
                                 </div>
                             </div>
                         </div>
@@ -160,9 +161,9 @@
                                     <i class="flaticon-layers"></i>
                                 </div>
                                 <div class="features-content-three">
-                                    <h2 class="title">Business Consulting</h2>
-                                    <p>Morem ipsum dolor sittemet consectetur adipiscing elitflorai psum dolor.</p>
-                                    <a href="services-details.html" class="link-btn">See Details <img src="<?php echo $domain ?>assets/img/icons/right-arrow.svg" alt=""></a>
+                                    <h2 class="title">Financial Accounting </h2>
+                                    <p>We provide more in-depth financial accounting services for profit entities, not-for-profit organizations, partnerships, individuals, etc. The Business and Tax Consulting Group, Inc., can assist in organizing your financial transactions and tasks at a higher level other than bookkeeping. </p>
+                                    <a href="#" class="link-btn">See Details <img src="<?php echo $domain ?>assets/img/icons/right-arrow.svg" alt=""></a>
                                 </div>
                             </div>
                         </div>
@@ -172,9 +173,9 @@
                                     <i class="flaticon-calculator"></i>
                                 </div>
                                 <div class="features-content-three">
-                                    <h2 class="title">Tax Advisory</h2>
-                                    <p>Morem ipsum dolor sittemet consectetur adipiscing elitflorai psum dolor.</p>
-                                    <a href="services-details.html" class="link-btn">See Details <img src="<?php echo $domain ?>assets/img/icons/right-arrow.svg" alt=""></a>
+                                    <h2 class="title">Taxation</h2>
+                                    <p>In our tax services, we understand the liability and huge business payout that is involved with noncompliance in federal, state, and local tax administrations. The complexity in understanding changes in tax laws is profound.</p>
+                                    <a href="#" class="link-btn">See Details <img src="<?php echo $domain ?>assets/img/icons/right-arrow.svg" alt=""></a>
                                 </div>
                             </div>
                         </div>
@@ -184,8 +185,8 @@
                                     <i class="flaticon-investment"></i>
                                 </div>
                                 <div class="features-content-three">
-                                    <h2 class="title">Business Audit</h2>
-                                    <p>Morem ipsum dolor sittemet consectetur adipiscing elitflorai psum dolor.</p>
+                                    <h2 class="title">Business Consulting</h2>
+                                    <p>Our business consulting expertise is tailored to the needs of small or medium-size businesses. We help analyze your business and create solutions to enable organizations to achieve their operational goals and objectives. </p>
                                     <a href="services-details.html" class="link-btn">See Details <img src="<?php echo $domain ?>assets/img/icons/right-arrow.svg" alt=""></a>
                                 </div>
                             </div>
@@ -217,10 +218,10 @@
                     <div class="col-lg-5">
                         <div class="about-content-four">
                             <div class="section-title-two mb-30 tg-heading-subheading animation-style1">
-                                <span class="sub-title tg-element-title">Get To know US</span>
-                                <h2 class="title tg-element-title">We are the next gen Business experience</h2>
+                                <span class="sub-title tg-element-title">Get To Know Us</span>
+                                <h2 class="title tg-element-title">Empowering Businesses for Success</h2>
                             </div>
-                            <p>With over 25 years of experience, we have crafted thousands of Strategic discovery process that enables us to peel back which enable us to understand.</p>
+                            <p>With over 25 years of expertise, we provide strategic consulting tailored to each business’s unique challenges, helping them thrive and grow.</p>
                             <div class="about-list-three">
                                 <ul class="list-wrap">
                                     <li>
@@ -229,7 +230,7 @@
                                         </div>
                                         <div class="content">
                                             <h2 class="title">Business Growth</h2>
-                                            <p>eiusmod temporincididunt ut labore magna aliqua Quisery.</p>
+                                            <p>Helping you achieve sustainable growth and enhanced profitability.</p>
                                         </div>
                                     </li>
                                     <li>
@@ -237,14 +238,15 @@
                                             <i class="flaticon-mission"></i>
                                         </div>
                                         <div class="content">
-                                            <h2 class="title">Target Audience</h2>
-                                            <p>eiusmod temporincididunt ut labore magna aliqua Quisery.</p>
+                                            <h2 class="title">Targeted Strategies</h2>
+                                            <p>Custom solutions designed to reach and engage your ideal clients.</p>
                                         </div>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
@@ -270,31 +272,32 @@
                         <div class="overview-content-two">
                             <div class="section-title-two mb-30 tg-heading-subheading animation-style1">
                                 <span class="sub-title tg-element-title">Company Overview</span>
-                                <h2 class="title tg-element-title">We Prepare An Effective Strategy For Companies</h2>
+                                <h2 class="title tg-element-title">Crafting Effective Strategies for Business Success</h2>
                             </div>
-                            <p>Morem ipsum dolor sit amet, consectetur adipiscing elita florai psum dolor sit amet, consecteture.</p>
+                            <p>At MyBusTaxBookkeeping, we’re committed to providing strategies that help businesses navigate challenges, optimize growth, and achieve lasting success.</p>
                             <div class="progress-wrap">
                                 <div class="progress-item">
                                     <h6 class="title">Consulting</h6>
-                                    <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress" role="progressbar" aria-label="Consulting" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
                                         <div class="progress-bar wow slideInLeft" data-wow-delay=".1s" style="width: 85%"><span>85%</span></div>
                                     </div>
                                 </div>
                                 <div class="progress-item">
-                                    <h6 class="title">Investment</h6>
-                                    <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="76" aria-valuemin="0" aria-valuemax="100">
+                                    <h6 class="title">Financial Planning</h6>
+                                    <div class="progress" role="progressbar" aria-label="Financial Planning" aria-valuenow="76" aria-valuemin="0" aria-valuemax="100">
                                         <div class="progress-bar wow slideInLeft" data-wow-delay=".2s" style="width: 76%"><span>76%</span></div>
                                     </div>
                                 </div>
                                 <div class="progress-item">
-                                    <h6 class="title">Investment</h6>
-                                    <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                    <h6 class="title">Tax Preparation</h6>
+                                    <div class="progress" role="progressbar" aria-label="Tax Preparation" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
                                         <div class="progress-bar wow slideInLeft" data-wow-delay=".3s" style="width: 90%"><span>90%</span></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
@@ -306,13 +309,13 @@
                 <div class="row align-items-center">
                     <div class="col-lg-5 col-md-8">
                         <div class="section-title-two mb-40 tg-heading-subheading animation-style1">
-                            <span class="sub-title tg-element-title">Complete Projects</span>
-                            <h2 class="title tg-element-title">A Complete Solution For Global Business</h2>
+                            <span class="sub-title tg-element-title">Our Projects</span>
+                            <h2 class="title tg-element-title">Comprehensive Solutions for Business Success</h2>
                         </div>
                     </div>
                     <div class="col-lg-7 col-md-4">
                         <div class="view-all-btn text-end mb-30">
-                            <a href="project-details.html" class="btn btn-three">See All Projects</a>
+                            <a href="project-details.html" class="btn btn-three">View All Projects</a>
                         </div>
                     </div>
                 </div>
@@ -322,34 +325,35 @@
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="project-item-three">
                             <div class="project-thumb-three">
-                                <a href="project-details.html"><img src="<?php echo $domain ?>assets/img/project/h3_project_img01.jpg" alt=""></a>
+                                <a href="project-details.html"><img src="<?php echo $domain ?>assets/img/project/h3_project_img01.jpg" alt="Project Image 1"></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="project-item-three">
                             <div class="project-thumb-three">
-                                <a href="project-details.html"><img src="<?php echo $domain ?>assets/img/project/h3_project_img02.jpg" alt=""></a>
+                                <a href="project-details.html"><img src="<?php echo $domain ?>assets/img/project/h3_project_img02.jpg" alt="Project Image 2"></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="project-item-three">
                             <div class="project-thumb-three">
-                                <a href="project-details.html"><img src="<?php echo $domain ?>assets/img/project/h3_project_img03.jpg" alt=""></a>
+                                <a href="project-details.html"><img src="<?php echo $domain ?>assets/img/project/h3_project_img03.jpg" alt="Project Image 3"></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="project-item-three">
                             <div class="project-thumb-three">
-                                <a href="project-details.html"><img src="<?php echo $domain ?>assets/img/project/h3_project_img04.jpg" alt=""></a>
+                                <a href="project-details.html"><img src="<?php echo $domain ?>assets/img/project/h3_project_img04.jpg" alt="Project Image 4"></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
         <!-- project-area-end -->
 
         <!-- counter-area -->
@@ -366,7 +370,7 @@
                         <div class="col-lg-3 col-md-4 col-sm-6">
                             <div class="counter-item-two">
                                 <h2 class="count"><span class="odometer" data-count="55"></span>k</h2>
-                                <p>Complete Projects</p>
+                                <p>Projects Completed</p>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-4 col-sm-6">
@@ -378,13 +382,14 @@
                         <div class="col-lg-3 col-md-4 col-sm-6">
                             <div class="counter-item-two">
                                 <h2 class="count"><span class="odometer" data-count="15"></span>k</h2>
-                                <p>Trade In The World</p>
+                                <p>Businesses Supported</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
         <!-- counter-area-end -->
 
         <!-- team-area -->
@@ -393,9 +398,9 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-6">
                         <div class="section-title-two text-center mb-50 tg-heading-subheading animation-style1">
-                            <span class="sub-title tg-element-title">Expert People</span>
-                            <h2 class="title tg-element-title">Dedicated Team Members</h2>
-                            <p>Ever find yourself staring at your computer screen a good consulting slogan to come to mind? Oftentimes.</p>
+                            <span class="sub-title tg-element-title">Our Expert Team</span>
+                            <h2 class="title tg-element-title">Meet Our Dedicated Professionals</h2>
+                            <p>Our skilled team is here to provide top-tier business and tax consulting to help your business thrive.</p>
                         </div>
                     </div>
                 </div>
@@ -403,7 +408,7 @@
                     <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
                         <div class="team-item-three">
                             <div class="team-thumb-three">
-                                <img src="<?php echo $domain ?>assets/img/team/h3_team_img01.png" alt="">
+                                <img src="<?php echo $domain ?>assets/img/team/h3_team_img01.png" alt="Brooklyn Simmons">
                                 <div class="team-social-three">
                                     <div class="social-toggle-icon">
                                         <i class="fas fa-share-alt"></i>
@@ -418,14 +423,14 @@
                             </div>
                             <div class="team-content-three">
                                 <h4 class="title"><a href="team-details.html">Brooklyn Simmons</a></h4>
-                                <span>Finance Advisor</span>
+                                <span>Business Consultant</span>
                             </div>
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
                         <div class="team-item-three">
                             <div class="team-thumb-three">
-                                <img src="<?php echo $domain ?>assets/img/team/h3_team_img02.png" alt="">
+                                <img src="<?php echo $domain ?>assets/img/team/h3_team_img02.png" alt="Jenny Wilson">
                                 <div class="team-social-three">
                                     <div class="social-toggle-icon">
                                         <i class="fas fa-share-alt"></i>
@@ -440,14 +445,14 @@
                             </div>
                             <div class="team-content-three">
                                 <h4 class="title"><a href="team-details.html">Jenny Wilson</a></h4>
-                                <span>Finance Advisor</span>
+                                <span>Tax Specialist</span>
                             </div>
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
                         <div class="team-item-three">
                             <div class="team-thumb-three">
-                                <img src="<?php echo $domain ?>assets/img/team/h3_team_img03.png" alt="">
+                                <img src="<?php echo $domain ?>assets/img/team/h3_team_img03.png" alt="Ronald Richards">
                                 <div class="team-social-three">
                                     <div class="social-toggle-icon">
                                         <i class="fas fa-share-alt"></i>
@@ -462,14 +467,14 @@
                             </div>
                             <div class="team-content-three">
                                 <h4 class="title"><a href="team-details.html">Ronald Richards</a></h4>
-                                <span>Finance Advisor</span>
+                                <span>Financial Advisor</span>
                             </div>
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
                         <div class="team-item-three">
                             <div class="team-thumb-three">
-                                <img src="<?php echo $domain ?>assets/img/team/h3_team_img04.png" alt="">
+                                <img src="<?php echo $domain ?>assets/img/team/h3_team_img04.png" alt="Marvin McKinney">
                                 <div class="team-social-three">
                                     <div class="social-toggle-icon">
                                         <i class="fas fa-share-alt"></i>
@@ -484,13 +489,14 @@
                             </div>
                             <div class="team-content-three">
                                 <h4 class="title"><a href="team-details.html">Marvin McKinney</a></h4>
-                                <span>Finance Advisor</span>
+                                <span>Operations Manager</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
         <!-- team-area-end -->
 
         <!-- testimonial-area -->
@@ -499,7 +505,7 @@
                 <div class="row g-0 align-items-end">
                     <div class="col-37">
                         <div class="testimonial-img-three">
-                            <img src="<?php echo $domain ?>assets/img/images/h3_testimonial_img.jpg" alt="">
+                            <img src="<?php echo $domain ?>assets/img/images/h3_testimonial_img.jpg" alt="Testimonial Image">
                         </div>
                     </div>
                     <div class="col-63">
@@ -514,10 +520,10 @@
                                             <i class="fas fa-star"></i>
                                             <i class="fas fa-star"></i>
                                         </div>
-                                        <p>“ Morem ipsum dolor sit amet, consectetur adipiscing elita florai sum dolor sit amet, consecteture.Borem ipsum dolor sit amet, consectetur adipiscing elita Moremsit amet.</p>
+                                        <p>“ MyBusTaxBookkeeping has been a game-changer for our finances. Their dedication and professionalism helped streamline our accounting processes seamlessly. Highly recommended!”</p>
                                         <div class="testimonial-info">
-                                            <h2 class="title">Mr.Robey Alexa</h2>
-                                            <span>CEO, Gerow Agency</span>
+                                            <h2 class="title">Sarah Johnson</h2>
+                                            <span>Founder, Horizon Ventures</span>
                                         </div>
                                     </div>
                                 </div>
@@ -530,10 +536,10 @@
                                             <i class="fas fa-star"></i>
                                             <i class="fas fa-star"></i>
                                         </div>
-                                        <p>“ Morem ipsum dolor sit amet, consectetur adipiscing elita florai sum dolor sit amet, consecteture.Borem ipsum dolor sit amet, consectetur adipiscing elita Moremsit amet.</p>
+                                        <p>“The team at MyBusTaxBookkeeping made our tax preparation effortless. They’re detail-oriented and responsive, which makes them a pleasure to work with every tax season.”</p>
                                         <div class="testimonial-info">
-                                            <h2 class="title">Mr.Robey Alexa</h2>
-                                            <span>CEO, Gerow Agency</span>
+                                            <h2 class="title">John Michaels</h2>
+                                            <span>CEO, TechWave Solutions</span>
                                         </div>
                                     </div>
                                 </div>
@@ -544,6 +550,7 @@
                 </div>
             </div>
         </section>
+
         <!-- testimonial-area-end -->
 
         <!-- cta-area -->
@@ -558,11 +565,11 @@
                                         <i class="flaticon-phone-call"></i>
                                     </div>
                                     <div class="content">
-                                        <span>Call For More Info</span>
-                                        <a href="tel:0123456789">+123 8989 444</a>
+                                        <span>Call for Business Assistance</span>
+                                        <a href="tel:0123456789"><?php echo $sitenumber ?></a>
                                     </div>
                                 </div>
-                                <h2 class="title">Let’s Request a Schedule For Free Consultation</h2>
+                                <h2 class="title">Request a Free Consultation to Boost Your Business</h2>
                             </div>
                         </div>
                         <div class="col-lg-3">
@@ -574,6 +581,7 @@
                 </div>
             </div>
         </section>
+
         <!-- cta-area-end -->
 
         <!-- blog-area -->
@@ -583,8 +591,8 @@
                     <div class="col-lg-6">
                         <div class="section-title-two text-center mb-50 tg-heading-subheading animation-style1">
                             <span class="sub-title tg-element-title">News & Blogs</span>
-                            <h2 class="title tg-element-title">Read Our Latest Updates</h2>
-                            <p>Ever find yourself staring at your computer screen a good consulting slogan to come to mind? Oftentimes.</p>
+                            <h2 class="title tg-element-title">Read Our Latest Insights</h2>
+                            <p>Stay up to date with the latest trends and expert advice to help grow your business and manage your taxes efficiently.</p>
                         </div>
                     </div>
                 </div>
@@ -593,11 +601,11 @@
                         <div class="blog-post-item-two">
                             <div class="blog-post-thumb-two">
                                 <a href="blog-details.html"><img src="<?php echo $domain ?>assets/img/blog/h3_blog_img01.jpg" alt=""></a>
-                                <a href="blog.html" class="tag tag-two">Development</a>
+                                <a href="blog.html" class="tag tag-two">Business Growth</a>
                             </div>
                             <div class="blog-post-content-two">
-                                <h2 class="title"><a href="blog-details.html">Meet AutoManage, the best AI management tools</a></h2>
-                                <p>Everything you need to start building area atching presence for your business.</p>
+                                <h2 class="title"><a href="blog-details.html">Maximize Your Business Potential with Smart Tax Strategies</a></h2>
+                                <p>Discover how effective tax planning can save your business money and fuel its growth.</p>
                                 <div class="blog-meta">
                                     <ul class="list-wrap">
                                         <li>
@@ -613,11 +621,11 @@
                         <div class="blog-post-item-two">
                             <div class="blog-post-thumb-two">
                                 <a href="blog-details.html"><img src="<?php echo $domain ?>assets/img/blog/h3_blog_img02.jpg" alt=""></a>
-                                <a href="blog.html" class="tag tag-two">Business</a>
+                                <a href="blog.html" class="tag tag-two">Tax Advisory</a>
                             </div>
                             <div class="blog-post-content-two">
-                                <h2 class="title"><a href="blog-details.html">Meet AutoManage, the best AI management tools</a></h2>
-                                <p>Everything you need to start building area atching presence for your business.</p>
+                                <h2 class="title"><a href="blog-details.html">Why Effective Tax Advice is Crucial for Your Business</a></h2>
+                                <p>Explore the importance of professional tax guidance and how it can lead to long-term financial success.</p>
                                 <div class="blog-meta">
                                     <ul class="list-wrap">
                                         <li>
@@ -633,11 +641,11 @@
                         <div class="blog-post-item-two">
                             <div class="blog-post-thumb-two">
                                 <a href="blog-details.html"><img src="<?php echo $domain ?>assets/img/blog/h3_blog_img03.jpg" alt=""></a>
-                                <a href="blog.html" class="tag tag-two">Tax Advisory</a>
+                                <a href="blog.html" class="tag tag-two">Finance Tips</a>
                             </div>
                             <div class="blog-post-content-two">
-                                <h2 class="title"><a href="blog-details.html">Meet AutoManage, the best AI management tools</a></h2>
-                                <p>Everything you need to start building area atching presence for your business.</p>
+                                <h2 class="title"><a href="blog-details.html">How to Optimize Your Business Tax Filing</a></h2>
+                                <p>Learn best practices to streamline your tax filing process and avoid common pitfalls.</p>
                                 <div class="blog-meta">
                                     <ul class="list-wrap">
                                         <li>
@@ -652,6 +660,7 @@
                 </div>
             </div>
         </section>
+
         <!-- blog-area-end -->
 
     </main>
@@ -659,7 +668,7 @@
 
 
     <!-- footer-area -->
-     <?php include('./includes/footer.php') ?>
+    <?php include('./includes/footer.php') ?>
     <!-- footer-area-end -->
 
 

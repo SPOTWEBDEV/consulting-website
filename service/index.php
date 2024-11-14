@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Gerow - Business Consulting HTML Template</title>
+    <title><?php echo $domain ?> || Service-Page</title>
     <meta name="description" content="Gerow - Business Consulting HTML Template">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -28,7 +28,6 @@
     <link rel="stylesheet" href="<?php echo $domain ?>assets/css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/brands.min.css">
-
 
 </head>
 
@@ -69,7 +68,7 @@
                             <h2 class="title">Our Services</h2>
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="<?php echo $domain ?>">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                                     <li class="breadcrumb-item active" aria-current="page">Services</li>
                                 </ol>
                             </nav>
@@ -86,224 +85,136 @@
 
 
         <!-- services-area -->
-        <section class="services-area-six">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <div class="section-title-two mb-60">
-                            <span class="sub-title">What We Do For You</span>
-                            <h2 class="title">We can inspire and Offer Different Services</h2>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="section-top-content mb-30">
-                            <ul>
-                                <li>Bookkeeping </li>
-                                <li>Financial Accounting </li>
-                                <li>Taxation </li>
-                                <li>Business Consulting </li>
-                                <li>Entrepreneurship Start-up and Training</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-        </section>
-
-
-
-        <section class="team-area team-bg" data-background="<?php echo $domain ?>assets/img/bg/team_bg.jpg">
+        <section class="services-area-five inner-services-bg" data-background="<?php echo $domain ?>assets/img/bg/inner_services_bg.jpg">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-xl-10 col-lg-8">
-                        <div class="section-title text-center mb-50">
-                            <span class="sub-title">Financial Accounting Services</span>
-                            <h2 class="title">Financial Accounting </h2>
-                            <p>We provide more in-depth financial accounting services for profit entities, not-for-profit organizations, partnerships, individuals, etc. The Business and Tax Consulting Group, Inc., can assist in organizing your financial transactions and tasks at a higher level other than bookkeeping. </p>
+                    <div class="col-xl-6 col-lg-8 col-md-10">
+                        <div class="section-title-two text-center mb-50">
+                            <h2 class="title">Services</h2>
+                            <p>Our services are designed to serve entrepreneurs of all sizes who are striving to manage, maintain, and grow their business, as well as effective compliance standards on federal, state, and local government policies.</p>
                         </div>
                     </div>
                 </div>
                 <div class="row justify-content-center">
-                    <div class="col-xl-13 col-lg-6 col-md-6 col-sm-9">
-                        <ul>
-
-                            <p>Our responsibilities will include but not be limited to the following:</p>
-                            <li>Create a chart of accounts.</li>
-                            <li>Advising leadership on compliance needs.</li>
-                            <li>Monitoring and recording office expenses.</li>
-                            <li>Coordinate appropriate billing to clients.</li>
-                            <li>Reconciling sales tax collections and remittances.</li>
-                            <li>Reviewing and recording cash receipts and payments.</li>
-                            <li>Balance and maintain accurate ledgers/bank accounts.</li>
-                            <li>Providing guidance with financials reports as needed.</li>
-                            <li>Working with an accounting personnels when necessary.</li>
-                            <li>Creating and processing accounts receivable and payable.</li>
-                            <li>Keeping records of purchases of assets and rentals, etc.</li>
-                            <li>Paying and tracking vendor invoices and account balances.</li>
-                            <li>Processing and handling employee time sheets and payrolls.</li>
-                            <li>Recording and monitoring day-to-day financial transactions.</li>
-                            <li>Track customer and vendor invoices for timeliness and accuracy.</li>
-                            <li>Developing monthly financial statements, including cash flow, profit
-                                and loss statements, and balance sheets.</li>
-
-                        </ul>
-
+                    <div class="col-lg-4 col-md-6 col-sm-10">
+                        <div class="services-item">
+                            <div class="services-content">
+                                <div class="content-top">
+                                    <div class="icon">
+                                        <i class="fas fa-briefcase"></i>
+                                    </div>
+                                    <h2 class="title">Bookkeeping</h2>
+                                </div>
+                                <div class="services-thumb">
+                                    <img src="<?php echo $domain ?>assets/img/services/services_img01.jpg" alt="">
+                                    <a href="services-details.html" class="btn transparent-btn">Our Services</a>
+                                </div>
+                                <ul class="list-wrap">
+                                    <p>Running a business involves effective decision-making. This may become impossible without accurate bookkeeping or accounting records. We’ll teach your company how to effectively keep records of your business transactions. </p>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-
+                    <div class="col-lg-4 col-md-6 col-sm-10">
+                        <div class="services-item">
+                            <div class="services-content">
+                                <div class="content-top">
+                                    <div class="icon">
+                                        <i class="fas fa-calculator"></i>
+                                    </div>
+                                    <h2 class="title">Financial Accounting</h2>
+                                </div>
+                                <div class="services-thumb">
+                                    <img src="<?php echo $domain ?>assets/img/services/services_img02.jpg" alt="">
+                                    <a href="services-details.html" class="btn transparent-btn">Our Services</a>
+                                </div>
+                                <ul class="list-wrap">
+                                    <p>We provide more in-depth financial accounting services for profit entities, not-for-profit organizations, partnerships, individuals, etc. The Business and Tax Consulting Group, Inc., can assist in organizing your financial transactions and tasks at a higher level other than bookkeeping. </p>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-10">
+                        <div class="services-item">
+                            <div class="services-content">
+                                <div class="content-top">
+                                    <div class="icon">
+                                        <i class="fas fa-hand-holding-usd"></i>
+                                    </div>
+                                    <h2 class="title">Tax Services</h2>
+                                </div>
+                                <div class="services-thumb">
+                                    <img src="<?php echo $domain ?>assets/img/services/services_img03.jpg" alt="">
+                                    <a href="services-details.html" class="btn transparent-btn">Our Services</a>
+                                </div>
+                                <ul class="list-wrap">
+                                   <p>In our tax services, we understand the liability and huge business payout that is involved with noncompliance in federal, state, and local tax administrations.</p>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-10">
+                        <div class="services-item">
+                            <div class="services-content">
+                                <div class="content-top">
+                                    <div class="icon">
+                                        <i class="fas fa-chart-line"></i>
+                                    </div>
+                                    <h2 class="title">Tax Planning</h2>
+                                </div>
+                                <div class="services-thumb">
+                                    <img src="<?php echo $domain ?>assets/img/services/services_img04.jpg" alt="">
+                                    <a href="services-details.html" class="btn transparent-btn">Our Services</a>
+                                </div>
+                                <ul class="list-wrap">
+                                    <p>The essence of tax planning is to allocate and arrange your financial affairs in a manner that taxes are minimized. As tax experts, our team is on your side to assist in minimum payment of tax burdens.</p>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-10">
+                        <div class="services-item">
+                            <div class="services-content">
+                                <div class="content-top">
+                                    <div class="icon">
+                                        <i class="fas fa-bullseye"></i>
+                                    </div>
+                                    <h2 class="title">Business Consulting</h2>
+                                </div>
+                                <div class="services-thumb">
+                                    <img src="<?php echo $domain ?>assets/img/services/services_img05.jpg" alt="">
+                                    <a href="services-details.html" class="btn transparent-btn">Our Services</a>
+                                </div>
+                                <ul class="list-wrap">
+                                    <p>Our business consulting expertise is tailored to the needs of small or medium-size businesses. We help analyze your business and create solutions to enable organizations to achieve their operational goals and objectives. </p>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-10">
+                        <div class="services-item">
+                            <div class="services-content">
+                                <div class="content-top">
+                                    <div class="icon">
+                                        <i class="fas fa-calculator"></i>
+                                    </div>
+                                    <h2 class="title">Entrepreneurship Start-up and Training</h2>
+                                </div>
+                                <div class="services-thumb">
+                                    <img src="<?php echo $domain ?>assets/img/services/services_img06.jpg" alt="">
+                                    <a href="services-details.html" class="btn transparent-btn">Our Services</a>
+                                </div>
+                                <ul class="list-wrap">
+                                    <p>In our House of Knowledge program, we help create value in the training of individuals, employees, managers, and company executives to manage tasks effectively and to enhance employee retention and productivity. </p>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-
 
         <!-- services-area-end -->
-
-        <div class="row justify-content-center">
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
-                <div class="services-item-two">
-                    <div class="services-thumb-two">
-                        <img src="<?php echo $domain ?>assets/img/services/h2_services_img01.jpg" alt="Business Financial Analysis">
-                        <div class="item-shape">
-                            <img src="<?php echo $domain ?>assets/img/services/services_item_shape.png" alt="">
-                        </div>
-                    </div>
-                    <div class="services-content-two">
-                        <div class="icon">
-                            <i class="fas fa-piggy-bank"></i> <!-- Changed to Font Awesome -->
-                        </div>
-                        <h2 class="title"><a href="services-details.html">Business Financial Analysis</a></h2>
-                        <p>Helping you make informed financial decisions for sustainable growth.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
-                <div class="services-item-two">
-                    <div class="services-thumb-two">
-                        <img src="<?php echo $domain ?>assets/img/services/h2_services_img02.jpg" alt="Corporate Tax Review">
-                        <div class="item-shape">
-                            <img src="<?php echo $domain ?>assets/img/services/services_item_shape.png" alt="">
-                        </div>
-                    </div>
-                    <div class="services-content-two">
-                        <div class="icon">
-                            <i class="fas fa-calculator"></i> <!-- Changed to Font Awesome -->
-                        </div>
-                        <h2 class="title"><a href="services-details.html">Corporate Tax Review</a></h2>
-                        <p>Ensuring your business stays compliant with tax regulations.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
-                <div class="services-item-two">
-                    <div class="services-thumb-two">
-                        <img src="<?php echo $domain ?>assets/img/services/h2_services_img03.jpg" alt="Investment Advisory">
-                        <div class="item-shape">
-                            <img src="<?php echo $domain ?>assets/img/services/services_item_shape.png" alt="">
-                        </div>
-                    </div>
-                    <div class="services-content-two">
-                        <div class="icon">
-                            <i class="fas fa-money-bill-wave"></i> <!-- Changed to Font Awesome -->
-                        </div>
-                        <h2 class="title"><a href="services-details.html">Investment Advisory</a></h2>
-                        <p>Expert advice on diversifying your portfolio for higher returns.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
-                <div class="services-item-two">
-                    <div class="services-thumb-two">
-                        <img src="<?php echo $domain ?>assets/img/services/h2_services_img04.jpg" alt="Risk Assessment">
-                        <div class="item-shape">
-                            <img src="<?php echo $domain ?>assets/img/services/services_item_shape.png" alt="">
-                        </div>
-                    </div>
-                    <div class="services-content-two">
-                        <div class="icon">
-                            <i class="fas fa-shield-alt"></i> <!-- Changed to Font Awesome -->
-                        </div>
-                        <h2 class="title"><a href="services-details.html">Risk Assessment</a></h2>
-                        <p>Identifying and mitigating potential risks in your business.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
-                <div class="services-item-two">
-                    <div class="services-thumb-two">
-                        <img src="<?php echo $domain ?>assets/img/services/h2_services_img05.jpg" alt="Personal Tax Consultancy">
-                        <div class="item-shape">
-                            <img src="<?php echo $domain ?>assets/img/services/services_item_shape.png" alt="">
-                        </div>
-                    </div>
-                    <div class="services-content-two">
-                        <div class="icon">
-                            <i class="fas fa-file-invoice-dollar"></i> <!-- Changed to Font Awesome -->
-                        </div>
-                        <h2 class="title"><a href="services-details.html">Personal Tax Consultancy</a></h2>
-                        <p>Professional advice on managing your individual tax obligations.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
-                <div class="services-item-two">
-                    <div class="services-thumb-two">
-                        <img src="<?php echo $domain ?>assets/img/services/h2_services_img06.jpg" alt="Audit & Compliance">
-                        <div class="item-shape">
-                            <img src="<?php echo $domain ?>assets/img/services/services_item_shape.png" alt="">
-                        </div>
-                    </div>
-                    <div class="services-content-two">
-                        <div class="icon">
-                            <i class="fas fa-check-circle"></i> <!-- Changed to Font Awesome -->
-                        </div>
-                        <h2 class="title"><a href="services-details.html">Audit & Compliance</a></h2>
-                        <p>Ensuring your business meets all regulatory standards.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
-                <div class="services-item-two">
-                    <div class="services-thumb-two">
-                        <img src="<?php echo $domain ?>assets/img/services/h2_services_img07.jpg" alt="Strategic Business Planning">
-                        <div class="item-shape">
-                            <img src="<?php echo $domain ?>assets/img/services/services_item_shape.png" alt="">
-                        </div>
-                    </div>
-                    <div class="services-content-two">
-                        <div class="icon">
-                            <i class="fas fa-handshake"></i> <!-- Changed to Font Awesome -->
-                        </div>
-                        <h2 class="title"><a href="services-details.html">Strategic Business Planning</a></h2>
-                        <p>Developing strategies to enhance your business growth.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
-                <div class="services-item-two">
-                    <div class="services-thumb-two">
-                        <img src="<?php echo $domain ?>assets/img/services/h2_services_img08.jpg" alt="Retirement Planning">
-                        <div class="item-shape">
-                            <img src="<?php echo $domain ?>assets/img/services/services_item_shape.png" alt="">
-                        </div>
-                    </div>
-                    <div class="services-content-two">
-                        <div class="icon">
-                            <i class="fas fa-piggy-bank"></i> <!-- Changed to Font Awesome -->
-                        </div>
-                        <h2 class="title"><a href="services-details.html">Retirement Planning</a></h2>
-                        <p>Helping you secure a comfortable and sustainable retirement.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
-
-        <!-- brand-area -->
-
-        <!-- brand-area-end -->
 
 
     </main>

@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Gerow - Business Consulting HTML Template</title>
+    <title><?php echo $domain ?> || Portfolio</title>
     <meta name="description" content="Gerow - Business Consulting HTML Template">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -26,6 +26,12 @@
     <link rel="stylesheet" href="<?php echo $domain ?>assets/css/default.css">
     <link rel="stylesheet" href="<?php echo $domain ?>assets/css/style.css">
     <link rel="stylesheet" href="<?php echo $domain ?>assets/css/responsive.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/brands.min.css">
+
+           
+
 </head>
 
 <body>

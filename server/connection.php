@@ -1,7 +1,11 @@
 <?php
 
-
-
+define("HOST","localhost");
+define("USER","root");
+define("PASS","");
+define("NAME","aximwbkh_axil");
+$connection = mysqli_connect(HOST, USER, PASS, NAME);
+session_start();
 $domain = 'http://localhost/consulting-website/';
 $sitename = 'Mybustaxbookkeeping';
 $siteshort = 'Mybustax B-K';

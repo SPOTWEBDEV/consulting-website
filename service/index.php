@@ -107,7 +107,7 @@
                                 </div>
                                 <div class="services-thumb">
                                     <img src="<?php echo $domain ?>assets/img/services/services_img01.jpg" alt="">
-                                    <a href="services-details.html" class="btn transparent-btn">Our Services</a>
+                                    <a href="<?php echo $domain ?>service/" class="btn transparent-btn">Our Services</a>
                                 </div>
                                 <ul class="list-wrap">
                                     <p>Running a business involves effective decision-making. This may become impossible without accurate bookkeeping or accounting records. We’ll teach your company how to effectively keep records of your business transactions. </p>
@@ -126,7 +126,7 @@
                                 </div>
                                 <div class="services-thumb">
                                     <img src="<?php echo $domain ?>assets/img/services/services_img02.jpg" alt="">
-                                    <a href="services-details.html" class="btn transparent-btn">Our Services</a>
+                                    <a href="<?php echo $domain ?>service/" class="btn transparent-btn">Our Services</a>
                                 </div>
                                 <ul class="list-wrap">
                                     <p>We provide more in-depth financial accounting services for profit entities, not-for-profit organizations, partnerships, individuals, etc. The Business and Tax Consulting Group, Inc., can assist in organizing your financial transactions and tasks at a higher level other than bookkeeping. </p>
@@ -145,7 +145,7 @@
                                 </div>
                                 <div class="services-thumb">
                                     <img src="<?php echo $domain ?>assets/img/services/services_img03.jpg" alt="">
-                                    <a href="services-details.html" class="btn transparent-btn">Our Services</a>
+                                    <a href="<?php echo $domain ?>service/" class="btn transparent-btn">Our Services</a>
                                 </div>
                                 <ul class="list-wrap">
                                    <p>In our tax services, we understand the liability and huge business payout that is involved with noncompliance in federal, state, and local tax administrations.</p>
@@ -164,7 +164,7 @@
                                 </div>
                                 <div class="services-thumb">
                                     <img src="<?php echo $domain ?>assets/img/services/services_img04.jpg" alt="">
-                                    <a href="services-details.html" class="btn transparent-btn">Our Services</a>
+                                    <a href="<?php echo $domain ?>service/" class="btn transparent-btn">Our Services</a>
                                 </div>
                                 <ul class="list-wrap">
                                     <p>The essence of tax planning is to allocate and arrange your financial affairs in a manner that taxes are minimized. As tax experts, our team is on your side to assist in minimum payment of tax burdens.</p>
@@ -183,7 +183,7 @@
                                 </div>
                                 <div class="services-thumb">
                                     <img src="<?php echo $domain ?>assets/img/services/services_img05.jpg" alt="">
-                                    <a href="services-details.html" class="btn transparent-btn">Our Services</a>
+                                    <a href="<?php echo $domain ?>service/" class="btn transparent-btn">Our Services</a>
                                 </div>
                                 <ul class="list-wrap">
                                     <p>Our business consulting expertise is tailored to the needs of small or medium-size businesses. We help analyze your business and create solutions to enable organizations to achieve their operational goals and objectives. </p>
@@ -202,7 +202,7 @@
                                 </div>
                                 <div class="services-thumb">
                                     <img src="<?php echo $domain ?>assets/img/services/services_img06.jpg" alt="">
-                                    <a href="services-details.html" class="btn transparent-btn">Our Services</a>
+                                    <a href="<?php echo $domain ?>service/" class="btn transparent-btn">Our Services</a>
                                 </div>
                                 <ul class="list-wrap">
                                     <p>In our House of Knowledge program, we help create value in the training of individuals, employees, managers, and company executives to manage tasks effectively and to enhance employee retention and productivity. </p>

@@ -83,6 +83,8 @@
                 <div class="banner-content-three">
                     <h2 class="title" data-aos="fade-right" data-aos-delay="0">Need Business Consultation Today?</h2>
                     <p data-aos="fade-right" data-aos-delay="300">MyBusTaxBookkeeping provides expert insights to help your business overcome challenges and thrive.</p>
+                    <a href="<?php echo $domain ?>book-me/"><button type="button" class="btn btn-primary mb-4">Book Now</button></a>
+
                     <form action="#" class="banner-form" data-aos="fade-right" data-aos-delay="600">
                         <label for="email" class="sr-only">E-mail Address</label>
                         <input type="email" id="email" placeholder="E-mail Address" required>
@@ -291,7 +293,7 @@
                     </div>
                     <div class="col-lg-7 col-md-4">
                         <div class="view-all-btn text-end mb-30">
-                            <a href="project-details.html" class="btn btn-three">View All Projects</a>
+                            <a href="#" class="btn btn-three">View All Projects</a>
                         </div>
                     </div>
                 </div>
@@ -553,7 +555,7 @@
                         </div>
                         <div class="col-lg-3">
                             <div class="cta-btn text-end">
-                                <a href="contact.html" class="btn btn-three">Contact Us</a>
+                                <a href="<?php echo $domain ?>contact/" class="btn btn-three">Contact Us</a>
                             </div>
                         </div>
                     </div>

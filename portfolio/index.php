@@ -101,13 +101,12 @@
                                 </div>
                                 <div class="col-29">
                                     <div class="project-details-info">
-                                        <h4 class="title">Project Information</h4>
+                                        <h4 class="title">Personal Information</h4>
                                         <ul class="list-wrap">
                                         
-                                            <li><span>Date:</span>17 March, 2023</li>
-                                            <li><span>Category:</span>Business & Tax Consulting Group, Inc.</li>
-                                            <li><span>Author:</span>Dr. Francis Ikeokwu</li>
-                                            <li><span>Place:</span>Jacksonville, Florida 32203</li>
+                                            <li><span>Name:</span>Dr. Francis Ikeokwu</li>
+                                            <li><span>Business:</span>Business & Tax Consulting Group, Inc.</li>
+                                            <li><span>Address:</span>Jacksonville, Florida 32203</li>
                                             <li class="social">
                                                 <span>Share:</span>
                                                 <ul class="list-wrap">

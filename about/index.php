@@ -131,7 +131,7 @@
                     </div>
                     <div class="about-content-bottom">
                         <div class="services-btn">
-                            <a href="services.html" class="btn">Our Services</a>
+                            <a href="<?php echo $domain ?>service/" class="btn">Our Services</a>
                         </div>
                         <div class="about-author-info">
                             <div class="thumb">

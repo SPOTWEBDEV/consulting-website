@@ -92,48 +92,44 @@
 
                         <div class="container mt-5">
                             <h2 class="mb-4 text-primary">Book Now</h2>
-                            <form>
+                            <form method="$_POST">
                                 <!-- Name Field -->
                                 <div class="mb-3">
-                                    
-                                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
                                 </div>
                                 <!-- Email Field -->
                                 <div class="mb-3">
-                                   
-                                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email">
                                 </div>
 
                                 <div class="mb-3">
-                                    
-                                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                                    <input type="text" class="form-control" id="email" name="phone" placeholder="Enter your Phonenumber">
                                 </div>
 
                                 <div class="mb-3">
                                 
-                                    <select class="form-select" id="exampleSelect">
-                                        <option selected disabled>Select an option</option>
-                                        <option value="1">Bookkeeping</option>
-                                        <option value="2">Financial Accounting</option>
-                                        <option value="3">Tax Services</option>
-                                        <option value="1">Tax Planning</option>
-                                        <option value="2">Business Consulting</option>
-                                        <option value="3">Entrepreneurship Start-up and Training</option>
+                                    <select name="type" class="form-select" id="exampleSelect">
+                                        <option selected disabled>Select an business</option>
+                                        <option value="Bookkeeping">Bookkeeping</option>
+                                        <option value="Financial Accounting">Financial Accounting</option>
+                                        <option value="Tax Services">Tax Services</option>
+                                        <option value="Tax Planning">Tax Planning</option>
+                                        <option value="Business Consulting">Business Consulting</option>
+                                        <option value="Entrepreneurship Start-up and Training">Entrepreneurship Start-up and Training</option>
                                     </select>
                                 </div>
 
                                 <div class="mb-3">
-                                    
-                                    <input type="email" class="form-control" id="amount" placeholder="Amount" readonly>
+                                    <input type="email" name="amount" class="form-control" id="amount" placeholder="Amount" readonly>
                                 </div>
                                 
-                                <button type="submit" class="btn btn-primary">Book now</button>
+                                <button type="submit" name="book_btn" class="btn btn-primary">Book now</button>
                             </form>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="inner-contact-info">
-                            <h2 class="title">Our Office Address</h2>
+                            <h2 class="title">Contact Us</h2>
                             <div class="contact-info-item">
                                 <h5 class="title-two">USA Office</h5>
                                 <ul class="list-wrap">

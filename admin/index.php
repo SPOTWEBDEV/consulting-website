@@ -236,15 +236,11 @@
                             </div>
                           </div>
                         </div>
-                        <span class="fw-semibold d-block mb-1">Total Deposit</span>
+                        <span class="fw-semibold d-block mb-1">BookKeeping</span>
                         <h3 class="card-title mb-2">
-                          <?php
-                            $get_deps = mysqli_query($connection, "SELECT * FROM `deposits` WHERE `status` = '1'");
-                            $total_deps = mysqli_num_rows($get_deps);
-                            echo $total_deps;
-                          ?>
+                         
                         </h3>
-                        <small class="text-success fw-semibold"><i class='bx bx-up-arrow-alt'></i> <?php echo $total_deps / 100 ?> %</small>
+                        <small class="text-success fw-semibold"><i class='bx bx-up-arrow-alt'></i>  %</small>
                       </div>
                     </div>
                   </div>
@@ -265,31 +261,14 @@
                             </div>
                           </div> -->
                         </div>
-                        <span>Deposit Amount(total)</span>
+                        <span>Financial Acct</span>
                         <h3 class="card-title text-nowrap mb-1">
-                        $<?php
-                            $get_deps = mysqli_query($connection, "SELECT * FROM `deposits` WHERE `status` = '1'");
+                       
                             
-                            $deps = 0;
-                            while ($all_deps = mysqli_fetch_assoc($get_deps)) {
-                              $deps += $all_deps['amount'];
-                            }
-
-                            
-                            
-                            // $get_send = mysqli_query($con, "SELECT * FROM `transactions` WHERE `transaction_type` = 'international' AND `status` = '1'");
-                            
-                            // $send = 0;
-                            // while ($all_send = mysqli_fetch_assoc($get_send)) {
-                            //   $send += $all_send['r_amount'];
-                            // }
-
-                            // $total_amount =  $deps - $send;
-                            // echo $total_amount;
-                            echo number_format($deps);
+                          
 
 
-                          ?>
+                          
                         </h3>
                         <small class="text-success fw-semibold"><i class='bx bx-up-arrow-alt'></i><?php // echo $total_amount / 100 ?>%</small>
                       </div>
@@ -321,7 +300,7 @@
                         </div>
                       </div>
                       <div id="growthChart"></div>
-                      <div class="text-center fw-semibold pt-3 mb-2"><?php echo  mysqli_num_rows($get_all) / 100 ?>% Company Growth</div>
+                      <div class="text-center fw-semibold pt-3 mb-2">% Company Growth</div>
 
                       <div class="d-flex px-xxl-4 px-lg-2 p-4 gap-xxl-3 gap-lg-1 gap-3 justify-content-between">
                         <div class="d-flex">
@@ -368,12 +347,9 @@
                         </div>
                         <span class="d-block mb-1">Total Withdrawals</span>
                         <h3 class="card-title text-nowrap mb-2">
-                          <?php
-                            $get_all_trsf = mysqli_query($connection, "SELECT * FROM `withdrawals` WHERE `status` = '1'");
-                            echo mysqli_num_rows($get_all_trsf);
-                          ?>
+                          
                         </h3>
-                        <small class="text-danger fw-semibold"><i class='bx bx-down-arrow-alt'></i><?php echo mysqli_num_rows($get_all_trsf) / 100 ?>%</small>
+                        <small class="text-danger fw-semibold"><i class='bx bx-down-arrow-alt'></i>%</small>
                       </div>
                     </div>
                   </div>
@@ -395,9 +371,7 @@
                         </div>
                         <span class="fw-semibold d-block mb-1">Total users</span>
                         <h3 class="card-title mb-2">
-                          <?php
-                            echo mysqli_num_rows($get_all);
-                          ?>
+                          
                         </h3>
                         <small class="text-success fw-semibold"><i class='bx bx-up-arrow-alt'></i> <?php echo mysqli_num_rows($get_all) / 100?>%</small>
                       </div>

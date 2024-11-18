@@ -72,7 +72,7 @@
 
 
         <li class="menu-item">
-            <a href="#" class="menu-link">
+            <a href="book.php" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-layout"></i>
                 <div data-i18n="Analytics">Booking</div>
             </a>

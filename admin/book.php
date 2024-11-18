@@ -1,8 +1,9 @@
 <?php
 session_start();
 include('config/config.php');
-
-if (!isset($_SESSION['moding']) && $_SESSION['moding'] != true) echo "<script> window.location.href = 'all.php' </script>"; 
+if (!isset($_SESSION['admin_login_']) && $_SESSION['admin_login_'] != true) {
+  echo "<script> window.location.href = 'login.php'</script>";
+}
 ?>
 <!DOCTYPE html>
 <html lang="en" class="light-style layout-menu-fixed " dir="ltr" data-theme="theme-default" data-assets-path="assets/" data-template="vertical-menu-template-free">
@@ -11,12 +12,7 @@ if (!isset($_SESSION['moding']) && $_SESSION['moding'] != true) echo "<script> w
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-  <title>Moding</title>
-
-  <meta name="description" content="Most Powerful &amp; Comprehensive Bootstrap 5 HTML Admin Dashboard Template built for developers!" />
-  <meta name="keywords" content="dashboard, bootstrap 5 dashboard, bootstrap 5 design, bootstrap 5">
-  <!-- Canonical SEO -->
-  <link rel="canonical" href="https://themeselection.com/products/sneat-bootstrap-html-admin-template/">
+  <title>Booked_List</title>
 
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="assets/img/favicon/favicon.ico" />
@@ -50,8 +46,6 @@ if (!isset($_SESSION['moding']) && $_SESSION['moding'] != true) echo "<script> w
   <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
   <script src="assets/js/config.js"></script>
 
-   
-  <!-- Custom notification for demo -->
   <!-- beautify ignore:end -->
   <script src="jquery-3.6.0.min.js"></script>
     <script src="sweetalert2.all.min.js"></script>
@@ -184,75 +178,61 @@ if (!isset($_SESSION['moding']) && $_SESSION['moding'] != true) echo "<script> w
           <div class="container-xxl flex-grow-1 container-p-y">
 
             <h4 class="fw-bold py-3 mb-4">
-              <span class="text-muted fw-light">Admin /</span> Moding Balance
+              <span class="text-muted fw-light">Admin /</span> Booked_List
             </h4>
 
-            <!-- Basic Layout -->
-            <div class="row">
-              <div class="col-xl">
-                <div class="card mb-4">
-                  <div class="card-header d-flex justify-content-between align-items-center">
-                    <h5 class="mb-0">Modifying Balance</h5> <small class="text-muted float-end">for <?php echo $_SESSION['bal_person'] ?></small>
-                  </div>
-                  <div class="card-body">
+            <!-- Basic Bootstrap Table -->
+            <div class="card">
+              <h5 class="card-header">Booked_List</h5>
+              <div class="table-responsive text-nowrap">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>S/N</th>
+                      <th>Fullname</th> 
+                      <th>Email</th>
+                      <th>Phonenumber</th>
+                      <th>Booked_Date</th>
+                      <th>Type</th>
+                      <th>Amount</th>
+                      <th>Status</th> 
+                      
+                      
+                    </tr>
+                  </thead>
+                  <tbody class="table-border-bottom-0">
                     <?php
-                      if (isset($_POST['proceed'])) {
-                        $newBalance = mysqli_real_escape_string($con, $_POST['newBalance']);
-                        $mod_id = $_SESSION['bal_id'];
+                    
+                    $sql = mysqli_query($con, "SELECT * FROM `booking` WHERE `status` = '0'");
+                    if (mysqli_num_rows($sql)) {
+                      $count = 1;
+                      while ($details = mysqli_fetch_assoc($sql)) {
 
-                        
-                        if (!empty($newBalance)) { 
-                            $mod_it = mysqli_query($con, "UPDATE `clients` SET `wallet` = '$newBalance' WHERE `id` = '$mod_id'");
-                          
-                            if ($mod_it) {
-                              
-                              echo "<script> 
-                                      Swal.fire('Balance Modified','{$_SESSION['bal_person']}\'s balance has been modified to {$newBalance}','success')
-                              
-                                      setTimeout(()=>{
-                                        window.location.href = 'all.php';
-                                      },2400)
-                              </script>";
-                              unset($_SESSION['bal_id']);
-                              unset($_SESSION['bal_person']);
-                              unset($_SESSION['bal']);
-                              unset($_SESSION['moding']);
-                              
-                            } else { 
-                              echo "<script>
-                                  Swal.fire('Error','FAILED TO MODIFY THIS BALANCE','error')
-                                </script>";
-                            } 
-                        } else {
-                          echo "<script>
-                              Swal.fire('warning','YOUR INPUT IS EMPTY','warning')
-                            </script>";
-                        }
-                      }
-
-
+                        $id = $details['id'];
                     ?>
-                    <form method="POST">
-                      <div class="mb-3">
-                        <label class="form-label" for="basic-default-fullname">Current Balance</label>
-                        <input type="text" class="form-control" value="$ <?php echo (isset($_SESSION['bal']))? $_SESSION['bal'] : '' ?>" name="email" id="basic-default-fullname" placeholder="Brad@gmail.com" readonly/>
-                      </div>
-                      <div class="mb-3">
-                        <label class="form-label" for="basic-default-company">New Balance</label>
-                        <input type="text" class="form-control" name="newBalance" id="basic-default-company" placeholder="Enter New Balance" />
-                      </div>  
-                      <!-- <div class="mb-3">
-                        <label class="form-label" for="basic-default-company">Admin Security Pin</label>
-                        <input type="password" class="form-control" name="ad_pin" id="basic-default-company" placeholder="Nobody" />
-                      </div>   -->
-                      <button type="submit" class="btn btn-primary" onclick="return confirm('Are you sure you want to change this balance, this action cannot be reverted in the future >>> sure to proceed')" name="proceed">CHANGE BALANCE</button>
-                    </form>
-                  </div>
-                </div>
+                        <tr>
+                          <td><?php echo $count ?></td>
+                          <td><?php echo $details['name']?></td> 
+                          <td><?php echo $details['email']?></td> 
+                          <td><?php echo $details['phonenumber']?></td> 
+                          <td><?php echo $details['date']?></td> 
+                          <td><?php echo $details['type']?></td> 
+                          <td><?php echo $details['amount']?></td> 
+                          <td><?php echo $details['status']?></td> 
+                         
+                          
+                        </tr>
+                    <?php $count++;
+                      }
+                    } else {
+                      echo "<td class='bg-danger text-white' colspan='10'>No Users</td>";
+                    } ?>
+                  </tbody>
+                </table>
               </div>
             </div>
+            <!--/ Basic Bootstrap Table -->
           </div>
-          <!-- Basic form end -->
           <!-- / Content -->
 
 

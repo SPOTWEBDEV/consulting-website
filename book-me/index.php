@@ -1,4 +1,11 @@
-<?php include('../server/connection.php') ?>
+<?php
+include('../server/connection.php');
+
+
+
+
+
+?>
 <!doctype html>
 <html class="no-js" lang="en">
 
@@ -28,6 +35,10 @@
     <link rel="stylesheet" href="<?php echo $domain ?>assets/css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/brands.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+
 
 
 </head>
@@ -56,6 +67,45 @@
     <?php include('../includes/nav-one.php') ?>
     <!-- header-area-end -->
 
+    <?php
+
+    if (isset($_POST['book_btn'])) {
+
+
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $phone = $_POST['phone'];
+        $type = $_POST['type'];
+        $amount = $_POST['amount'];
+
+        $date = date('D-M-Y h:m');
+
+        $check = mysqli_query($connection, "SELECT * FROM `users` WHERE `email`='$email'");
+        if (mysqli_num_rows($check)){
+            echo "<script>
+                                Message({status:false,text:'This Email has already use by another user'})
+                            </script>";
+          
+        }else{
+            $statement = mysqli_query($connection, "INSERT INTO `booking`(`name`,`email`,`phone`,`type`,`date`, `amount`) VALUES ('$name','$email','$phone','$type','$date','$amount')");
+            $query = mysqli_query($connection," INSERT INTO `users`(`name`, `email`, `phone`, `date_registered`, `status`) VALUES ('$name','$email','$phone','$date','')");
+            echo mysqli_error($connection);
+            if ($statement) {
+                echo "<script>
+                Message({status:true,text:'Your booking for the course has been confirmed. We'll contact you with further details soon.'})
+            
+            </script>";
+            } else {
+                echo "<script>
+                Message({status:false,text:'Your booking could not be completed. Please try again later or contact support'})
+            </script>";
+            }
+        }
+
+        
+    }
+
+    ?>
 
     <!-- main-area -->
     <main class="fix">
@@ -92,7 +142,8 @@
 
                         <div class="container mt-5">
                             <h2 class="mb-4 text-primary">Book Now</h2>
-                            <form method="$_POST">
+
+                            <form method="POST">
                                 <!-- Name Field -->
                                 <div class="mb-3">
                                     <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
@@ -107,7 +158,7 @@
                                 </div>
 
                                 <div class="mb-3">
-                                
+
                                     <select name="type" class="form-select" id="exampleSelect">
                                         <option selected disabled>Select an business</option>
                                         <option value="Bookkeeping">Bookkeeping</option>
@@ -122,7 +173,9 @@
                                 <div class="mb-3">
                                     <input type="email" name="amount" class="form-control" id="amount" placeholder="Amount" readonly>
                                 </div>
+
                                 
+
                                 <button type="submit" name="book_btn" class="btn btn-primary">Book now</button>
                             </form>
                         </div>

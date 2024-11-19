@@ -84,11 +84,29 @@
                     <h2 class="title" data-aos="fade-right" data-aos-delay="0">Need Business Consultation Today?</h2>
                     <p data-aos="fade-right" data-aos-delay="300">MyBusTaxBookkeeping provides expert insights to help your business overcome challenges and thrive.</p>
                     <a href="<?php echo $domain ?>book-me/"><button type="button" class="btn btn-primary mb-4">Book Now</button></a>
+                    <?php 
 
-                    <form action="#" class="banner-form" data-aos="fade-right" data-aos-delay="600">
+                    
+                    if (isset($_POST['book_btn'])) {
+
+                        $email = $_POST['email'];
+
+                        
+                            $check = mysqli_query($connection, "SELECT * FROM `users` WHERE `email`='$email'");
+                            if (mysqli_num_rows($check)){
+                                echo "<script>
+                                Message({status:false,text:'This Email has already use by another user'})
+                            </script>";
+                            }else {
+                                $query = mysqli_query($connection," INSERT INTO `users`(`email`) VALUES ('$email')");
+                            }
+                    
+                    }
+                    ?>
+                    <form method="POST" class="banner-form" data-aos="fade-right" data-aos-delay="600">
                         <label for="email" class="sr-only">E-mail Address</label>
-                        <input type="email" id="email" placeholder="E-mail Address" required>
-                        <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                        <input type="email" name="email" id="email" placeholder="E-mail Address" required>
+                        <button type="submit" name="btn"><i class="fas fa-arrow-right"></i></button>
                     </form>
                 </div>
             </div>

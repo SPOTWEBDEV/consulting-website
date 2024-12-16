@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title><?php echo $domain ?> || Portfolio</title>
+    <title><?php echo $sitename ?> || Portfolio</title>
     <meta name="description" content="Gerow - Business Consulting HTML Template">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -104,7 +104,7 @@
                                         <h4 class="title">Personal Information</h4>
                                         <ul class="list-wrap">
                                         
-                                            <li><span>Name:</span>Dr. Francis Ikeokwu</li>
+                                            <li><span>Name:</span>Dr. Francis Ikeokwu, Sr., Ph.D., MAC, MBA, CFC, CFS</li>
                                             <li><span>Business:</span>Business & Tax Consulting Group, Inc.</li>
                                             <li><span>Address:</span>Jacksonville, Florida 32203</li>
                                             <li class="social">
@@ -132,7 +132,7 @@
                                 </div>
                                 <div class="pd-inner-wrap">
                                     <div class="row align-items-center">
-                                        <div class="col-41">
+                                        <div class="">
                                             <div class="content">
                                               
                                                 <h6 class="info-one">He has received several academic achievements and recognitions, and has various professional and academic qualifications, which include – </h6>
@@ -147,12 +147,7 @@
                                                 In addition to his academic training and leadership, he served as Senior Tax Specialist with the Florida Department of Revenue for thirteen years, specializing in tax laws, auditing, sales & use tax, intangible tax, corporate tax, local option tax, and documentary stamp tax.</p>
                                             </div>
                                         </div>
-                                        <div class="col-59">
-                                            <div class="thumb">
-                                                <img src="<?php echo $domain ?>assets/img/project/project_details02.jpg" alt="">
-                                                <a href="https://www.youtube.com/watch?v=6mkoGSqTqFI" class="play-btn popup-video"><i class="fas fa-play"></i></a>
-                                            </div>
-                                        </div>
+                                       
                                     </div>
                                 </div>
                             </div>

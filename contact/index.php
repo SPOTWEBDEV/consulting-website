@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title><?php echo $domain ?> || Contact-Page</title>
+    <title><?php echo $sitename ?> || Contact-Page</title>
     <meta name="description" content="Gerow - Business Consulting HTML Template">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -99,7 +99,8 @@
                             <div class="contact-info-item">
                                 <h5 class="title-two">USA Office</h5>
                                 <ul class="list-wrap">
-                                <li><?php echo $siteshort ?> <br> <?php echo $siteaddress ?></li>
+                                
+                                <li><?php echo $sitepobox ?>  <?php echo $siteaddress ?></li>
                                     <li><?php echo $sitenumber ?></li>
                                     <li><?php echo $siteemail ?></li>
                                 </ul>

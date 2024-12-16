@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title><?php echo $domain ?> || About-Page</title>
+    <title><?php echo $sitename ?> || About-Page</title>
     <meta name="description" content="Gerow - Business Consulting HTML Template">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -101,9 +101,10 @@
                         <h2 class="title">BUSINESS & Tax Consulting Group Inc.
                             (ABSOLUTE HOUSE OF KNOWLEDGE)</h2>
                     </div>
-                    <p>Business and Tax Consulting Group, Inc. provides consulting services to rescue businesses from business mistakes, struggles, and complex operational requirements.  
-                        Our services are designed to serve entrepreneurs of all sizes who are striving to manage, maintain, and grow their business, as well as effective compliance standards on federal, state, and local government policies.
-                        Our services will enable the small and medium-size business owners and leaders to focus more on their business goals and objectives.</p>
+                    <p>Business and Tax Consulting Group, Inc. provides consulting services to rescue businesses from mistakes, struggles, and complex operational requirements. </p>
+                    <p>Our services are designed to serve entrepreneurs of all sizes who are striving to manage, maintain, and grow their business, as well as effective compliance standards on federal, state, and local government policies. </p>
+                    <p>Our services will enable  small and medium-sized business owners and leaders to focus more on their business goals and objectives. 
+                    </p>
                     <div class="about-content-inner">
                         <ul class="list-wrap">
                             <li>
@@ -161,7 +162,7 @@
                                 <span class="sub-title">OUR MISSION</span>
                                 <h2 class="title">MISSION</h2>
                             </div>
-                            <p>Business and Tax Consulting Group Inc.’s mission is to assist small and medium-sized businesses to save time and money that will enable them to focus on what they do best, as we help them organize their business and financial transactions in a way that will allow for sound business decisions-making. </p>
+                            <p>Business and Tax Consulting Group Inc.’s mission is to assist small and medium-sized businesses to save time and money that will enable them to focus on what they do best, as we help them organize their business and financial transactions in a way that will allow for sound business decision-making. </p>
 
                         </div>
                     </div>
@@ -189,7 +190,7 @@
                     </div>
                 </div>
                 <div class="row justify-content-center">
-                    <div class="col-xl-13 col-lg-6 col-md-6 col-sm-9">
+                    <div class=" col-lg-12 d-flex justify-content-center ">
                         <ul>
                             <li>Providing accurate financial reports to enable you to make effective and efficient business decisions.</li>
                             <li>Endeavoring to spot and address your performance risk to enhance business success.</li>

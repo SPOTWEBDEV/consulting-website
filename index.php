@@ -5,8 +5,8 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title><?php echo $domain ?> || Home</title>
-    <meta name="description" content="Gerow - Business Consulting HTML Template">
+    <title><?php echo $sitename ?> || Home</title>
+    <meta name="description" content="<?php echo $sitename ?> - Business Consulting Website">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="shortcut icon" type="image/x-icon" href="<?php echo $domain ?>assets/img/favicon.png">

@@ -173,56 +173,60 @@
 
         const loadingContents = () => {
 
-const url = new URLSearchParams(window.location.search)
-const id = url.get('index');
+            const url = new URLSearchParams(window.location.search)
+            let id = url.get('index');
 
-let newService = services.filter(item => item.id == id);
+            if(id == null) id = 1;
 
-const name = newService[0].name;
-document.querySelector('.services-details-content').innerHTML = `<h2 class="title text-center">${name}</h2>`;
+            let newService = services.filter(item => item.id == id);
 
-for (let i = 0; i < newService[0].message.length; i++) {
-    const { heading, details } = newService[0].message[i];
+            const name = newService[0].name;
+            document.querySelector('.services-details-content').innerHTML = `<h2 class="title text-center">${name}</h2>`;
 
-    // Create the heading element
-    const html1 = `<h4 class="title-two">${heading}</h4>`;
+            for (let i = 0; i < newService[0].message.length; i++) {
+                const {
+                    heading,
+                    details
+                } = newService[0].message[i];
 
-    let detailsHtml = '';
+                // Create the heading element
+                const html1 = `<h4 class="title-two">${heading}</h4>`;
 
-    if (Array.isArray(details)) {
-        // If 'details' is an array, check each item in the array
-        detailsHtml = '<ul>';
-        details.forEach(item => {
-            // Check if the item is a string
-            if (typeof item === 'string') {
-                detailsHtml += `<li>${item}</li>`;
-            } else if (typeof item === 'object' && item !== null) {
-                // Check if the item is an object and has a 'level' property
-                if (item.level) {
-                    detailsHtml += `<li>${item.level}</li>`;
+                let detailsHtml = '';
+
+                if (Array.isArray(details)) {
+                    // If 'details' is an array, check each item in the array
+                    detailsHtml = '<ul>';
+                    details.forEach(item => {
+                        // Check if the item is a string
+                        if (typeof item === 'string') {
+                            detailsHtml += `<li>${item}</li>`;
+                        } else if (typeof item === 'object' && item !== null) {
+                            // Check if the item is an object and has a 'level' property
+                            if (item.level) {
+                                detailsHtml += `<li>${item.level}</li>`;
+                            } else {
+                                detailsHtml += `<li>Unknown level</li>`;
+                            }
+                        } else {
+                            detailsHtml += `<li>Invalid item</li>`;
+                        }
+                    });
+                    detailsHtml += '</ul>';
                 } else {
-                    detailsHtml += `<li>Unknown level</li>`;
+                    // If 'details' is not an array, display it in a <p> tag
+                    detailsHtml = `<p>${details}</p>`;
                 }
-            } else {
-                detailsHtml += `<li>Invalid item</li>`;
+
+                // Combine the heading and the details
+                const htmlContent = html1 + detailsHtml;
+
+                // Append the generated HTML to the '.services-details-content' container
+                document.querySelector('.services-details-content').innerHTML += htmlContent;
             }
-        });
-        detailsHtml += '</ul>';
-    } else {
-        // If 'details' is not an array, display it in a <p> tag
-        detailsHtml = `<p>${details}</p>`;
-    }
+        }
 
-    // Combine the heading and the details
-    const htmlContent = html1 + detailsHtml;
-
-    // Append the generated HTML to the '.services-details-content' container
-    document.querySelector('.services-details-content').innerHTML += htmlContent;
-}
-}
-
-loadingContents();
-
+        loadingContents();
     </script>
 
 

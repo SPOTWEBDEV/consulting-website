@@ -78,7 +78,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="copyright-text-two text-center">
-                            <p>Copyright © <?php echo date('Y'); ?> gerow | All Right Reserved</p>
+                            <p>Copyright © <?php echo date('Y') . ' '  .  $sitename?>  | All Right Reserved</p>
                         </div>
                     </div>
                 </div>

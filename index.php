@@ -389,7 +389,7 @@
         <!-- counter-area-end -->
 
         <!-- team-area -->
-        <section class="team-area-three">
+        <section style="display:none" class="team-area-three">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-6">

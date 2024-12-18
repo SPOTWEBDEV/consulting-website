@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="<?php echo $domain ?>assets/css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/brands.min.css">
-
+   
 </head>
 
 <body>
@@ -96,7 +96,7 @@
                     </div>
                 </div>
                 <div class="row justify-content-center" id="services">
-                    
+
                 </div>
             </div>
         </section>
@@ -121,22 +121,32 @@
         } from '<?php echo $domain ?>assets/js/data.js';
         console.log(services);
 
-        for(let i=0;i<services.length;i++){
-            const {name,message} = services[i];
+        for (let i = 0; i < services.length; i++) {
+            const {
+                id,
+                name,
+                message
+            } = services[i];
             const html = `<div class="col-xl-3 col-lg-4 col-md-6">
                         <div class="features-item-three">
                             <div class="features-icon-three">
-                                <i class="flaticon-inspiration"></i>
+                               <i class="fas fa-calculator"></i>
                             </div>
                             <div class="features-content-three">
                                 <h2 class="title">${name}</h2>
-                                <p>${message[0]}</p>
-                                <a href="services-details/?index=" class="link-btn">See Details <img src="assets/img/icons/right-arrow.svg" alt=""></a>
+                                <p>${displayFirst20Characters(message[0].details)}</p>
+                                <a href="<?php echo $domain ?>service-details/?index=${id}" class="link-btn">See Details <img src="<?php echo $domain ?>assets/img/icons/right-arrow.svg" alt=""></a>
                             </div>
                         </div>
                     </div>`
 
             document.querySelector('#services').innerHTML += html
+        }
+
+        function displayFirst20Characters(text) {
+            // Ensure the text is at least 20 characters long, otherwise, just return the whole text
+            const displayText = text.length > 200 ? text.slice(0, 200) : text ;
+            return displayText + '...';
         }
     </script>
 

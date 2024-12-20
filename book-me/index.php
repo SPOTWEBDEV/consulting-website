@@ -1,5 +1,21 @@
 <?php
 include('../server/connection.php');
+include('../server/model.php');
+include('../server/payment/index.php');
+
+
+if(isset($_GET['cancel'])){
+    $cancel = $_GET['cancel'];
+    
+
+    $query = mysqli_query($connection, "UPDATE `booking` SET `status` = 'cancelled' WHERE `id` = '$cancel'");
+
+    if ($query) {
+        echo "<script>window.onload = () => Model('Your booking has been marked as cancelled. Please try again or contact support if you need help.', 'danger');</script>";
+    } else {
+        echo "<script>window.onload = () => Model('Something went wrong in updating status', 'danger');</script>";
+    }
+}
 
 
 
@@ -12,7 +28,7 @@ include('../server/connection.php');
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title><?php echo $domain ?> || Book-Page</title>
+    <title><?php echo $sitename ?> || Book Page</title>
     <meta name="description" content="Gerow - Business Consulting HTML Template">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -67,46 +83,7 @@ include('../server/connection.php');
     <?php include('../includes/nav-one.php') ?>
     <!-- header-area-end -->
 
-    <?php
-
-    if (isset($_POST['book_btn'])) {
-
-
-        $name = $_POST['name'];
-        $email = $_POST['email'];
-        $phone = $_POST['phone'];
-        $type = $_POST['type'];
-        $amount = $_POST['amount'];
-
-        $date = date('D-M-Y h:m');
-
-        $check = mysqli_query($connection, "SELECT * FROM `users` WHERE `email`='$email'");
-        if (mysqli_num_rows($check)){
-            echo "<script>
-                                Message({status:false,text:'This Email has already use by another user'})
-                            </script>";
-          
-        }else{
-            $statement = mysqli_query($connection, "INSERT INTO `booking`(`name`,`email`,`phone`,`type`,`date`, `amount`) VALUES ('$name','$email','$phone','$type','$date','$amount')");
-            $query = mysqli_query($connection," INSERT INTO `users`(`name`, `email`, `phone`, `date_registered`, `status`) VALUES ('$name','$email','$phone','$date','')");
-            echo mysqli_error($connection);
-            if ($statement) {
-                echo "<script>
-                Message({status:true,text:'Your booking for the course has been confirmed. We'll contact you with further details soon.'})
-            
-            </script>";
-            } else {
-                echo "<script>
-                Message({status:false,text:'Your booking could not be completed. Please try again later or contact support'})
-            </script>";
-            }
-        }
-
-        
-    }
-
-    ?>
-
+    
     <!-- main-area -->
     <main class="fix">
 
@@ -171,48 +148,23 @@ include('../server/connection.php');
                                 </div>
 
                                 <div class="mb-3">
-                                    <input type="email" name="amount" class="form-control" id="amount" placeholder="Amount" readonly>
+                                    <input type="text" name="amount" class="form-control" id="amount" placeholder="Amount" >
                                 </div>
 
-                                
+
 
                                 <button type="submit" name="book_btn" class="btn btn-primary">Book now</button>
                             </form>
                         </div>
                     </div>
-                    <div class="col-lg-6">
-                        <div class="inner-contact-info">
-                            <h2 class="title">Contact Us</h2>
-                            <div class="contact-info-item">
-                                <h5 class="title-two">USA Office</h5>
-                                <ul class="list-wrap">
-                                    <li><?php echo $siteshort ?> <br> <?php echo $siteaddress ?></li>
-                                    <li><?php echo $sitenumber ?></li>
-                                    <li><?php echo $siteemail ?></li>
-                                </ul>
-                            </div>
-                            <div class="contact-info-item">
-                                <h5 class="title-two">Australia Office</h5>
-                                <ul class="list-wrap">
-                                    <li><?php echo $siteshort ?> <br> <?php echo $siteaddress ?></li>
-                                    <li><?php echo $sitenumber ?></li>
-                                    <li><?php echo $siteemail ?></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </section>
         <!-- contact-area-end -->
 
 
-        <!-- contact-map -->
-        <div class="contact-map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.332792000835!2d144.96011341744386!3d-37.805673299999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d4c2b349649%3A0xb6899234e561db11!2sEnvato!5e0!3m2!1sen!2sbd!4v1685027435635!5m2!1sen!2sbd"
-                allowfullscreen loading="lazy"></iframe>
-        </div>
-        <!-- contact-map-end -->
+
 
 
     </main>

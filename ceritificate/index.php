@@ -84,12 +84,12 @@
                     <div class="col-lg-6 col-md-10">
                         <div class="overview-img-two">
                             <div class="mask-img-two">
-                                <img src="<?php echo $domain ?>assets/img/images/h3_overview_img01.jpg" alt="">
+                                <img src="<?php echo $domain ?>certificate/1.png" alt="">
                             </div>
-                            <img src="<?php echo $domain ?>assets/img/images/h3_overview_img02.jpg" alt="" class="img-two" data-parallax='{"y" : 100 }'>
+                            <img src="<?php echo $domain ?>ceritificate/1.png" alt="" class="img-two" data-parallax='{"y" : 100 }'>
                             <div class="overview-shape-wrap">
-                                <img src="<?php echo $domain ?>assets/img/images/h3_overview_shape01.png" alt="">
-                                <img src="<?php echo $domain ?>assets/img/images/h3_overview_shape02.png" alt="">
+                                <img src="<?php echo $domain ?>ceritificate/1.png" alt="">
+                                <img src="<?php echo $domain ?>ceritificate/1.png" alt="">
                             </div>
                         </div>
                     </div>

@@ -63,12 +63,7 @@
             </a>
         </li>
 
-        <li class="menu-item">
-            <a href="#" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-layout"></i>
-                <div data-i18n="Analytics">Contact Us Message</div>
-            </a>
-        </li>
+        
 
 
         <li class="menu-item">

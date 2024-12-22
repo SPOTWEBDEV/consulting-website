@@ -1,6 +1,5 @@
 <?php
-session_start();
-include('config/config.php');
+include('../server/connection.php');
 if (!isset($_SESSION['admin_login_']) && $_SESSION['admin_login_'] != true) {
   echo "<script> window.location.href = 'login.php'</script>";
 }
@@ -207,7 +206,7 @@ if (!isset($_SESSION['admin_login_']) && $_SESSION['admin_login_'] != true) {
                   
 
                     
-                    $sql = mysqli_query($con, "SELECT * FROM `users` WHERE `status` = '0'");
+                    $sql = mysqli_query($connection, "SELECT * FROM `users`");
                     if (mysqli_num_rows($sql)) {
                       $count = 1;
                       while ($details = mysqli_fetch_assoc($sql)) {

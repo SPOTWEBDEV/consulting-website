@@ -4,9 +4,9 @@ include('../server/model.php');
 include('../server/payment/index.php');
 
 
-if(isset($_GET['cancel'])){
+if (isset($_GET['cancel'])) {
     $cancel = $_GET['cancel'];
-    
+
 
     $query = mysqli_query($connection, "UPDATE `booking` SET `status` = 'cancelled' WHERE `id` = '$cancel'");
 
@@ -83,7 +83,7 @@ if(isset($_GET['cancel'])){
     <?php include('../includes/nav-one.php') ?>
     <!-- header-area-end -->
 
-    
+
     <!-- main-area -->
     <main class="fix">
 
@@ -112,13 +112,19 @@ if(isset($_GET['cancel'])){
         <!-- breadcrumb-area-end -->
 
         <!-- contact-area -->
-        <section class="inner-contact-area pt-120 pb-120">
+        <section class="inner-contact-area  pb-120">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 mx-auto">
 
                         <div class="container mt-5">
                             <h2 class="mb-4 text-primary">Book Now</h2>
+
+                            <style>
+                                form input {
+                                    height: 50px;
+                                }
+                            </style>
 
                             <form method="POST">
                                 <!-- Name Field -->
@@ -129,32 +135,98 @@ if(isset($_GET['cancel'])){
                                 <div class="mb-3">
                                     <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email">
                                 </div>
-
+                                <!-- Phone Field -->
                                 <div class="mb-3">
-                                    <input type="text" class="form-control" id="email" name="phone" placeholder="Enter your Phonenumber">
+                                    <input type="text" class="form-control" id="phone" name="phone" placeholder="Enter your Phonenumber">
                                 </div>
-
+                                <!-- Business Type Select -->
                                 <div class="mb-3">
-
-                                    <select name="type" class="form-select" id="exampleSelect">
-                                        <option selected disabled>Select an business</option>
-                                        <option value="Bookkeeping">Bookkeeping</option>
-                                        <option value="Financial Accounting">Financial Accounting</option>
-                                        <option value="Tax Services">Tax Services</option>
-                                        <option value="Tax Planning">Tax Planning</option>
-                                        <option value="Business Consulting">Business Consulting</option>
-                                        <option value="Entrepreneurship Start-up and Training">Entrepreneurship Start-up and Training</option>
+                                    <select name="type" class="form-select" id="businessType">
+                                        <option selected disabled>Select a business</option>
                                     </select>
                                 </div>
-
+                                <!-- Amount Field -->
                                 <div class="mb-3">
-                                    <input type="text" name="amount" class="form-control" id="amount" placeholder="Amount" >
+                                    <input type="text" name="amount" class="form-control" id="amount" placeholder="Amount" readonly>
                                 </div>
-
-
-
+                                <!-- Submit Button -->
                                 <button type="submit" name="book_btn" class="btn btn-primary">Book now</button>
                             </form>
+
+                            <script>
+                                // Array of business options with prices
+                                const businessOptions = [{
+                                        id: 1,
+                                        name: "Bookkeeping Orientation Level",
+                                        price: 200
+                                    },
+                                    {
+                                        id: 2,
+                                        name: "Analyzing and Recording Transactions",
+                                        price: 200
+                                    },
+                                    {
+                                        id: 3,
+                                        name: "Bookkeeping and Accounting Cyber Process",
+                                        price: 200
+                                    },
+                                    {
+                                        id: 4,
+                                        name: "Analysis of Financial Statement",
+                                        price: 200
+                                    },
+                                    {
+                                        id: 5,
+                                        name: "Business Start-ups",
+                                        price: 200
+                                    },
+                                    {
+                                        id: 6,
+                                        name: "Basic bookkeeping financial statement",
+                                        price: 200
+                                    },
+                                    {
+                                        id: 7,
+                                        name: "Financial Statement Analysis",
+                                        price: 200
+                                    },
+                                    {
+                                        id: 8,
+                                        name: "Business Plan (Hand free experience)",
+                                        price: 200
+                                    },
+                                    {
+                                        id: 9,
+                                        name: "Student Member Request",
+                                        price: 30.99
+                                    },
+                                    {
+                                        id: 10,
+                                        name: "Professional Member Request",
+                                        price: 44.99
+                                    }
+                                ];
+
+
+                                // Get the elements
+                                const businessTypeSelect = document.getElementById('businessType');
+                                const amountInput = document.getElementById('amount');
+
+                                // Populate the select element with options from the array
+                                businessOptions.forEach(option => {
+                                    const opt = document.createElement('option');
+                                    opt.value = option.name;
+                                    opt.textContent = option.name;
+                                    businessTypeSelect.appendChild(opt);
+                                });
+
+                                // Add an event listener to update the price
+                                businessTypeSelect.addEventListener('change', function() {
+                                    const selectedOption = businessOptions.find(option => option.name === this.value);
+                                    amountInput.value = selectedOption ? `$${selectedOption.price}` : '';
+                                });
+                            </script>
+
                         </div>
                     </div>
 

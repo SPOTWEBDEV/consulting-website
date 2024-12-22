@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 19, 2024 at 10:55 AM
+-- Generation Time: Dec 21, 2024 at 11:49 PM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.12
 
@@ -39,12 +39,7 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`id`, `email`, `pass`, `status`) VALUES
-(0, 'admin123@amdmin.com', 'admin123', '1'),
-(0, 'admin123@amdmin.com', 'admin123', '1'),
-(0, 'admin123@amdmin.com', 'admin123', '1'),
-(0, 'admin123@amdmin.com', 'admin123', '1'),
-(0, 'admin123@amdmin.com', 'admin123', '1'),
-(0, 'admin123@amdmin.com', 'admin123', '1');
+(1, 'admin123@amdmin.com', 'admin123', '1');
 
 -- --------------------------------------------------------
 
@@ -60,22 +55,28 @@ CREATE TABLE `booking` (
   `type` varchar(255) NOT NULL,
   `date` varchar(255) NOT NULL,
   `amount` varchar(255) NOT NULL,
-  `status` varchar(255) NOT NULL
+  `status` enum('pending','approved','declined','abandoned','success','failed','reversed','ongoing','cancelled') NOT NULL DEFAULT 'pending',
+  `reference` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `booking`
 --
 
-INSERT INTO `booking` (`id`, `name`, `email`, `phone`, `type`, `date`, `amount`, `status`) VALUES
-(1, 'repented godswill', 'uchennagodswill539@gmail.com', '07080879957', 'Bookkeeping', '2024-11-19', '', 'Pending'),
-(2, 'repented godswill', 'spotwebdev.com@gmail.com', '07809876555', 'Bookkeeping', 'Tue-Nov-2024 10:11', '', ''),
-(3, 'repented godswill', 'spotwebdev.com@gmail.com', '07809876555', 'Bookkeeping', 'Tue-Nov-2024 10:11', '', ''),
-(4, 'repented godswill', 'spotwebdev.com@gmail.com', '07809876555', 'Bookkeeping', 'Tue-Nov-2024 10:11', '', ''),
-(5, 'repented godswill', 'spotwebdev.com@gmail.com', '07809876555', 'Bookkeeping', 'Tue-Nov-2024 10:11', '', ''),
-(6, 'repented godswill', 'spotwebdev.com@gmail.com', '07809876555', 'Bookkeeping', 'Tue-Nov-2024 10:11', '', ''),
-(7, 'repented godswill', 'spotwebdev.com@gmail.com', '07809876555', 'Bookkeeping', 'Tue-Nov-2024 10:11', '', ''),
-(8, 'king', 'spotwebdev.com@gmail.com', '07809876555', 'Business Consulting', 'Tue-Nov-2024 10:11', '', '');
+INSERT INTO `booking` (`id`, `name`, `email`, `phone`, `type`, `date`, `amount`, `status`, `reference`) VALUES
+(1, 'SPOTWEB COM', 'giftchinenyenwa1@gmail.com', '07047548913', 'Bookkeeping', '2024-12-19 22:19:17', '', '', ''),
+(2, 'SPOTWEB COM', 'giftchinenyenwa1@gmail.com', '07047548913', 'Bookkeeping', '2024-12-20 01:21:25', '300', 'pending', ''),
+(3, 'SPOTWEB COM', 'giftchinenyenwa1@gmail.com', '07047548913', 'Bookkeeping', '2024-12-20 01:22:13', '300', 'pending', ''),
+(4, 'SPOTWEB COM', 'giftchinenyenwa1@gmail.com', '07047548913', 'Bookkeeping', '2024-12-20 01:27:35', '400', 'pending', ''),
+(5, 'SPOTWEB COM', 'spotwebdev.com@gmail.com', '07047548913', 'Bookkeeping', '2024-12-20 01:30:15', '501', 'pending', ''),
+(6, 'SPOTWEB COM', 'spotwebdev.com@gmail.com', '07047548913', 'Bookkeeping', '2024-12-20 01:31:16', '501', 'success', '4fck5z32rl'),
+(7, 'thebest', 'firstclass@gmail.com', '07047548913', 'Business Consulting', '2024-12-20 01:38:57', '600', 'success', '67ei5lt5uc'),
+(8, 'firstclassThebest', 'chiamaka@gmail.com', '049499595', 'Financial Accounting', '2024-12-20 01:45:57', '304599', 'pending', ''),
+(9, 'firstclassThebest', 'chiamaka@gmail.com', '049499595', 'Financial Accounting', '2024-12-20 01:46:55', '304599', 'pending', ''),
+(10, 'firstclassThebest', 'chiamaka@gmail.com', '049499595', 'Financial Accounting', '2024-12-20 01:51:59', '304599', 'pending', ''),
+(11, 'firstclassThebest', 'chiamaka@gmail.com', '049499595', 'Financial Accounting', '2024-12-20 02:00:17', '304599', 'pending', ''),
+(12, 'firstclassThebest', 'chiamaka@gmail.com', '049499595', 'Financial Accounting', '2024-12-20 02:01:03', '304599', 'cancelled', ''),
+(13, 'SPOTWEB COM', 'nkem@gmail.com', '07047548913', 'Business Consulting', '2024-12-21 22:41:09', '50000', 'success', '0i2mayu2hj');
 
 -- --------------------------------------------------------
 
@@ -97,11 +98,21 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `phone`, `date_registered`, `status`) VALUES
-(7, 'king', 'spotwebdev.com@gmail.com', '07809876555', 'Tue-Nov-2024 10:11', '');
+(1, 'SPOTWEB COM', 'giftchinenyenwa1@gmail.com', '07047548913', '2024-12-19 22:19:17', ''),
+(2, 'SPOTWEB COM', 'spotwebdev.com@gmail.com', '07047548913', '2024-12-20 01:30:15', ''),
+(3, 'thebest', 'firstclass@gmail.com', '07047548913', '2024-12-20 01:38:57', ''),
+(4, 'firstclassThebest', 'chiamaka@gmail.com', '049499595', '2024-12-20 01:45:57', ''),
+(5, 'SPOTWEB COM', 'nkem@gmail.com', '07047548913', '2024-12-21 22:41:09', '');
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `admin`
+--
+ALTER TABLE `admin`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `booking`
@@ -120,16 +131,22 @@ ALTER TABLE `users`
 --
 
 --
+-- AUTO_INCREMENT for table `admin`
+--
+ALTER TABLE `admin`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
 -- AUTO_INCREMENT for table `booking`
 --
 ALTER TABLE `booking`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

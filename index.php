@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="<?php echo $domain ?>assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?php echo $domain ?>assets/css/animate.min.css">
     <link rel="stylesheet" href="<?php echo $domain ?>assets/css/magnific-popup.css">
-   
+
     <link rel="stylesheet" href="<?php echo $domain ?>assets/css/flaticon.css">
     <link rel="stylesheet" href="<?php echo $domain ?>assets/css/odometer.css">
     <link rel="stylesheet" href="<?php echo $domain ?>assets/css/jarallax.css">
@@ -33,11 +33,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/brands.min.css">
 
-           
 
 
 
-   
+
+
 
 </head>
 
@@ -70,181 +70,168 @@
 
         <!-- banner-area -->
         <section class="banner-area-three">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-7 col-md-9 order-0 order-lg-2">
-                <div class="banner-img-three" data-aos="fade-left" data-aos-delay="300">
-                    <img src="<?php echo $domain ?>assets/img/banner/h3_banner_img01.jpg" alt="Business Consultation" class="main-img">
-                    <img src="<?php echo $domain ?>assets/img/banner/h3_banner_img02.jpg" alt="Parallax Image 2" class="img-two" data-parallax='{"y" : 100 }'>
-                    <img src="<?php echo $domain ?>assets/img/banner/h3_banner_img03.jpg" alt="Parallax Image 3" class="img-three" data-parallax='{"x" : -100 }'>
-                </div>
-            </div>
-            <div class="col-lg-5">
-                <div class="banner-content-three">
-                    <h2 class="title" data-aos="fade-right" data-aos-delay="0">Need Business Consultation Today?</h2>
-                    <p data-aos="fade-right" data-aos-delay="300">MyBusTaxBookkeeping provides expert insights to help your business overcome challenges and thrive.</p>
-                    <a href="<?php echo $domain ?>book-me/"><button type="button" class="btn btn-primary mb-4">Book Now</button></a>
-                    <?php 
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-7 col-md-9 order-0 order-lg-2">
+                        <div class="banner-img-three" data-aos="fade-left" data-aos-delay="300">
+                            <img src="<?php echo $domain ?>assets/img/banner/h3_banner_img01.jpg" alt="Business Consultation" class="main-img">
+                            <img src="<?php echo $domain ?>assets/img/banner/h3_banner_img02.jpg" alt="Parallax Image 2" class="img-two" data-parallax='{"y" : 100 }'>
+                            <img src="<?php echo $domain ?>assets/img/banner/h3_banner_img03.jpg" alt="Parallax Image 3" class="img-three" data-parallax='{"x" : -100 }'>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="banner-content-three">
+                            <h2 class="title" data-aos="fade-right" data-aos-delay="0">Need Business Consultation Today?</h2>
+                            <p data-aos="fade-right" data-aos-delay="300">MyBusTaxBookkeeping provides expert insights to help your business overcome challenges and thrive.</p>
+                            <a href="<?php echo $domain ?>book-me/"><button type="button" class="btn btn-primary mb-4">Book Now</button></a>
+                            <?php
 
-                    
-                    if (isset($_POST['book_btn'])) {
 
-                        $email = $_POST['email'];
+                            if (isset($_POST['book_btn'])) {
 
-                        
-                            $check = mysqli_query($connection, "SELECT * FROM `users` WHERE `email`='$email'");
-                            if (mysqli_num_rows($check)){
-                                echo "<script>
+                                $email = $_POST['email'];
+
+
+                                $check = mysqli_query($connection, "SELECT * FROM `users` WHERE `email`='$email'");
+                                if (mysqli_num_rows($check)) {
+                                    echo "<script>
                                 Message({status:false,text:'This Email has already use by another user'})
                             </script>";
-                            }else {
-                                $query = mysqli_query($connection," INSERT INTO `users`(`email`) VALUES ('$email')");
+                                } else {
+                                    $query = mysqli_query($connection, " INSERT INTO `users`(`email`) VALUES ('$email')");
+                                }
                             }
-                    
-                    }
-                    ?>
-                    <form method="POST" class="banner-form" data-aos="fade-right" data-aos-delay="600">
-                        <label for="email" class="sr-only">E-mail Address</label>
-                        <input type="email" name="email" id="email" placeholder="E-mail Address" required>
-                        <button type="submit" name="btn"><i class="fas fa-arrow-right"></i></button>
-                    </form>
+                            ?>
+                            <form method="POST" class="banner-form" data-aos="fade-right" data-aos-delay="600">
+                                <label for="email" class="sr-only">E-mail Address</label>
+                                <input type="email" name="email" id="email" placeholder="E-mail Address" required>
+                                <button type="submit" name="btn"><i class="fas fa-arrow-right"></i></button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="banner-shape-wrap-three">
-        <img src="<?php echo $domain ?>assets/img/banner/h3_banner_shape01.png" alt="Banner Shape 1">
-        <img src="<?php echo $domain ?>assets/img/banner/h3_banner_shape02.png" alt="Banner Shape 2">
-    </div>
-</section>
+            <div class="banner-shape-wrap-three">
+                <img src="<?php echo $domain ?>assets/img/banner/h3_banner_shape01.png" alt="Banner Shape 1">
+                <img src="<?php echo $domain ?>assets/img/banner/h3_banner_shape02.png" alt="Banner Shape 2">
+            </div>
+        </section>
 
         <!-- banner-area-end -->
 
         <!-- brand-area -->
-       
+
         <!-- brand-area-end -->
 
         <!-- features-area -->
         <section class="features-area-three">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-xl-6 col-lg-7">
-                <div class="section-title-two text-center mb-40 tg-heading-subheading animation-style1">
-                    <span class="sub-title tg-element-title">What We Do For You</span>
-                    <h2 class="title tg-element-title">The features that make our Service unique</h2>
-                </div>
-            </div>
-        </div>
-        <div class="features-item-wrap-two">
-            <div class="row justify-content-center">
-                <div class="col-xl-3 col-lg-4 col-md-6">
-                    <div class="features-item-three">
-                        <div class="features-icon-three">
-                            <i class="fas fa-book"></i> <!-- Replaced with Font Awesome icon -->
-                        </div>
-                        <div class="features-content-three">
-                            <h2 class="title">Bookkeeping</h2>
-                            <p>Running a business involves effective decision-making. This may become impossible without accurate bookkeeping or accounting records. We’ll teach your company how to effectively keep records of your business transactions. </p>
-                            <a href="#" class="link-btn">See Details <img src="<?php echo $domain ?>assets/img/icons/right-arrow.svg" alt="Arrow"></a>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-6 col-lg-7">
+                        <div class="section-title-two text-center mb-40 tg-heading-subheading animation-style1">
+                            <span class="sub-title tg-element-title">What We Do For You</span>
+                            <h2 class="title tg-element-title">The features that make our Service unique</h2>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-4 col-md-6">
-                    <div class="features-item-three">
-                        <div class="features-icon-three">
-                            <i class="fas fa-calculator"></i> <!-- Replaced with Font Awesome icon -->
-                        </div>
-                        <div class="features-content-three">
-                            <h2 class="title">Financial Accounting</h2>
-                            <p>We provide more in-depth financial accounting services for profit entities, not-for-profit organizations, partnerships, individuals, etc. The Business and Tax Consulting Group, Inc., can assist in organizing your financial transactions and tasks at a higher level other than bookkeeping.</p>
-                            <a href="#" class="link-btn">See Details <img src="<?php echo $domain ?>assets/img/icons/right-arrow.svg" alt="Arrow"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6">
-                    <div class="features-item-three">
-                        <div class="features-icon-three">
-                            <i class="fas fa-file-invoice-dollar"></i> <!-- Replaced with Font Awesome icon -->
-                        </div>
-                        <div class="features-content-three">
-                            <h2 class="title">Taxation</h2>
-                            <p>In our tax services, we understand the liability and huge business payout that is involved with noncompliance in federal, state, and local tax administrations. The complexity in understanding changes in tax laws is profound.</p>
-                            <a href="#" class="link-btn">See Details <img src="<?php echo $domain ?>assets/img/icons/right-arrow.svg" alt="Arrow"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6">
-                    <div class="features-item-three">
-                        <div class="features-icon-three">
-                            <i class="fas fa-briefcase"></i> <!-- Replaced with Font Awesome icon -->
-                        </div>
-                        <div class="features-content-three">
-                            <h2 class="title">Business Consulting</h2>
-                            <p>Our business consulting expertise is tailored to the needs of small or medium-size businesses. We help analyze your business and create solutions to enable organizations to achieve their operational goals and objectives.</p>
-                            <a href="services-details.html" class="link-btn">See Details <img src="<?php echo $domain ?>assets/img/icons/right-arrow.svg" alt="Arrow"></a>
-                        </div>
+                <div class="features-item-wrap-two">
+                    <div id="services" class="row justify-content-center">
+
+
+                        <script type="module">
+                            import {
+                                services
+                            } from '<?php echo $domain ?>assets/js/data.js';
+                            console.log(services);
+
+                            for (let i = 0; i < services.length; i++) {
+                                const {
+                                    id,
+                                    name,
+                                    message
+                                } = services[i];
+                                const html = `<div class="col-xl-3 col-lg-4 col-md-6">
+                                                <div class="features-item-three">
+                                                    <div class="features-icon-three">
+                                                    <i class="fas fa-calculator"></i>
+                                                    </div>
+                                                    <div class="features-content-three">
+                                                        <h2 class="title">${name}</h2>
+                                                        <p>${displayFirst20Characters(message[0].details)}</p>
+                                                        <a href="<?php echo $domain ?>service-details/?index=${id}" class="link-btn">See Details <img src="<?php echo $domain ?>assets/img/icons/right-arrow.svg" alt=""></a>
+                                                    </div>
+                                                </div>  
+                                            </div>`
+
+                                document.querySelector('#services').innerHTML += html
+                            }
+
+                            function displayFirst20Characters(text) {
+                                // Ensure the text is at least 20 characters long, otherwise, just return the whole text
+                                const displayText = text.length > 200 ? text.slice(0, 200) : text;
+                                return displayText + '...';
+                            }
+                        </script>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
 
         <!-- features-area-end -->
 
         <!-- about-area -->
         <section class="about-area-four pb-120">
-    <div class="container">
-        <div class="row align-items-center justify-content-center">
-            <div class="col-lg-7 col-md-10 order-0 order-lg-2">
-                <div class="about-img-wrap-four">
-                    <div class="mask-img-wrap">
-                        <img src="<?php echo $domain ?>assets/img/images/h3_about_img01.jpg" alt="">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-lg-7 col-md-10 order-0 order-lg-2">
+                        <div class="about-img-wrap-four">
+                            <div class="mask-img-wrap">
+                                <img src="<?php echo $domain ?>assets/img/images/h3_about_img01.jpg" alt="">
+                            </div>
+                            <div class="icon"><i class="fas fa-chalkboard-teacher"></i></div> <!-- Replaced with Font Awesome icon -->
+                            <img src="<?php echo $domain ?>assets/img/images/h3_about_img02.jpg" alt="" class="img-two">
+                            <div class="about-shape-wrap-three">
+                                <img src="<?php echo $domain ?>assets/img/images/h3_about_shape01.png" alt="">
+                                <img src="<?php echo $domain ?>assets/img/images/h3_about_shape02.png" alt="">
+                                <img src="<?php echo $domain ?>assets/img/images/h3_about_shape03.png" alt="">
+                            </div>
+                        </div>
                     </div>
-                    <div class="icon"><i class="fas fa-chalkboard-teacher"></i></div> <!-- Replaced with Font Awesome icon -->
-                    <img src="<?php echo $domain ?>assets/img/images/h3_about_img02.jpg" alt="" class="img-two">
-                    <div class="about-shape-wrap-three">
-                        <img src="<?php echo $domain ?>assets/img/images/h3_about_shape01.png" alt="">
-                        <img src="<?php echo $domain ?>assets/img/images/h3_about_shape02.png" alt="">
-                        <img src="<?php echo $domain ?>assets/img/images/h3_about_shape03.png" alt="">
+                    <div class="col-lg-5">
+                        <div class="about-content-four">
+                            <div class="section-title-two mb-30 tg-heading-subheading animation-style1">
+                                <span class="sub-title tg-element-title">Get To Know Us</span>
+                                <h2 class="title tg-element-title">Empowering Businesses for Success</h2>
+                            </div>
+                            <p>With over 25 years of expertise, we provide strategic consulting tailored to each business’s unique challenges, helping them thrive and grow.</p>
+                            <div class="about-list-three">
+                                <ul class="list-wrap">
+                                    <li>
+                                        <div class="icon">
+                                            <i class="fas fa-chart-line"></i> <!-- Replaced with Font Awesome icon -->
+                                        </div>
+                                        <div class="content">
+                                            <h2 class="title">Business Growth</h2>
+                                            <p>Helping you achieve sustainable growth and enhanced profitability.</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <i class="fas fa-bullseye"></i> <!-- Replaced with Font Awesome icon -->
+                                        </div>
+                                        <div class="content">
+                                            <h2 class="title">Targeted Strategies</h2>
+                                            <p>Custom solutions designed to reach and engage your ideal clients.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-lg-5">
-                <div class="about-content-four">
-                    <div class="section-title-two mb-30 tg-heading-subheading animation-style1">
-                        <span class="sub-title tg-element-title">Get To Know Us</span>
-                        <h2 class="title tg-element-title">Empowering Businesses for Success</h2>
-                    </div>
-                    <p>With over 25 years of expertise, we provide strategic consulting tailored to each business’s unique challenges, helping them thrive and grow.</p>
-                    <div class="about-list-three">
-                        <ul class="list-wrap">
-                            <li>
-                                <div class="icon">
-                                    <i class="fas fa-chart-line"></i> <!-- Replaced with Font Awesome icon -->
-                                </div>
-                                <div class="content">
-                                    <h2 class="title">Business Growth</h2>
-                                    <p>Helping you achieve sustainable growth and enhanced profitability.</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="icon">
-                                    <i class="fas fa-bullseye"></i> <!-- Replaced with Font Awesome icon -->
-                                </div>
-                                <div class="content">
-                                    <h2 class="title">Targeted Strategies</h2>
-                                    <p>Custom solutions designed to reach and engage your ideal clients.</p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
 
-        </div>
-    </div>
-</section>
+                </div>
+            </div>
+        </section>
 
         <!-- about-area-end -->
 
@@ -497,57 +484,57 @@
 
         <!-- testimonial-area -->
         <section class="testimonial-area-three">
-    <div class="container">
-        <div class="row g-0 align-items-end">
-            <div class="col-37">
-                <div class="testimonial-img-three">
-                    <img src="<?php echo $domain ?>assets/img/images/h3_testimonial_img.jpg" alt="Testimonial Image">
-                </div>
-            </div>
-            <div class="col-63">
-                <div class="testimonial-item-wrap-three" data-background="<?php echo $domain ?>assets/img/bg/h3_testimonial_bg.png">
-                    <div class="testimonial-active-three">
-                        <div class="testimonial-item-three">
-                            <div class="testimonial-content-three">
-                                <div class="rating">
-                                    <!-- Font Awesome Star Icons -->
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                                <p>“ MyBusTaxBookkeeping has been a game-changer for our finances. Their dedication and professionalism helped streamline our accounting processes seamlessly. Highly recommended!”</p>
-                                <div class="testimonial-info">
-                                    <h2 class="title">Sarah Johnson</h2>
-                                    <span>Founder, Horizon Ventures</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="testimonial-item-three">
-                            <div class="testimonial-content-three">
-                                <div class="rating">
-                                    <!-- Font Awesome Star Icons -->
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                                <p>“The team at MyBusTaxBookkeeping made our tax preparation effortless. They’re detail-oriented and responsive, which makes them a pleasure to work with every tax season.”</p>
-                                <div class="testimonial-info">
-                                    <h2 class="title">John Michaels</h2>
-                                    <span>CEO, TechWave Solutions</span>
-                                </div>
-                            </div>
+            <div class="container">
+                <div class="row g-0 align-items-end">
+                    <div class="col-37">
+                        <div class="testimonial-img-three">
+                            <img src="<?php echo $domain ?>assets/img/images/h3_testimonial_img.jpg" alt="Testimonial Image">
                         </div>
                     </div>
-                    <div class="testimonial-nav-three"></div>
+                    <div class="col-63">
+                        <div class="testimonial-item-wrap-three" data-background="<?php echo $domain ?>assets/img/bg/h3_testimonial_bg.png">
+                            <div class="testimonial-active-three">
+                                <div class="testimonial-item-three">
+                                    <div class="testimonial-content-three">
+                                        <div class="rating">
+                                            <!-- Font Awesome Star Icons -->
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <p>“ MyBusTaxBookkeeping has been a game-changer for our finances. Their dedication and professionalism helped streamline our accounting processes seamlessly. Highly recommended!”</p>
+                                        <div class="testimonial-info">
+                                            <h2 class="title">Sarah Johnson</h2>
+                                            <span>Founder, Horizon Ventures</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="testimonial-item-three">
+                                    <div class="testimonial-content-three">
+                                        <div class="rating">
+                                            <!-- Font Awesome Star Icons -->
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <p>“The team at MyBusTaxBookkeeping made our tax preparation effortless. They’re detail-oriented and responsive, which makes them a pleasure to work with every tax season.”</p>
+                                        <div class="testimonial-info">
+                                            <h2 class="title">John Michaels</h2>
+                                            <span>CEO, TechWave Solutions</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial-nav-three"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
 
 
         <!-- testimonial-area-end -->

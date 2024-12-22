@@ -1,6 +1,6 @@
 <?php
-session_start();
-include('config/config.php');
+
+include('../server/connection.php');
 if (!isset($_SESSION['admin_login_']) && $_SESSION['admin_login_'] != true) {
   echo "<script> window.location.href = 'login.php'</script>";
 }
@@ -12,7 +12,7 @@ if (!isset($_SESSION['admin_login_']) && $_SESSION['admin_login_'] != true) {
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-  <title>Booked_List</title>
+  <title><?php echo $sitename ?>-- Booking History</title>
 
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="assets/img/favicon/favicon.ico" />
@@ -193,8 +193,8 @@ if (!isset($_SESSION['admin_login_']) && $_SESSION['admin_login_'] != true) {
                       <th>Email</th>
                       <th>Phonenumber</th>
                       <th>Booked_Date</th>
-                      <th>Type</th>
                       <th>Amount</th>
+                      <th>Type</th>
                       <th>Status</th> 
                       
                       
@@ -203,7 +203,7 @@ if (!isset($_SESSION['admin_login_']) && $_SESSION['admin_login_'] != true) {
                   <tbody class="table-border-bottom-0">
                     <?php
                     
-                    $sql = mysqli_query($con, "SELECT * FROM `booking` WHERE `status` = '0'");
+                    $sql = mysqli_query($connection, "SELECT * FROM `booking`");
                     if (mysqli_num_rows($sql)) {
                       $count = 1;
                       while ($details = mysqli_fetch_assoc($sql)) {
@@ -214,11 +214,22 @@ if (!isset($_SESSION['admin_login_']) && $_SESSION['admin_login_'] != true) {
                           <td><?php echo $count ?></td>
                           <td><?php echo $details['name']?></td> 
                           <td><?php echo $details['email']?></td> 
-                          <td><?php echo $details['phonenumber']?></td> 
-                          <td><?php echo $details['date']?></td> 
+                          <td><?php echo $details['phone']?></td> 
                           <td><?php echo $details['type']?></td> 
-                          <td><?php echo $details['amount']?></td> 
-                          <td><?php echo $details['status']?></td> 
+                          <td><?php echo $details['date']?></td> 
+                          <td><?php echo ($details['amount'] == '')? '0.00': number_format($details['amount'],2)?></td> 
+                          <td><?php 
+                             
+                               if($details['status'] == 'pending' || $details['status'] == 'ongoing') {
+                                    echo "<span class='badge bg-danger'>Pending</span>";
+                                  }
+                               if($details['status'] == 'cancelled' || $details['status'] == 'declined' || $details['status'] == 'failed' || $details['status'] == 'abandoned') {
+                                    echo "<span class='badge bg-warning'></span>";
+                                  }
+                                  if($details['status'] == 'success' || $details['status'] == 'approved' ) {
+                                    echo "<span class='badge bg-success'></span>";
+                                  }
+                               ?></td> 
                          
                           
                         </tr>

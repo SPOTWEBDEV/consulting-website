@@ -84,12 +84,57 @@
                     <div class="col-lg-6 col-md-10">
                         <div class="overview-img-two">
                             <div class="mask-img-two">
-                                <img src="<?php echo $domain ?>certificate/1.png" alt="">
+                                <!-- <img src="<?php echo $domain ?>certificate/1.png" alt=""> -->
                             </div>
-                            <img src="<?php echo $domain ?>ceritificate/1.png" alt="" class="img-two" data-parallax='{"y" : 100 }'>
+                            <!-- <img src="<?php echo $domain ?>ceritificate/1.png" alt="" class="img-two" data-parallax='{"y" : 100 }'> -->
                             <div class="overview-shape-wrap">
                                 <img src="<?php echo $domain ?>ceritificate/1.png" alt="">
-                                <img src="<?php echo $domain ?>ceritificate/1.png" alt="">
+                                <!-- <img src="<?php echo $domain ?>ceritificate/1.png" alt=""> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="overview-content-two">
+                            <div class="section-title-two mb-30 tg-heading-subheading animation-style1">
+                                <span class="sub-title tg-element-title">Company Overview</span>
+                                <h2 class="title tg-element-title">Crafting Effective Strategies for Business Success</h2>
+                            </div>
+                            <p>At MyBusTaxBookkeeping, we’re committed to providing strategies that help businesses navigate challenges, optimize growth, and achieve lasting success.</p>
+                            <div class="progress-wrap">
+                                <div class="progress-item">
+                                    <h6 class="title">Consulting</h6>
+                                    <div class="progress" role="progressbar" aria-label="Consulting" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar wow slideInLeft" data-wow-delay=".1s" style="width: 85%"><span>85%</span></div>
+                                    </div>
+                                </div>
+                                <div class="progress-item">
+                                    <h6 class="title">Financial Planning</h6>
+                                    <div class="progress" role="progressbar" aria-label="Financial Planning" aria-valuenow="76" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar wow slideInLeft" data-wow-delay=".2s" style="width: 76%"><span>76%</span></div>
+                                    </div>
+                                </div>
+                                <div class="progress-item">
+                                    <h6 class="title">Tax Preparation</h6>
+                                    <div class="progress" role="progressbar" aria-label="Tax Preparation" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar wow slideInLeft" data-wow-delay=".3s" style="width: 90%"><span>90%</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-lg-6 col-md-10">
+                        <div class="overview-img-two">
+                            <div class="mask-img-two">
+                                <!-- <img src="<?php echo $domain ?>certificate/1.png" alt=""> -->
+                            </div>
+                            <!-- <img src="<?php echo $domain ?>ceritificate/1.png" alt="" class="img-two" data-parallax='{"y" : 100 }'> -->
+                            <div class="overview-shape-wrap">
+                                <img src="<?php echo $domain ?>ceritificate/2.png" alt="">
+                                <!-- <img src="<?php echo $domain ?>ceritificate/1.png" alt=""> -->
                             </div>
                         </div>
                     </div>

@@ -7,7 +7,8 @@
                         <div class="footer-widget">
                             <div class="fw-logo">
                                 <!-- <a href="index.html"><img src="<?php echo $domain ?>assets/img/logo/w_logo.png" alt=""></a> -->
-                                 <h2 style="color: white;"><?php echo $sitelogo ?></h2>
+                                <img style="height:70px !important" src="<?php echo $domain ?>logo.png" alt="Logo">
+                                 
                             </div>
                             <div class="footer-content">
                                 <p>In addition to his academic training and leadership, he served as Senior Tax Specialist with the Florida Department of Revenue for thirteen years, specializing in tax laws, auditing, sales & use tax, intangible tax, corporate tax, local option tax, and documentary stamp tax.</p>

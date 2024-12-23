@@ -486,12 +486,8 @@
         <section class="testimonial-area-three">
             <div class="container">
                 <div class="row g-0 align-items-end">
-                    <div class="col-37">
-                        <div class="testimonial-img-three">
-                            <img src="<?php echo $domain ?>assets/img/images/h3_testimonial_img.jpg" alt="Testimonial Image">
-                        </div>
-                    </div>
-                    <div class="col-63">
+                    
+                    <div class="col-73">
                         <div class="testimonial-item-wrap-three" data-background="<?php echo $domain ?>assets/img/bg/h3_testimonial_bg.png">
                             <div class="testimonial-active-three">
                                 <div class="testimonial-item-three">
@@ -506,8 +502,8 @@
                                         </div>
                                         <p>“ MyBusTaxBookkeeping has been a game-changer for our finances. Their dedication and professionalism helped streamline our accounting processes seamlessly. Highly recommended!”</p>
                                         <div class="testimonial-info">
-                                            <h2 class="title">Sarah Johnson</h2>
-                                            <span>Founder, Horizon Ventures</span>
+                                            <h2 class="title">Ifeanyi Ewoh</h2>
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -523,8 +519,8 @@
                                         </div>
                                         <p>“The team at MyBusTaxBookkeeping made our tax preparation effortless. They’re detail-oriented and responsive, which makes them a pleasure to work with every tax season.”</p>
                                         <div class="testimonial-info">
-                                            <h2 class="title">John Michaels</h2>
-                                            <span>CEO, TechWave Solutions</span>
+                                            <h2 class="title">John Nsude</h2>
+                                           
                                         </div>
                                     </div>
                                 </div>
@@ -593,12 +589,7 @@
                                 <h2 class="title"><a href="blog-details.html">Maximize Your Business Potential with Smart Tax Strategies</a></h2>
                                 <p>Discover how effective tax planning can save your business money and fuel its growth.</p>
                                 <div class="blog-meta">
-                                    <ul class="list-wrap">
-                                        <li>
-                                            <a href="blog-details.html"><img src="<?php echo $domain ?>assets/img/blog/blog_avatar01.png" alt="">Kat Doven</a>
-                                        </li>
-                                        <li><i class="far fa-calendar"></i>22 Jan, 2023</li>
-                                    </ul>
+                                  
                                 </div>
                             </div>
                         </div>
@@ -614,10 +605,7 @@
                                 <p>Explore the importance of professional tax guidance and how it can lead to long-term financial success.</p>
                                 <div class="blog-meta">
                                     <ul class="list-wrap">
-                                        <li>
-                                            <a href="blog-details.html"><img src="<?php echo $domain ?>assets/img/blog/blog_avatar01.png" alt="">Kat Doven</a>
-                                        </li>
-                                        <li><i class="far fa-calendar"></i>22 Jan, 2023</li>
+                                        
                                     </ul>
                                 </div>
                             </div>
@@ -632,14 +620,14 @@
                             <div class="blog-post-content-two">
                                 <h2 class="title"><a href="blog-details.html">How to Optimize Your Business Tax Filing</a></h2>
                                 <p>Learn best practices to streamline your tax filing process and avoid common pitfalls.</p>
-                                <div class="blog-meta">
+                                <!-- <div class="blog-meta">
                                     <ul class="list-wrap">
                                         <li>
                                             <a href="blog-details.html"><img src="<?php echo $domain ?>assets/img/blog/blog_avatar01.png" alt="">Kat Doven</a>
                                         </li>
                                         <li><i class="far fa-calendar"></i>22 Jan, 2023</li>
                                     </ul>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>

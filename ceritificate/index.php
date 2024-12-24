@@ -82,11 +82,11 @@
                     <div class="col-12">
                         <div class="project-details-wrap">
 
-                            <div class="project-details-content text-center">
+                            <div class="project-details-content ">
                                 <h2 class="title text-center">CERTIFICATION PROGRAM</h2>
                                 <h4 class=" text-center">PROFESSIONAL INSTITUTE OF INDEPENDENT BOOKKEEPERS (PIIB)</h4>
                                 <h4 class=" text-center">“Absolute House of Knowledge”</h4>
-                                <h5 class=" text-center">(8-WEEK PROGRAM)</h5>
+                                <h5 style="color: red;" class=" text-center">(8-WEEK PROGRAM)</h5>
 
                                 <h3 class="mt-3">About PIIB</h3>
                                 <p>
@@ -152,15 +152,19 @@
                                     ensure that there is trust in maintaining securing client’s financial information.
                                     There are four key elements that form the principles of bookkeeping ethics.
                                     These include honesty, objectivity, confidentiality, and professionalism.
-                                     Honesty
-                                     Objectivity
-                                     Confidentiality
-                                     Professional Behavior
+
+                                    <ul>
+                                        <li>Honesty</li>
+                                        <li>Objectivity</li>
+                                        <li>Confidentiality</li>
+                                        <li>Professional Behavior</li>
+                                    </ul>
 
                                     20
 
                                     As a member of the Professional Institute of Independent Bookkeepers (PIIB),
-                                    you are expected to maintain the prescribed ethics of conduct.</p>
+                                    you are expected to maintain the prescribed ethics of conduct.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -202,36 +206,7 @@
 
                 </div>
 
-                <div class="row align-items-center justify-content-center">
-                    <div class="col-lg-6 col-md-10">
-                        <div class="overview-img-two">
-                            <div class="mask-img-two">
-                                <!-- <img src="<?php echo $domain ?>certificate/1.png" alt=""> -->
-                            </div>
-                            <!-- <img src="<?php echo $domain ?>ceritificate/1.png" alt="" class="img-two" data-parallax='{"y" : 100 }'> -->
-                            <div class="overview-shape-wrap">
-                                <img src="<?php echo $domain ?>ceritificate/2.png" alt="">
-                                <!-- <img src="<?php echo $domain ?>ceritificate/1.png" alt=""> -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="overview-content-two">
-                            <div class="section-title-two mb-30 tg-heading-subheading animation-style1">
-                                <span class="sub-title tg-element-title">Professional Institute Overview</span>
-                                <h2 class="title tg-element-title">Empowering Independent Bookkeepers for Excellence</h2>
-                            </div>
-                            <p>After completing the four levels of learning and passing all required
-                                examinations, you will receive a certificate of completion and approval to use
-                                the designation “Certified Independent Bookkeepers (CIB). The certificate
-                                solidifies your mastery of bookkeeping concepts as a professional and can
-                                always be displayed as a proud achievement in the bookkeeping world.</p>
-
-                        </div>
-
-                    </div>
-
-                </div>
+                
             </div>
         </section>
         <!-- overview-area-end -->

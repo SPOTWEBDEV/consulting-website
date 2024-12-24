@@ -35,10 +35,10 @@
                     <div class="mobile-nav-toggler"><i class="fas fa-bars"></i></div> <!-- Changed to Font Awesome -->
                     <div class="menu-wrap">
                         <nav class="menu-nav">
-                            <div class="logo">
+                            
                             <img style="height:70px !important" src="<?php echo $domain ?>logo.png" alt="Logo">
                                 
-                            </div>
+                        
                             <div class="navbar-wrap main-menu d-none d-lg-flex">
                                 <ul class="navigation">
                                     <li><a href="<?php echo $domain ?>">Home</a></li>
@@ -63,7 +63,7 @@
                         <nav class="menu-box">
                             <div class="close-btn"><i class="fas fa-times"></i></div> <!-- Changed to Font Awesome -->
                             <div class="nav-logo">
-                            <img style="height:70px !important" src="<?php echo $domain ?>logo.png" alt="Logo">
+                            <img style="height:100px !important; max:width" src="<?php echo $domain ?>logo.png" alt="Logo">
                                 
                             </div>
                             <div class="mobile-search">

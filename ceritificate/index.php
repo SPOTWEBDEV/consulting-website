@@ -76,6 +76,98 @@
         <!-- banner-area-end -->
 
 
+        <section class="project-details-area pt-120 pb-120">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="project-details-wrap">
+
+                            <div class="project-details-content text-center">
+                                <h2 class="title text-center">CERTIFICATION PROGRAM</h2>
+                                <h4 class=" text-center">PROFESSIONAL INSTITUTE OF INDEPENDENT BOOKKEEPERS (PIIB)</h4>
+                                <h4 class=" text-center">“Absolute House of Knowledge”</h4>
+                                <h5 class=" text-center">(8-WEEK PROGRAM)</h5>
+
+                                <h3 class="mt-3">About PIIB</h3>
+                                <p>
+                                    The Institute of Professional Independent Bookkeepers (PIIB) is a membership
+                                    association for bookkeepers designed to provide educational awareness to
+                                    individuals or employees of business organizations who aspire to become
+                                    professional bookkeepers.
+                                    Most companies are interested in recruiting bookkeepers to maintain their
+                                    financial transactions and records.
+                                    Also, most individuals may want to establish a bookkeeping service as
+                                    entrepreneurs, with the intent to service small businesses.
+                                    Companies or individuals who needs bookkeeping knowledge will require
+                                    training to acquire the skills to perform functional bookkeeping and accounting
+                                    duties. The Professional Institute of Independent Bookkeepers (PIIB) is
+                                    established to equip and prepare individuals or groups with the knowledge
+                                    needed to function as professional bookkeepers.
+                                    Bookkeeping is a respected profession in the business world. Completing our
+                                    bookkeeping training will provide you with the knowledge and skills you need
+                                    to be recognized and respected in the business world.
+                                </p>
+
+                                <h3 style="margin-bottom: 5px;">PIIB Objectives</h3>
+                                <p>
+                                    The fundamental objective of the PIIB is to provide training and enhance the
+                                    expertise of members on their journey to understanding bookkeeping
+                                    concepts, as well as becoming reliable, dependable, accurate, consistent, and
+                                    confident in preparing and reporting financial information to internal and
+                                    external users of accounting and bookkeeping data.
+                                    Members who complete all four levels of training will be proficient in preparing and
+                                    analyzing important bookkeeping records, which will include, but are not
+                                    limited to your journal entries, ledger transactions, ledger records, income
+                                    statement reports, cash flow statements, and balance sheets.
+                                </p>
+
+                                <h3>Student Member</h3>
+                                <p>If you are a beginner or student of any academic institution, you may join as a
+                                    Student Member. The applicant must provide evidence of academic
+                                    engagement for student-member qualification. A non-refundable membership
+                                    admission fee of $30.99 will be due with the application form. Your
+                                    membership will renew on either a monthly or yearly basis unless you cancel.
+                                    Upon admission, non-refundable membership dues of $39.99 will be paid
+                                    yearly.
+                                    After your year as a Student Member has ended, you will be given the choice
+                                    of whether or not you want to continue as a Professional Member.</p>
+
+                                <h3>Professional Member</h3>
+                                <p>Prospective members who are currently employed in the bookkeeping or
+                                    accounting profession or a related field can apply as a Professional Member. A
+                                    non-refundable membership admission fee of $49.99 will be due with the
+                                    application form. Your membership will renew automatically, and you can
+                                    cancel at any time.
+                                    Upon admission, a non-refundable membership fee of $59.99 will be paid
+                                    yearly.</p>
+
+                                <h3>Ethical Considerations</h3>
+                                <p>In bookkeeping profession, maintaining ethical standards is essential to
+                                    building trust and reliability. Bookkeepers are expected to build and enhance
+                                    the financial health of businesses. These types of responsibilities require a
+                                    certain set of codes of ethics that guide bookkeeping professionals to uphold
+                                    the highest standards of honesty and integrity in the profession.
+                                    Bookkeepers have a responsibility to maintain honesty, objectivity,
+                                    confidentiality, and professionalism in their work. These values are essential to
+                                    ensure that there is trust in maintaining securing client’s financial information.
+                                    There are four key elements that form the principles of bookkeeping ethics.
+                                    These include honesty, objectivity, confidentiality, and professionalism.
+                                     Honesty
+                                     Objectivity
+                                     Confidentiality
+                                     Professional Behavior
+
+                                    20
+
+                                    As a member of the Professional Institute of Independent Bookkeepers (PIIB),
+                                    you are expected to maintain the prescribed ethics of conduct.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
 
         <!-- overview-area -->
         <section class="overview-area-two">
@@ -99,27 +191,11 @@
                                 <span class="sub-title tg-element-title">Professional Recognition</span>
                                 <h2 class="title tg-element-title">Achieving Excellence in Independent Bookkeeping</h2>
                             </div>
-                            <p>At the Professional Institute of Independent Bookkeepers (PIIB), we’re committed to certifying professionals who excel in bookkeeping, ensuring businesses receive top-notch financial services.</p>
-                            <div class="progress-wrap">
-                                <div class="progress-item">
-                                    <h6 class="title">Four Level Bookkeeping</h6>
-                                    <div class="progress" role="progressbar" aria-label="Four Level Bookkeeping" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-                                        <div class="progress-bar wow slideInLeft" data-wow-delay=".1s" style="width: 100%"><span>100%</span></div>
-                                    </div>
-                                </div>
-                                <div class="progress-item">
-                                    <h6 class="title">Certified Independent Bookkeeper</h6>
-                                    <div class="progress" role="progressbar" aria-label="Certified Independent Bookkeeper" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-                                        <div class="progress-bar wow slideInLeft" data-wow-delay=".2s" style="width: 100%"><span>100%</span></div>
-                                    </div>
-                                </div>
-                                <div class="progress-item">
-                                    <h6 class="title">Business and Tax Consulting</h6>
-                                    <div class="progress" role="progressbar" aria-label="Business and Tax Consulting" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
-                                        <div class="progress-bar wow slideInLeft" data-wow-delay=".3s" style="width: 95%"><span>95%</span></div>
-                                    </div>
-                                </div>
-                            </div>
+                            <p>Upon admission into the Professional Institute of Independent Bookkeepers
+                                (PIIB), you will receive a Certificate of Membership. The certificate solidifies
+                                your affiliation with the bookkeeping association to your co-workers,
+                                colleagues, or clients.</p>
+
                         </div>
 
                     </div>
@@ -145,27 +221,12 @@
                                 <span class="sub-title tg-element-title">Professional Institute Overview</span>
                                 <h2 class="title tg-element-title">Empowering Independent Bookkeepers for Excellence</h2>
                             </div>
-                            <p>At the Professional Institute of Independent Bookkeepers (PIIB), we are dedicated to fostering expertise, promoting professionalism, and ensuring success for our members.</p>
-                            <div class="progress-wrap">
-                                <div class="progress-item">
-                                    <h6 class="title">Membership Certification</h6>
-                                    <div class="progress" role="progressbar" aria-label="Membership Certification" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
-                                        <div class="progress-bar wow slideInLeft" data-wow-delay=".1s" style="width: 95%"><span>95%</span></div>
-                                    </div>
-                                </div>
-                                <div class="progress-item">
-                                    <h6 class="title">Professional Development</h6>
-                                    <div class="progress" role="progressbar" aria-label="Professional Development" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100">
-                                        <div class="progress-bar wow slideInLeft" data-wow-delay=".2s" style="width: 88%"><span>88%</span></div>
-                                    </div>
-                                </div>
-                                <div class="progress-item">
-                                    <h6 class="title">Networking Opportunities</h6>
-                                    <div class="progress" role="progressbar" aria-label="Networking Opportunities" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100">
-                                        <div class="progress-bar wow slideInLeft" data-wow-delay=".3s" style="width: 92%"><span>92%</span></div>
-                                    </div>
-                                </div>
-                            </div>
+                            <p>After completing the four levels of learning and passing all required
+                                examinations, you will receive a certificate of completion and approval to use
+                                the designation “Certified Independent Bookkeepers (CIB). The certificate
+                                solidifies your mastery of bookkeeping concepts as a professional and can
+                                always be displayed as a proud achievement in the bookkeeping world.</p>
+
                         </div>
 
                     </div>

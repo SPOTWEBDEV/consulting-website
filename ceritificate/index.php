@@ -153,18 +153,19 @@
                                     There are four key elements that form the principles of bookkeeping ethics.
                                     These include honesty, objectivity, confidentiality, and professionalism.
 
-                                    <ul>
-                                        <li>Honesty</li>
-                                        <li>Objectivity</li>
-                                        <li>Confidentiality</li>
-                                        <li>Professional Behavior</li>
-                                    </ul>
+                                <ul>
+                                    <li>Honesty</li>
+                                    <li>Objectivity</li>
+                                    <li>Confidentiality</li>
+                                    <li>Professional Behavior</li>
+                                </ul>
 
-                                    20
+                                20
 
-                                    As a member of the Professional Institute of Independent Bookkeepers (PIIB),
-                                    you are expected to maintain the prescribed ethics of conduct.
+                                As a member of the Professional Institute of Independent Bookkeepers (PIIB),
+                                you are expected to maintain the prescribed ethics of conduct.
                                 </p>
+                                <a href="<?php echo $domain ?>form/" class="btn btn-primary">BOOK NOW</a>
                             </div>
                         </div>
                     </div>
@@ -175,38 +176,21 @@
 
         <!-- overview-area -->
         <section class="overview-area-two">
-            <div class="container">
-                <div class="row align-items-center justify-content-center">
-                    <div class="col-lg-6 col-md-10">
-                        <div class="overview-img-two">
-                            <div class="mask-img-two">
-                                <!-- <img src="<?php echo $domain ?>certificate/1.png" alt=""> -->
-                            </div>
-                            <!-- <img src="<?php echo $domain ?>ceritificate/1.png" alt="" class="img-two" data-parallax='{"y" : 100 }'> -->
-                            <div class="overview-shape-wrap">
-                                <img src="<?php echo $domain ?>ceritificate/1.png" alt="">
-                                <!-- <img src="<?php echo $domain ?>ceritificate/1.png" alt=""> -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="overview-content-two">
-                            <div class="section-title-two mb-30 tg-heading-subheading animation-style1">
-                                <span class="sub-title tg-element-title">Professional Recognition</span>
-                                <h2 class="title tg-element-title">Achieving Excellence in Independent Bookkeeping</h2>
-                            </div>
-                            <p>Upon admission into the Professional Institute of Independent Bookkeepers
-                                (PIIB), you will receive a Certificate of Membership. The certificate solidifies
-                                your affiliation with the bookkeeping association to your co-workers,
-                                colleagues, or clients.</p>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
 
-                        </div>
+                        <img src="./1.png" alt="">
 
                     </div>
-
                 </div>
+                <div class="col-sm-6">
+                    <div class="card">
 
-                
+                        <img src="./2.png" alt="">
+
+                    </div>
+                </div>
             </div>
         </section>
         <!-- overview-area-end -->

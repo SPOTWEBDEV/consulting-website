@@ -41,6 +41,7 @@ include('../server/payment/index.php');
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 
 
@@ -113,40 +114,54 @@ include('../server/payment/index.php');
                                 }
                             </style>
 
-                            <?php 
-                              
-                                
-                                // Check if the form is submitted
-                                if (isset($_POST['form_btn'])) {
-                                    // Retrieve form data
-                                    $membership_type = isset($_POST['student']) ? 'Student' : (isset($_POST['professional']) ? 'Professional' : '');
-                                    $name = $connection->real_escape_string($_POST['name']);
-                                    $date = $connection->real_escape_string($_POST['date']);
-                                    $occupation = $connection->real_escape_string($_POST['occupation']);
-                                    $address = $connection->real_escape_string($_POST['address']);
-                                    $phone = $connection->real_escape_string($_POST['phone']);
-                                    $city = $connection->real_escape_string($_POST['city']);
-                                    $state = $connection->real_escape_string($_POST['state']);
-                                    $country = $connection->real_escape_string($_POST['country']);
-                                    $email = $connection->real_escape_string($_POST['email']);
-                                    $date_of_birth = $connection->real_escape_string($_POST['datebirth']);
-                                    $gender = $connection->real_escape_string($_POST['exampleSelect']);
-                                
-                                    // Prepare the SQL query
-                                    $sql = "INSERT INTO `form`(`membership_type`, `name`, `date`, `occupation`, `address`, `phone`, `city`, `state`, `country`, `email`, `date_of_birth`, `gender`)
+                            <?php
+
+
+                            // Check if the form is submitted
+                            if (isset($_POST['form_btn'])) {
+                                // Retrieve form data
+                                $membership_type = isset($_POST['student']) ? 'Student' : (isset($_POST['professional']) ? 'Professional' : '');
+                                $name = $connection->real_escape_string($_POST['name']);
+                                $date = $connection->real_escape_string($_POST['date']);
+                                $occupation = $connection->real_escape_string($_POST['occupation']);
+                                $address = $connection->real_escape_string($_POST['address']);
+                                $phone = $connection->real_escape_string($_POST['phone']);
+                                $city = $connection->real_escape_string($_POST['city']);
+                                $state = $connection->real_escape_string($_POST['state']);
+                                $country = $connection->real_escape_string($_POST['country']);
+                                $email = $connection->real_escape_string($_POST['email']);
+                                $date_of_birth = $connection->real_escape_string($_POST['datebirth']);
+                                $gender = $connection->real_escape_string($_POST['exampleSelect']);
+
+                                // Prepare the SQL query
+                                $sql = "INSERT INTO `form`(`membership_type`, `name`, `date`, `occupation`, `address`, `phone`, `city`, `state`, `country`, `email`, `date_of_birth`, `gender`)
                                             VALUES ('$membership_type', '$name', '$date', '$occupation', '$address', '$phone', '$city', '$state', '$country', '$email', '$date_of_birth', '$gender')";
-                                
-                                    // Execute the query
-                                    if ($connection->query($sql) === TRUE) {
-                                        echo "Form submitted successfully!";
-                                    } else {
-                                        echo "Error: " . $sql . "<br>" . $connection->error;
-                                    }
-                                
-                                    
+
+                                // Execute the query
+                                if ($connection->query($sql) === TRUE) {
+                                    echo  "
+                                      <script>
+                                        Swal.fire({
+                                            title: 'Success!',
+                                            text: 'Your operation was completed successfully.',
+                                            icon: 'success',
+                                            confirmButtonText: 'Okay',
+                                            timer: 3000, // Auto close after 3 seconds
+                                            timerProgressBar: true
+                                        });
+                                    </script>
+                                     ";
+                                } else {
+                                    echo " Swal.fire({
+  icon: 'error',
+  title: 'Oops...',
+  text: 'Something went wrong, but we’ll fix it soon! 💖',
+  confirmButtonText: 'Okay'
+});";
                                 }
-                                
-                                
+                            }
+
+
                             ?>
 
                             <form method="POST">
@@ -212,7 +227,7 @@ include('../server/payment/index.php');
                                     <select class="form-select" id="exampleSelect" name="exampleSelect">
                                         <option value="male">Male</option>
                                         <option value="female">Female</option>
-                                    
+
                                     </select>
                                 </div>
 

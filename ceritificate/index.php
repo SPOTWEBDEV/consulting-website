@@ -70,12 +70,12 @@
 
         <!-- banner-area -->
         <section class="banner-area-three">
-            
+
         </section>
 
         <!-- banner-area-end -->
 
-        
+
 
         <!-- overview-area -->
         <section class="overview-area-two">
@@ -96,31 +96,32 @@
                     <div class="col-lg-6">
                         <div class="overview-content-two">
                             <div class="section-title-two mb-30 tg-heading-subheading animation-style1">
-                                <span class="sub-title tg-element-title">Company Overview</span>
-                                <h2 class="title tg-element-title">Crafting Effective Strategies for Business Success</h2>
+                                <span class="sub-title tg-element-title">Professional Recognition</span>
+                                <h2 class="title tg-element-title">Achieving Excellence in Independent Bookkeeping</h2>
                             </div>
-                            <p>At MyBusTaxBookkeeping, we’re committed to providing strategies that help businesses navigate challenges, optimize growth, and achieve lasting success.</p>
+                            <p>At the Professional Institute of Independent Bookkeepers (PIIB), we’re committed to certifying professionals who excel in bookkeeping, ensuring businesses receive top-notch financial services.</p>
                             <div class="progress-wrap">
                                 <div class="progress-item">
-                                    <h6 class="title">Consulting</h6>
-                                    <div class="progress" role="progressbar" aria-label="Consulting" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-                                        <div class="progress-bar wow slideInLeft" data-wow-delay=".1s" style="width: 85%"><span>85%</span></div>
+                                    <h6 class="title">Four Level Bookkeeping</h6>
+                                    <div class="progress" role="progressbar" aria-label="Four Level Bookkeeping" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar wow slideInLeft" data-wow-delay=".1s" style="width: 100%"><span>100%</span></div>
                                     </div>
                                 </div>
                                 <div class="progress-item">
-                                    <h6 class="title">Financial Planning</h6>
-                                    <div class="progress" role="progressbar" aria-label="Financial Planning" aria-valuenow="76" aria-valuemin="0" aria-valuemax="100">
-                                        <div class="progress-bar wow slideInLeft" data-wow-delay=".2s" style="width: 76%"><span>76%</span></div>
+                                    <h6 class="title">Certified Independent Bookkeeper</h6>
+                                    <div class="progress" role="progressbar" aria-label="Certified Independent Bookkeeper" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar wow slideInLeft" data-wow-delay=".2s" style="width: 100%"><span>100%</span></div>
                                     </div>
                                 </div>
                                 <div class="progress-item">
-                                    <h6 class="title">Tax Preparation</h6>
-                                    <div class="progress" role="progressbar" aria-label="Tax Preparation" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                                        <div class="progress-bar wow slideInLeft" data-wow-delay=".3s" style="width: 90%"><span>90%</span></div>
+                                    <h6 class="title">Business and Tax Consulting</h6>
+                                    <div class="progress" role="progressbar" aria-label="Business and Tax Consulting" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar wow slideInLeft" data-wow-delay=".3s" style="width: 95%"><span>95%</span></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
                     </div>
 
                 </div>
@@ -141,31 +142,32 @@
                     <div class="col-lg-6">
                         <div class="overview-content-two">
                             <div class="section-title-two mb-30 tg-heading-subheading animation-style1">
-                                <span class="sub-title tg-element-title">Company Overview</span>
-                                <h2 class="title tg-element-title">Crafting Effective Strategies for Business Success</h2>
+                                <span class="sub-title tg-element-title">Professional Institute Overview</span>
+                                <h2 class="title tg-element-title">Empowering Independent Bookkeepers for Excellence</h2>
                             </div>
-                            <p>At MyBusTaxBookkeeping, we’re committed to providing strategies that help businesses navigate challenges, optimize growth, and achieve lasting success.</p>
+                            <p>At the Professional Institute of Independent Bookkeepers (PIIB), we are dedicated to fostering expertise, promoting professionalism, and ensuring success for our members.</p>
                             <div class="progress-wrap">
                                 <div class="progress-item">
-                                    <h6 class="title">Consulting</h6>
-                                    <div class="progress" role="progressbar" aria-label="Consulting" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-                                        <div class="progress-bar wow slideInLeft" data-wow-delay=".1s" style="width: 85%"><span>85%</span></div>
+                                    <h6 class="title">Membership Certification</h6>
+                                    <div class="progress" role="progressbar" aria-label="Membership Certification" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar wow slideInLeft" data-wow-delay=".1s" style="width: 95%"><span>95%</span></div>
                                     </div>
                                 </div>
                                 <div class="progress-item">
-                                    <h6 class="title">Financial Planning</h6>
-                                    <div class="progress" role="progressbar" aria-label="Financial Planning" aria-valuenow="76" aria-valuemin="0" aria-valuemax="100">
-                                        <div class="progress-bar wow slideInLeft" data-wow-delay=".2s" style="width: 76%"><span>76%</span></div>
+                                    <h6 class="title">Professional Development</h6>
+                                    <div class="progress" role="progressbar" aria-label="Professional Development" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar wow slideInLeft" data-wow-delay=".2s" style="width: 88%"><span>88%</span></div>
                                     </div>
                                 </div>
                                 <div class="progress-item">
-                                    <h6 class="title">Tax Preparation</h6>
-                                    <div class="progress" role="progressbar" aria-label="Tax Preparation" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                                        <div class="progress-bar wow slideInLeft" data-wow-delay=".3s" style="width: 90%"><span>90%</span></div>
+                                    <h6 class="title">Networking Opportunities</h6>
+                                    <div class="progress" role="progressbar" aria-label="Networking Opportunities" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar wow slideInLeft" data-wow-delay=".3s" style="width: 92%"><span>92%</span></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
                     </div>
 
                 </div>
@@ -173,8 +175,8 @@
         </section>
         <!-- overview-area-end -->
 
-       
-       
+
+
 
     </main>
     <!-- main-area-end -->

@@ -42,7 +42,7 @@
                                         </div>
                                         <div class="content">
                                             <span>Hot Line Number</span>
-                                            <a href="tel:0123456789">+123 8989 444</a>
+                                            <a href="+1238989444">+1238989444</a>
                                         </div>
                                     </li>
                                 </ul>

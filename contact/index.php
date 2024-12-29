@@ -90,29 +90,22 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6">
                         <div class="inner-contact-img">
-                            <img src="<?php echo $domain ?>assets/img/images/contact_img.jpg" alt="">
+                            <img src="<?php echo $domain ?>assets/images/Photo J.jpg" alt="">
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="inner-contact-info">
-                            <h2 class="title">Our Office Address</h2>
+                            <h2 class="title">Get in Contact</h2>
                             <div class="contact-info-item">
-                                <h5 class="title-two">USA Office</h5>
-                                <ul class="list-wrap">
                                 
+                                <ul class="list-wrap">
+                                <li>Dr. Francis Ikeokwu</li>
                                 <li><?php echo $sitepobox ?>  <?php echo $siteaddress ?></li>
                                     <li><?php echo $sitenumber ?></li>
                                     <li><?php echo $siteemail ?></li>
                                 </ul>
                             </div>
-                            <div class="contact-info-item">
-                                <h5 class="title-two">Australia Office</h5>
-                                <ul class="list-wrap">
-                                    <li><?php echo $siteshort ?> <br> <?php echo $siteaddress ?></li>
-                                    <li><?php echo $sitenumber ?></li>
-                                    <li><?php echo $siteemail ?></li>
-                                </ul>
-                            </div>
+                           
                         </div>
                     </div>
                 </div>
@@ -122,10 +115,7 @@
 
 
         <!-- contact-map -->
-        <div class="contact-map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.332792000835!2d144.96011341744386!3d-37.805673299999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d4c2b349649%3A0xb6899234e561db11!2sEnvato!5e0!3m2!1sen!2sbd!4v1685027435635!5m2!1sen!2sbd"
-                allowfullscreen loading="lazy"></iframe>
-        </div>
+       
         <!-- contact-map-end -->
 
 

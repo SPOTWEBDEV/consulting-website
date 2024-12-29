@@ -85,7 +85,7 @@ include('../server/payment/index.php');
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="<?php echo $domain ?>">Home</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Book Now</li>
+                                    <li class="breadcrumb-item active" aria-current="page">Request/Apply Now</li>
                                 </ol>
                             </nav>
                         </div>
@@ -106,7 +106,7 @@ include('../server/payment/index.php');
                     <div class="col-lg-6 mx-auto">
 
                         <div class="container mt-5">
-                            <h2 class="mb-4 text-primary">Book Now</h2>
+                            <h2 class="mb-4 text-primary">Request/Apply Now</h2>
 
                             <style>
                                 form input {
@@ -233,7 +233,7 @@ include('../server/payment/index.php');
 
 
                                 <!-- Submit Button -->
-                                <button type="submit" name="form_btn" class="btn btn-primary">Book now</button>
+                                <button type="submit" name="form_btn" class="btn btn-primary">Request/Apply Now</button>
                             </form>
 
 

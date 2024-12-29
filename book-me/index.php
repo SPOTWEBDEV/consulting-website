@@ -93,11 +93,11 @@ if (isset($_GET['cancel'])) {
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="breadcrumb-content">
-                            <h2 class="title">Book Now</h2>
+                            <h2 class="title">Request/Apply Now</h2>
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="<?php echo $domain ?>">Home</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Book Now</li>
+                                    <li class="breadcrumb-item active" aria-current="page">Request/Apply Now</li>
                                 </ol>
                             </nav>
                         </div>
@@ -118,7 +118,7 @@ if (isset($_GET['cancel'])) {
                     <div class="col-lg-6 mx-auto">
 
                         <div class="container mt-5">
-                            <h2 class="mb-4 text-primary">Book Now</h2>
+                            <h2 class="mb-4 text-primary">Request/Apply Now</h2>
 
                             <style>
                                 form input {
@@ -150,7 +150,7 @@ if (isset($_GET['cancel'])) {
                                     <input type="text" name="amount" class="form-control" id="amount" placeholder="Amount" readonly>
                                 </div>
                                 <!-- Submit Button -->
-                                <button type="submit" name="book_btn" class="btn btn-primary">Book now</button>
+                                <button type="submit" name="book_btn" class="btn btn-primary">Request/Apply Now</button>
                             </form>
 
                             <script>

@@ -91,7 +91,7 @@
         <div class="row align-items-center justify-content-center">
             <div class="col-lg-6 col-md-9">
                 <div class="about-img-eight">
-                    <img src="<?php echo $domain ?>assets/img/images/inner_about_img03.jpg" alt="">
+                    <img style="width: 100% !important;" src="<?php echo $domain ?>assets/images/My Photo 2.jpg" alt="">
                 </div>
             </div>
             <div class="col-lg-6">
@@ -126,9 +126,9 @@
                                 </div>
                             </li>
                         </ul>
-                        <div class="right-slide-img">
+                        <!-- <div class="right-slide-img">
                             <img src="<?php echo $domain ?>assets/img/images/inner_about_img04.jpg" alt="">
-                        </div>
+                        </div> -->
                     </div>
                     <div class="about-content-bottom">
                         <div class="services-btn">
@@ -136,10 +136,10 @@
                         </div>
                         <div class="about-author-info">
                             <div class="thumb">
-                                <img src="<?php echo $domain ?>assets/img/images/about_author.png" alt="">
+                                <img src="<?php echo $domain ?>assets/images/My Photo H.jpg" alt="">
                             </div>
                             <div class="content">
-                                <h2 class="title">Mark Stranger</h2>
+                                <h2 class="title">Dr. Francis Ikeokwu</h2>
                                 <span>CEO, Gerow Finance</span>
                             </div>
                         </div>
@@ -168,7 +168,7 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="choose-img-three">
-                            <img src="<?php echo $domain ?>assets/img/images/inner_choose_img.jpg" alt="">
+                            <img src="<?php echo $domain ?>assets/images/Photo H.jpg" alt="">
                         </div>
                     </div>
                 </div>

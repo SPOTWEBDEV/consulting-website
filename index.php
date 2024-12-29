@@ -74,7 +74,7 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-7 col-md-9 order-0 order-lg-2">
                         <div class="banner-img-three" data-aos="fade-left" data-aos-delay="300">
-                            <img src="<?php echo $domain ?>assets/img/banner/h3_banner_img01.jpg" alt="Business Consultation" class="main-img">
+                            <img src="<?php echo $domain ?>assets/images/Photo A.jpg" alt="Business Consultation" class="main-img">
                             <img src="<?php echo $domain ?>assets/img/banner/h3_banner_img02.jpg" alt="Parallax Image 2" class="img-two" data-parallax='{"y" : 100 }'>
                             <img src="<?php echo $domain ?>assets/img/banner/h3_banner_img03.jpg" alt="Parallax Image 3" class="img-three" data-parallax='{"x" : -100 }'>
                         </div>
@@ -82,7 +82,7 @@
                     <div class="col-lg-5">
                         <div class="banner-content-three">
                             <h2 class="title" data-aos="fade-right" data-aos-delay="0">Need Business Consultation Today?</h2>
-                            <p data-aos="fade-right" data-aos-delay="300">MyBusTaxBookkeeping provides expert insights to help your business overcome challenges and thrive.</p>
+                            <p data-aos="fade-right" data-aos-delay="300">Business and Tax Consulting, Incprovides expert insights to help your business overcome challenges and thrive.</p>
                             <a href="<?php echo $domain ?>book-me/"><button type="button" class="btn btn-primary mb-4">Book Now</button></a>
                             <?php
 
@@ -186,7 +186,7 @@
                     <div class="col-lg-7 col-md-10 order-0 order-lg-2">
                         <div class="about-img-wrap-four">
                             <div class="mask-img-wrap">
-                                <img src="<?php echo $domain ?>assets/img/images/h3_about_img01.jpg" alt="">
+                                <img src="<?php echo $domain ?>assets/images/Photo B.jpg" alt="">
                             </div>
                             <div class="icon"><i class="fas fa-chalkboard-teacher"></i></div> <!-- Replaced with Font Awesome icon -->
                             <img src="<?php echo $domain ?>assets/img/images/h3_about_img02.jpg" alt="" class="img-two">
@@ -242,7 +242,7 @@
                     <div class="col-lg-6 col-md-10">
                         <div class="overview-img-two">
                             <div class="mask-img-two">
-                                <img src="<?php echo $domain ?>assets/img/images/h3_overview_img01.jpg" alt="">
+                                <img src="<?php echo $domain ?>assets/images/Photo C.jpg" alt="">
                             </div>
                             <img src="<?php echo $domain ?>assets/img/images/h3_overview_img02.jpg" alt="" class="img-two" data-parallax='{"y" : 100 }'>
                             <div class="overview-shape-wrap">
@@ -308,28 +308,28 @@
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="project-item-three">
                             <div class="project-thumb-three">
-                                <a href="project-details.html"><img src="<?php echo $domain ?>assets/img/project/h3_project_img01.jpg" alt="Project Image 1"></a>
+                                <a href="project-details.html"><img src="<?php echo $domain ?>assets/images/Photo D.jpg" alt="Project Image 1"></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="project-item-three">
                             <div class="project-thumb-three">
-                                <a href="project-details.html"><img src="<?php echo $domain ?>assets/img/project/h3_project_img02.jpg" alt="Project Image 2"></a>
+                                <a href="project-details.html"><img src="<?php echo $domain ?>assets/images/Photo E.jpg" alt="Project Image 2"></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="project-item-three">
                             <div class="project-thumb-three">
-                                <a href="project-details.html"><img src="<?php echo $domain ?>assets/img/project/h3_project_img03.jpg" alt="Project Image 3"></a>
+                                <a href="project-details.html"><img src="<?php echo $domain ?>assets/images/Photo F.jpg" alt="Project Image 3"></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="project-item-three">
                             <div class="project-thumb-three">
-                                <a href="project-details.html"><img src="<?php echo $domain ?>assets/img/project/h3_project_img04.jpg" alt="Project Image 4"></a>
+                                <a href="project-details.html"><img src="<?php echo $domain ?>assets/images/Photo G.jpg" alt="Project Image 4"></a>
                             </div>
                         </div>
                     </div>
@@ -340,38 +340,7 @@
         <!-- project-area-end -->
 
         <!-- counter-area -->
-        <section class="counter-area-two">
-            <div class="container">
-                <div class="counter-item-wrap">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-3 col-md-4 col-sm-6">
-                            <div class="counter-item-two">
-                                <h2 class="count"><span class="odometer" data-count="95"></span>%</h2>
-                                <p>Success Rate</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6">
-                            <div class="counter-item-two">
-                                <h2 class="count"><span class="odometer" data-count="55"></span>k</h2>
-                                <p>Projects Completed</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6">
-                            <div class="counter-item-two">
-                                <h2 class="count"><span class="odometer" data-count="25"></span>k</h2>
-                                <p>Satisfied Clients</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6">
-                            <div class="counter-item-two">
-                                <h2 class="count"><span class="odometer" data-count="15"></span>k</h2>
-                                <p>Businesses Supported</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+       
 
         <!-- counter-area-end -->
 
@@ -500,7 +469,7 @@
                                             <i class="fas fa-star"></i>
                                             <i class="fas fa-star"></i>
                                         </div>
-                                        <p>“ MyBusTaxBookkeeping has been a game-changer for our finances. Their dedication and professionalism helped streamline our accounting processes seamlessly. Highly recommended!”</p>
+                                        <p>“ Business and Tax Consulting, Inchas been a game-changer for our finances. Their dedication and professionalism helped streamline our accounting processes seamlessly. Highly recommended!”</p>
                                         <div class="testimonial-info">
                                             <h2 class="title">Ifeanyi Ewoh</h2>
                                             
@@ -517,7 +486,7 @@
                                             <i class="fas fa-star"></i>
                                             <i class="fas fa-star"></i>
                                         </div>
-                                        <p>“The team at MyBusTaxBookkeeping made our tax preparation effortless. They’re detail-oriented and responsive, which makes them a pleasure to work with every tax season.”</p>
+                                        <p>“The team at Business and Tax Consulting, Incmade our tax preparation effortless. They’re detail-oriented and responsive, which makes them a pleasure to work with every tax season.”</p>
                                         <div class="testimonial-info">
                                             <h2 class="title">John Nsude</h2>
                                            
@@ -582,7 +551,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="blog-post-item-two">
                             <div class="blog-post-thumb-two">
-                                <a href="blog-details.html"><img src="<?php echo $domain ?>assets/img/blog/h3_blog_img01.jpg" alt=""></a>
+                                <a href="blog-details.html"><img src="<?php echo $domain ?>assets/images/Photo K.jpg" alt=""></a>
                                 <a href="blog.html" class="tag tag-two">Business Growth</a>
                             </div>
                             <div class="blog-post-content-two">
@@ -597,7 +566,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="blog-post-item-two">
                             <div class="blog-post-thumb-two">
-                                <a href="blog-details.html"><img src="<?php echo $domain ?>assets/img/blog/h3_blog_img02.jpg" alt=""></a>
+                                <a href="blog-details.html"><img src="<?php echo $domain ?>assets/images/Photo L.jpg" alt=""></a>
                                 <a href="blog.html" class="tag tag-two">Tax Advisory</a>
                             </div>
                             <div class="blog-post-content-two">
@@ -614,7 +583,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="blog-post-item-two">
                             <div class="blog-post-thumb-two">
-                                <a href="blog-details.html"><img src="<?php echo $domain ?>assets/img/blog/h3_blog_img03.jpg" alt=""></a>
+                                <a href="blog-details.html"><img src="<?php echo $domain ?>assets/images/Photo M.jpg" alt=""></a>
                                 <a href="blog.html" class="tag tag-two">Finance Tips</a>
                             </div>
                             <div class="blog-post-content-two">

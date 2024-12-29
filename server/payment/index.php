@@ -35,7 +35,7 @@ if (isset($_POST['book_btn'])) {
             'email' => $email,
             'amount' => $amount * 100, // Paystack requires amount in kobo
             'callback_url' => $domain . "server/payment/callback.php?id={$connection->insert_id}", // Pass donation ID as reference
-            'metadata' => ["cancel_action" => $domain . "book-me/?cancel={$connection->insert_id}"],
+            'metadata' => ["cancel_action" => $domain . "book-me/  ?cancel={$connection->insert_id}"],
 
         ];
 

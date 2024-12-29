@@ -28,7 +28,7 @@
                             </div>
                             <div class="header-action">
                                 <ul class="list-wrap">
-                                    <li class="header-search"><a href="#"><i class="fas fa-search"></i></a></li>
+                                    <!-- <li class="header-search"><a href="#"><i class="fas fa-search"></i></a></li> -->
                                     <li class="offcanvas-menu offcanvas-menu-two">
                                         <a href="#" class="menu-tigger">
                                             <span></span>
@@ -58,12 +58,12 @@
                                 <h1 style="font-size: 20px;"><?php echo $sitelogo ?></h1>
                                 <!-- <a href="index.html"><img src="<?php echo $domain ?>assets/img/logo/logo.png" alt="Logo"></a> -->
                             </div>
-                            <div class="mobile-search">
+                            <!-- <div class="mobile-search">
                                 <form action="#">
                                     <input type="text" placeholder="Search here...">
                                     <button><i class="fas fa-search"></i></button>
                                 </form>
-                            </div>
+                            </div> -->
                             <div class="menu-outer">
                                 <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
                             </div>
@@ -86,7 +86,7 @@
     </div>
 
     <!-- header-search -->
-    <div class="search-popup-wrap" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- <div class="search-popup-wrap" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="search-close">
             <span><i class="fas fa-times"></i></span>
         </div>
@@ -105,7 +105,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- header-search-end -->
 
     <!-- offCanvas-menu -->

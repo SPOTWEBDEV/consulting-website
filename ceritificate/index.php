@@ -88,7 +88,7 @@
                                 <h4 class=" text-center">“Absolute House of Knowledge”</h4>
                                 <h5 style="color: red;" class=" text-center">(8-WEEK PROGRAM)</h5>
 
-                                <h3 class="mt-3">About PIIB</h3>
+                                <h3 class="mt-3">About Professional Institute of Independent Bookkeepers</h3>
                                 <p>
                                     The Institute of Professional Independent Bookkeepers (PIIB) is a membership
                                     association for bookkeepers designed to provide educational awareness to

@@ -51,7 +51,7 @@
                             </div>
                             <div class="header-action d-none d-md-block">
                                 <ul class="list-wrap">
-                                    <li class="header-search"><a href="#"><i class="fas fa-search"></i></a></li> <!-- Changed to Font Awesome -->
+                                    <!-- <li class="header-search"><a href="#"><i class="fas fa-search"></i></a></li> Changed to Font Awesome -->
                                     <li class="header-btn"><a href="<?php echo $domain ?>book-me/" class="btn btn-two">Request/Apply Now</a></li>
                                 </ul>
                             </div>
@@ -68,8 +68,8 @@
                             </div>
                             <div class="mobile-search">
                                 <form action="#">
-                                    <input type="text" placeholder="Search here...">
-                                    <button><i class="fas fa-search"></i></button> <!-- Changed to Font Awesome -->
+                                    <!-- <input type="text" placeholder="Search here..."> -->
+                                    <!-- <button><i class="fas fa-search"></i></button> Changed to Font Awesome -->
                                 </form>
                             </div>
                             <div class="menu-outer">
@@ -95,7 +95,7 @@
     </div>
 
     <!-- header-search -->
-    <div class="search-popup-wrap" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- <div class="search-popup-wrap" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="search-close">
             <span><i class="fas fa-times"></i></span> <!-- Changed to Font Awesome -->
         </div>
@@ -114,7 +114,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> 
     <!-- header-search-end -->
 
 </header>

@@ -5,23 +5,23 @@ export const services = [
     name: "Bookkeeping",
     message: [
       {
-        heading: "Bookkeeping Training and Services",
+        heading: "bookkeeping training and services",
         details: "Most companies are interested in recruiting bookkeepers to maintain their financial transactions and records. Bookkeepers need to be trained to acquire the skills to perform such important duties. The Business and Tax Consulting Group, Inc., is highly equipped to help you reach your goals.",
       },
       {
-        heading: "The Profession of Bookkeeping",
+        heading: "the profession of bookkeeping",
         details: "Bookkeeping is a respected profession in the business world. Completing our bookkeeping training will provide you with the knowledge and skills you need to be recognized and respected in the business world.",
       },
       {
-        heading: "Training and Certification",
+        heading: "training and certification",
         details: "Our training involves completing several online bookkeeping-intensive curricula, which will position you to pass the exams that will earn you a bookkeeping certificate. Whether you plan to work as a bookkeeper or start your own bookkeeping company, our training will prepare you for these professional journeys. We will provide you with an industry-approved education with rounded bookkeeping and finance skills.",
       },
       {
-        heading: "Target Audience",
+        heading: "target audience",
         details: "Our bookkeeping certificate training is designed for those looking to switch into a bookkeeping career with little or no accounting knowledge, or those who have bookkeeping ideas but want to enhance their skill set in financial decision-making.",
       },
       {
-        heading: "Program Duration",
+        heading: "program duration",
         details: "The bookkeeping training curricula is designed for a three-month program and covers 60 hours of fundamental knowledge and skills needed to become an expert in bookkeeping.",
       },
       {

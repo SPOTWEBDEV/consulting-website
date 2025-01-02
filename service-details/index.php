@@ -31,6 +31,15 @@
 
 </head>
 
+<style>
+    .title-two {
+   
+    text-transform:lowercase; /* Capitalizes the first letter of each word */
+  
+}
+
+</style>
+
 <body>
 
     <!-- preloader -->
@@ -138,6 +147,12 @@
     </main>
     <!-- main-area-end -->
 
+    <style>
+        .services-details-content .title-two{
+            text-transform:lowercase !important;
+        }
+    </style>
+
 
     <!-- footer-area -->
     <?php include('../includes/footer.php') ?>
@@ -190,7 +205,7 @@
                 } = newService[0].message[i];
 
                 // Create the heading element
-                const html1 = `<h4 class="title-two">${heading}</h4>`;
+                const html1 = `<h4 style="text-transorm:" class="title-two">${heading}</h4>`;
 
                 let detailsHtml = '';
 

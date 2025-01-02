@@ -14,7 +14,7 @@
                         <nav class="menu-nav">
                             <div class="logos">
                                 <!-- <h1 style="font-size: 30px;"><?php echo $sitelogo ?></h1> -->
-                                <img style="height:70px !important" src="<?php echo $domain ?>logo.png" alt="Logo">
+                                <img style="height:70px !important" src="<?php echo $domain ?>logo.jpg" alt="Logo">
                             </div>
                             <div class="navbar-wrap main-menu d-none d-lg-flex">
                                 <ul class="navigation">
@@ -56,7 +56,7 @@
                             <div class="close-btn"><i class="fas fa-times"></i></div>
                             <div class="nav-logo">
                                 <h1 style="font-size: 20px;"><?php echo $sitelogo ?></h1>
-                                <!-- <a href="index.html"><img src="<?php echo $domain ?>assets/img/logo/logo.png" alt="Logo"></a> -->
+                                <!-- <a href="index.html"><img src="<?php echo $domain ?>assets/img/logo/logo.jpg" alt="Logo"></a> -->
                             </div>
                             <div class="mobile-search">
                                 <form action="#">
@@ -115,7 +115,7 @@
         </div>
         <div class="logo-side mb-30">
             <h1 style="font-size: 15px;"><?php echo $sitelogo ?></h1>
-            <!-- <a href="index.html"><img src="<?php echo $domain ?>assets/img/logo/logo.png" alt="Logo"></a> -->
+            <!-- <a href="index.html"><img src="<?php echo $domain ?>assets/img/logo/logo.jpg" alt="Logo"></a> -->
         </div>
         <div class="side-info mb-30">
             <div class="contact-list mb-30">

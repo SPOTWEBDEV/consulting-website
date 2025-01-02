@@ -130,7 +130,7 @@ if (isset($_GET['status']) && isset($_GET['reference'])) {
                                                       <tr>
                                                                <td class="title">
                                                                         <img
-                                                                                 src="https://sparksuite.github.io/simple-html-invoice-template/images/logo.png"
+                                                                                 src="https://sparksuite.github.io/simple-html-invoice-template/images/logo.jpg"
                                                                                  style="width: 100%; max-width: 300px" />
                                                                </td>
 

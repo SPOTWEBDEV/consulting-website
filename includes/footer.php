@@ -6,8 +6,8 @@
                     <div class="col-lg-4 col-md-7">
                         <div class="footer-widget">
                             
-                                <!-- <a href="index.html"><img src="<?php echo $domain ?>assets/img/logo/w_logo.png" alt=""></a> -->
-                                <img style="height:70px !important" src="<?php echo $domain ?>logo.png" alt="Logo">
+                                <!-- <a href="index.html"><img src="<?php echo $domain ?>assets/img/logo/w_logo.jpg" alt=""></a> -->
+                                <img style="height:70px !important" src="<?php echo $domain ?>logo.jpg" alt="Logo">
                                  
                             
                             <div class="footer-content">

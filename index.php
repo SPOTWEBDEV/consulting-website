@@ -129,7 +129,7 @@
                 <div class="row justify-content-center">
                     <div class="col-xl-6 col-lg-7">
                         <div class="section-title-two text-center mb-40 tg-heading-subheading animation-style1">
-                            <span class="sub-title tg-element-title">What We Do For You</span>
+                            <a href="<?php echo $domain ?>service/"><span class="sub-title tg-element-title">What We Do For You</span></a>
                             <h2 class="title tg-element-title">The features that make our Service unique</h2>
                         </div>
                     </div>
@@ -486,7 +486,7 @@
                                             <i class="fas fa-star"></i>
                                             <i class="fas fa-star"></i>
                                         </div>
-                                        <p>“The team at Business and Tax Consulting, Incmade our tax preparation effortless. They’re detail-oriented and responsive, which makes them a pleasure to work with every tax season.”</p>
+                                        <p>“The team at Business and Tax Consulting, Inc made our tax preparation effortless. They’re detail-oriented and responsive, which makes them a pleasure to work with every tax season.”</p>
                                         <div class="testimonial-info">
                                             <h2 class="title">John Nsude</h2>
                                            

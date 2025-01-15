@@ -55,7 +55,7 @@
                                                                                                    <span>Hot Line
                                                                                                             Number</span>
                                                                                                    <a
-                                                                                                            href="+1238989444">+1238989444</a>
+                                                                                                            href="<?php echo $sitenumber ?>"><?php echo $sitenumber ?></a>
                                                                                           </div>
                                                                                  </li>
                                                                         </ul>

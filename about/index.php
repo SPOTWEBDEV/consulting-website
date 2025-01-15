@@ -97,9 +97,9 @@
             <div class="col-lg-6">
                 <div class="about-content-eight">
                     <div class="section-title-two mb-30">
-                        <span class="sub-title">Get To Know More</span>
+                        <a href="<?php echo $domain ?>service/"><span class="sub-title">Get To Know More</span></a>
                         <h2 class="title">BUSINESS & Tax Consulting Group Inc.
-                            (ABSOLUTE HOUSE OF KNOWLEDGE)</h2>
+                            <small style="color:red">(ABSOLUTE HOUSE OF KNOWLEDGE)</small></h2>
                     </div>
                     <p>Business and Tax Consulting Group, Inc. provides consulting services to rescue businesses from mistakes, struggles, and complex operational requirements. </p>
                     <p>Our services are designed to serve entrepreneurs of all sizes who are striving to manage, maintain, and grow their business, as well as effective compliance standards on federal, state, and local government policies. </p>
@@ -153,7 +153,7 @@
         <!-- about-area-end -->
 
         <!-- choose-area -->
-        <section class="choose-area-three">
+        <section class="choose-area-three" id="mission">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
@@ -183,7 +183,8 @@
                 <div class="row justify-content-center">
                     <div class="col-xl-10 col-lg-8">
                         <div class="section-title text-center mb-50">
-                            <span class="sub-title">CULTURE</span>
+							<a href="#mission"><span class="sub-title">CULTURE</span></a>
+                            
                             <h2 class="title">CULTURE AND CORE VALUE</h2>
                             <p>We aspire to assist other businesses build business values through financial and operational counseling that cover and not limited to:</p>
                         </div>
@@ -232,7 +233,7 @@
                                         <p>“ Morem ipsum dolor sit amet, consectetur adipiscing elita florai sum dolor sit amet, consecteture.Borem ipsum dolor sit amet, consectetur adipiscing elita Moremsit amet.</p>
                                         <div class="testimonial-info">
                                             <h2 class="title">Mr.Robey Alexa</h2>
-                                            <span>CEO, Gerow Agency</span>
+                                            <span>CEO, <?php echo $sitename ?></span>
                                         </div>
                                     </div>
                                 </div>

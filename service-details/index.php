@@ -149,7 +149,7 @@
 
     <style>
         .services-details-content .title-two{
-            text-transform:lowercase !important;
+            text-transform:lowercase v !important;
         }
     </style>
 

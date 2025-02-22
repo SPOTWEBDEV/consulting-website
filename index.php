@@ -469,7 +469,7 @@
                                             <i class="fas fa-star"></i>
                                             <i class="fas fa-star"></i>
                                         </div>
-                                        <p>“ Business and Tax Consulting, Inchas been a game-changer for our finances. Their dedication and professionalism helped streamline our accounting processes seamlessly. Highly recommended!”</p>
+                                        <p>“ Business and Tax Consulting  Inc has been a game-changer for our finances. Their dedication and professionalism helped streamline our accounting processes seamlessly. Highly recommended!”</p>
                                         <div class="testimonial-info">
                                             <h2 class="title">Ifeanyi Ewoh</h2>
                                             

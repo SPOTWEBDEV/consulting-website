@@ -7,7 +7,7 @@ define("NAME","bustax");
 $connection = mysqli_connect(HOST, USER, PASS, NAME);
 session_start();
 $domain = 'http://localhost/consulting-website/';
-$sitename = 'Mybustaxbookkeeping';
+$sitename = 'Business and Tax Consulting Inc';
 $siteshort = 'Mybustax B-K';
 $siteemail = 'Francisikeokwu@gmail.com';
 $sitelogo = 'Mybustaxbookkeeping';

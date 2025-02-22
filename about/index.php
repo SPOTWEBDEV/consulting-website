@@ -99,7 +99,7 @@
                     <div class="section-title-two mb-30">
                         <a href="<?php echo $domain ?>service/"><span class="sub-title">Get To Know More</span></a>
                         <h2 class="title">BUSINESS & Tax Consulting Group Inc.
-                            <small style="color:red">(ABSOLUTE HOUSE OF KNOWLEDGE)</small></h2>
+                            <small style="color:red; font-size:25px">(ABSOLUTE HOUSE OF KNOWLEDGE)</small></h2>
                     </div>
                     <p>Business and Tax Consulting Group, Inc. provides consulting services to rescue businesses from mistakes, struggles, and complex operational requirements. </p>
                     <p>Our services are designed to serve entrepreneurs of all sizes who are striving to manage, maintain, and grow their business, as well as effective compliance standards on federal, state, and local government policies. </p>
@@ -140,7 +140,7 @@
                             </div>
                             <div class="content">
                                 <h2 class="title">Dr. Francis Ikeokwu</h2>
-                                <span>CEO, Gerow Finance</span>
+                                <span>CEO, <?php echo $sitename ?></span>
                             </div>
                         </div>
                     </div>

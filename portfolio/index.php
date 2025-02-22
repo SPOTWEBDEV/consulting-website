@@ -96,7 +96,7 @@
                             <div class="row">
                                 <div class="col-71">
                                     <div class="project-details-thumb">
-                                        <img src="<?php echo $domain ?>assets/images/My Photo.jpg" alt="">
+                                        <img style="height: 500px;width:80%;" src="<?php echo $domain ?>assets/images/My Photo.jpg" alt="">
                                     </div>
                                 </div>
                                 <div class="col-29">
@@ -150,6 +150,50 @@
                                        
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-12 mt-4 pt-120">
+                        <div class="project-details-wrap">
+                            <div class="row">
+                                <div class="col-71">
+                                    <div class="project-details-thumb">
+                                        <img style="height: 500px;width:80%;" src="https://media.licdn.com/dms/image/v2/D4E03AQHA5TphX6JRaA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1732176778140?e=1745452800&v=beta&t=vY_pDqXul9zSMME39ZZHXwZs7vWQ8ho7pdWJBQNkH7k" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-29">
+                                    <div class="project-details-info">
+                                        <h4 class="title">Personal Information</h4>
+                                        <ul class="list-wrap">
+                                        
+                                            <li><span>Name:</span> Francis Ikeokwu</li>
+                                            <li><span>Business:</span>Ikeokwu Financial Network</li>
+                                            <li><span>Address:</span>Miami, Florida, United States</li>
+                                            <li class="social">
+                                                <span>Share:</span>
+                                                <ul class="list-wrap">
+                                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                                    <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-details-content">
+                               
+                                <p>
+                                 My proficiency as a candidate lies in my capacity to apply the logic and reasoning of accounting with the flexibility of financial analysis, allowing for driving forces that evoke change and innovation within organizations. I have excellent team work and leadership skills as well as the ability to prioritize work responsibilities above academic work and research. I possess the ability to provide accounting and financial literacy advice as a financial advisor when analyzing goals, managing portfolios, and offering guidance on financial strategies and risk management. 
+                                </p>
+                                <p>
+                                 As an accountant, integrity is a consistent achievement of mine, as I work closely with clients to educate them on their financial options, help them make informed decisions, and ensure that their financial plans align with their long-term objectives. Federal tax laws and accounting principles must be adhered to as accounting is a crucial dynamic to a company’s financial wellness across various capacities.
+                                </p>
+                                
+                               
                             </div>
                         </div>
                     </div>

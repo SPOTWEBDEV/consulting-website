@@ -180,14 +180,14 @@
                 <div class="col-sm-6">
                     <div class="card">
 
-                        <img src="./1.png" alt="">
+                        <img src="./1.jpg" alt="">
 
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="card">
 
-                        <img src="./2.png" alt="">
+                        <img src="./2.jpg" alt="">
 
                     </div>
                 </div>

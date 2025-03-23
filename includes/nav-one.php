@@ -68,7 +68,7 @@
                                                                                  </li>
                                                                                  <li><a href="<?php echo $domain ?>contact/">contacts</a>
                                                                                  </li>
-                                                                                 <li><a href="<?php echo $domain ?>book-me/">Book Now</a>
+                                                                                 <!-- <li><a href="<?php echo $domain ?>book-me/">Book Now</a> -->
                                                                                  </li>
                                                                         </ul>
                                                                </div>

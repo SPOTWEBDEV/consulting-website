@@ -83,7 +83,7 @@
                         <div class="banner-content-three">
                             <h2 class="title" data-aos="fade-right" data-aos-delay="0">Need Business Consultation Today?</h2>
                             <p data-aos="fade-right" data-aos-delay="300">Business and Tax Consulting, Incprovides expert insights to help your business overcome challenges and thrive.</p>
-                            <a href="<?php echo $domain ?>book-me/"><button type="button" class="btn btn-primary mb-4">Book Now</button></a>
+                            <!-- <a href="<?php echo $domain ?>book-me/"><button type="button" class="btn btn-primary mb-4">Book Now</button></a> -->
                             <a href="<?php echo $domain ?>form/"><button type="button" class="btn btn-primary mb-4">Request Application</button></a>
                             
                         </div>

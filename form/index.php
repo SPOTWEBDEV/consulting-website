@@ -3,6 +3,60 @@ include '../server/connection.php';
 include '../server/model.php';
 include '../server/payment/index.php';
 
+
+
+// Check if the form is submitted
+if (isset($_POST['form_btn'])) {
+                                                                                // Retrieve form data
+    $membership_type = isset($_POST['membership']) ? $_POST['membership'] : ''; // Get selected membership type
+    $name            = $connection->real_escape_string($_POST['name']);
+    $occupation      = $connection->real_escape_string($_POST['occupation']);
+    $address         = $connection->real_escape_string($_POST['address']);
+    $phone           = $connection->real_escape_string($_POST['phone']);
+    $city            = $connection->real_escape_string($_POST['city']);
+    $state           = $connection->real_escape_string($_POST['state']);
+    $country         = $connection->real_escape_string($_POST['country']);
+    $email           = $connection->real_escape_string($_POST['email']);
+    $date_of_birth   = $connection->real_escape_string($_POST['datebirth']);
+    $gender          = $connection->real_escape_string($_POST['gender']);
+
+    $amount = '';
+
+    if ($membership_type == 'professional') {
+        $amount = '49.99';
+    } else {
+        $amount = '39.99';
+    }
+
+    // Check if membership type is selected
+    if (empty($membership_type)) {
+        echo "<script>Swal.fire({ icon: 'error', title: 'Oops...', text: 'Please select a membership type to apply for.'});</script>";
+    } else {
+        // Prepare the SQL query
+        $sql = "INSERT INTO `form`(`membership_type`, `name`,`occupation`, `address`, `phone`, `city`, `state`, `country`, `email`, `date_of_birth`, `gender`)
+                                         VALUES ('$membership_type', '$name','$occupation', '$address', '$phone', '$city', '$state', '$country', '$email', '$date_of_birth', '$gender')";
+
+        // Execute the query
+        if ($connection->query($sql) === true) {
+
+            $insert_id = $connection->insert_id;
+
+            makePayment($amount, $email, $insert_id , 'form');
+
+        } else {
+            echo "<script>
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Oops...',
+                        text: 'Something went wrong with your membership application. Please try again later.',
+                        confirmButtonText: 'Okay'
+                    });
+                </script>";
+        }
+    }
+}
+
+
 ?>
 <!doctype html>
 <html class="no-js" lang="en">
@@ -43,6 +97,8 @@ include '../server/payment/index.php';
 </head>
 
 <body>
+
+
 
     <!-- preloader -->
     <div id="preloader">
@@ -109,54 +165,7 @@ include '../server/payment/index.php';
                                 }
                             </style>
 
-                            <?php
-                            // Check if the form is submitted
-                            if (isset($_POST['form_btn'])) {
-                                // Retrieve form data
-                                $membership_type = isset($_POST['membership']) ? $_POST['membership'] : '';  // Get selected membership type
-                                $name = $connection->real_escape_string($_POST['name']);
-                                $occupation = $connection->real_escape_string($_POST['occupation']);
-                                $address = $connection->real_escape_string($_POST['address']);
-                                $phone = $connection->real_escape_string($_POST['phone']);
-                                $city = $connection->real_escape_string($_POST['city']);
-                                $state = $connection->real_escape_string($_POST['state']);
-                                $country = $connection->real_escape_string($_POST['country']);
-                                $email = $connection->real_escape_string($_POST['email']);
-                                $date_of_birth = $connection->real_escape_string($_POST['datebirth']);
-                                $gender = $connection->real_escape_string($_POST['gender']);
-
-                                // Check if membership type is selected
-                                if (empty($membership_type)) {
-                                    echo "<script>Swal.fire({ icon: 'error', title: 'Oops...', text: 'Please select a membership type to apply for.'});</script>";
-                                } else {
-                                    // Prepare the SQL query
-                                    $sql = "INSERT INTO `form`(`membership_type`, `name`, `date`, `occupation`, `address`, `phone`, `city`, `state`, `country`, `email`, `date_of_birth`, `gender`)
-                                         VALUES ('$membership_type', '$name', '$date_of_birth', '$occupation', '$address', '$phone', '$city', '$state', '$country', '$email', '$date_of_birth', '$gender')";
-
-                                    // Execute the query
-                                    if ($connection->query($sql) === true) {
-                                        echo "<script>
-                                            Swal.fire({
-                                                title: 'Application Successful!',
-                                                text: 'Your membership request has been successfully submitted.',
-                                                icon: 'success',
-                                                confirmButtonText: 'Okay',
-                                            });
-                                        </script>";
-                                    } else {
-                                        echo "<script>
-                                            Swal.fire({
-                                                icon: 'error',
-                                                title: 'Oops...',
-                                                text: 'Something went wrong with your membership application. Please try again later.',
-                                                confirmButtonText: 'Okay'
-                                            });
-                                        </script>";
-                                    }
-                                }
-                            }
-                            ?>
-
+                            
 
                             <form method="POST">
                                 <!-- Name Field -->
@@ -232,11 +241,6 @@ include '../server/payment/index.php';
             </div>
         </section>
         <!-- contact-area-end -->
-
-
-
-
-
     </main>
     <!-- main-area-end -->
 

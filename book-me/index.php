@@ -72,6 +72,45 @@ if (isset($_GET['cancel'])) {
 
 
 
+if (isset($_POST['book_btn'])) {
+    $name    = $_POST['name'];
+    $email   = $_POST['email'];
+    $phone   = $_POST['phone'];
+    $type    = $_POST['type'];
+    $amounts = $_POST['amount'];
+
+    $amount = str_replace('$', '', $amounts);
+
+    $status = "pending"; // Initial status before payment completion
+
+                                 // Insert initial record with "pending" status
+    $date = date("Y-m-d H:i:s"); // Current date and time
+
+    $check = mysqli_query($connection, "SELECT * FROM `users` WHERE `email`='$email'");
+    echo mysqli_error($connection);
+    if (! mysqli_num_rows($check)) {
+        $query = mysqli_query($connection, " INSERT INTO `users`(`name`, `email`, `phone`, `date_registered`, `status`) VALUES ('$name','$email','$phone','$date','')");
+        echo mysqli_error($connection);
+        if (! $query) {
+            echo "<script>window.onload = () => Model('Something went wrong , your booking could not be completed. Please try again later or contact support', 'danger');</script>";
+        }
+    }
+
+    $statement = mysqli_query($connection, "INSERT INTO `booking`(`name`,`email`,`phone`,`type`,`date`, `amount`,`status`) VALUES ('$name','$email','$phone','$type','$date','$amount','$status')");
+    if ($statement) {
+        
+        $insert_id = $connection->insert_id;
+
+        makePayment($amount, $email, $insert_id , 'book-me');
+
+        
+    } else {
+        echo "<script>window.onload = () => Model('Your booking could not be completed. Please try again later or contact support', 'danger');</script>";
+    }
+}
+
+
+
 ?>
 
     <!-- preloader -->

@@ -7,7 +7,7 @@
          var toastData = {};
                 toastData.gravity = 'bottom';
                 toastData.position = 'left';
-                toastData.duration = 3000;
+                toastData.duration = 19000;
                 toastData.close = false;
                 toastData.style = false;
                 toastData.offset = false;
@@ -20,7 +20,7 @@
                             position: toastData.position,
                             className: "bg-" + className + "-500",
                             stopOnFocus: true,
-                            duration: 15000,
+                            duration: toastData.duration,
                             offset: {
                                 x: toastData.offset ? 50 : 0, // horizontal axis - can be a number or a string indicating unity. eg: '2em'
                                 y: toastData.offset ? 10 : 0, // vertical axis - can be a number or a string indicating unity. eg: '2em'

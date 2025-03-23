@@ -4,18 +4,7 @@ include('../server/model.php');
 include('../server/payment/index.php');
 
 
-if (isset($_GET['cancel'])) {
-    $cancel = $_GET['cancel'];
 
-
-    $query = mysqli_query($connection, "UPDATE `booking` SET `status` = 'cancelled' WHERE `id` = '$cancel'");
-
-    if ($query) {
-        echo "<script>window.onload = () => Model('Your booking has been marked as cancelled. Please try again or contact support if you need help.', 'danger');</script>";
-    } else {
-        echo "<script>window.onload = () => Model('Something went wrong in updating status', 'danger');</script>";
-    }
-}
 
 
 
@@ -61,6 +50,30 @@ if (isset($_GET['cancel'])) {
 
 <body>
 
+<?php
+
+if (isset($_GET['cancel'])) {
+    $cancel = $_GET['cancel'];
+
+    $query = mysqli_query($connection, "UPDATE `booking` SET `status` = 'cancelled' WHERE `id` = '$cancel'");
+
+    if ($query) {
+        echo "<script>window.onload = () => Model('Your booking has been marked as cancelled. Please try again or contact support if you need help.', 'danger');
+
+        window.location.href='index.php';
+        
+        </script>";
+    } else {
+        echo "<script>window.onload = () => Model('Something went wrong in updating status', 'danger');
+         window.location.href='index.php';
+        </script>";
+    }
+}
+
+
+
+?>
+
     <!-- preloader -->
     <div id="preloader">
         <div id="loading-center">
@@ -93,11 +106,11 @@ if (isset($_GET['cancel'])) {
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="breadcrumb-content">
-                            <h2 class="title">Request/Apply Now</h2>
+                            <h2 class="title">Booking Page</h2>
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="<?php echo $domain ?>">Home</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Request/Apply Now</li>
+                                    <li class="breadcrumb-item active" aria-current="page">Book Now</li>
                                 </ol>
                             </nav>
                         </div>
@@ -118,7 +131,7 @@ if (isset($_GET['cancel'])) {
                     <div class="col-lg-6 mx-auto">
 
                         <div class="container mt-5">
-                            <h2 class="mb-4 text-primary">Request/Apply Now</h2>
+                            <h2 class="mb-4 text-primary">Book Service</h2>
 
                             <style>
                                 form input {
@@ -129,28 +142,28 @@ if (isset($_GET['cancel'])) {
                             <form method="POST">
                                 <!-- Name Field -->
                                 <div class="mb-3">
-                                    <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Enter Your Name">
                                 </div>
                                 <!-- Email Field -->
                                 <div class="mb-3">
-                                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email">
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter Your Email">
                                 </div>
                                 <!-- Phone Field -->
                                 <div class="mb-3">
-                                    <input type="text" class="form-control" id="phone" name="phone" placeholder="Enter your Phonenumber">
+                                    <input type="text" class="form-control" id="phone" name="phone" placeholder="Enter Your Phone Number">
                                 </div>
                                 <!-- Business Type Select -->
                                 <div class="mb-3">
                                     <select name="type" class="form-select" id="businessType">
-                                        <option selected disabled>Select a business</option>
+                                        <option selected disabled>Select A Business</option>
                                     </select>
                                 </div>
                                 <!-- Amount Field -->
                                 <div class="mb-3">
-                                    <input type="text" name="amount" class="form-control" id="amount" placeholder="Amount" readonly>
+                                    <input type="text" name="amount" class="form-control" id="amount" placeholder="Enter Amount" readonly>
                                 </div>
                                 <!-- Submit Button -->
-                                <button type="submit" name="book_btn" class="btn btn-primary">Request/Apply Now</button>
+                                <button type="submit" name="book_btn" class="btn btn-primary">Book Now</button>
                             </form>
 
                             <script>
@@ -195,16 +208,6 @@ if (isset($_GET['cancel'])) {
                                         name: "Business Plan (Hand free experience)",
                                         price: 200
                                     },
-                                    {
-                                        id: 9,
-                                        name: "Student Member Request",
-                                        price: 30.99
-                                    },
-                                    {
-                                        id: 10,
-                                        name: "Professional Member Request",
-                                        price: 44.99
-                                    }
                                 ];
 
 

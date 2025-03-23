@@ -84,29 +84,8 @@
                             <h2 class="title" data-aos="fade-right" data-aos-delay="0">Need Business Consultation Today?</h2>
                             <p data-aos="fade-right" data-aos-delay="300">Business and Tax Consulting, Incprovides expert insights to help your business overcome challenges and thrive.</p>
                             <a href="<?php echo $domain ?>book-me/"><button type="button" class="btn btn-primary mb-4">Book Now</button></a>
-                            <?php
-
-
-                            if (isset($_POST['book_btn'])) {
-
-                                $email = $_POST['email'];
-
-
-                                $check = mysqli_query($connection, "SELECT * FROM `users` WHERE `email`='$email'");
-                                if (mysqli_num_rows($check)) {
-                                    echo "<script>
-                                Message({status:false,text:'This Email has already use by another user'})
-                            </script>";
-                                } else {
-                                    $query = mysqli_query($connection, " INSERT INTO `users`(`email`) VALUES ('$email')");
-                                }
-                            }
-                            ?>
-                            <form method="POST" class="banner-form" data-aos="fade-right" data-aos-delay="600">
-                                <label for="email" class="sr-only">E-mail Address</label>
-                                <input type="email" name="email" id="email" placeholder="E-mail Address" required>
-                                <button type="submit" name="btn"><i class="fas fa-arrow-right"></i></button>
-                            </form>
+                            <a href="<?php echo $domain ?>form/"><button type="button" class="btn btn-primary mb-4">Request Application</button></a>
+                            
                         </div>
                     </div>
                 </div>
@@ -139,39 +118,54 @@
 
 
                         <script type="module">
-                            import {
-                                services
-                            } from '<?php echo $domain ?>assets/js/data.js';
-                            console.log(services);
+    
+    
+    
+    fetch('<?php echo $domain ?>server/admin/api/getService.php')
+        .then(response => response.json())  // Parse the JSON response
+        .then(services => {
+        
+           console.log(services);
+           
+            services.forEach(service => {
+                const { id, name, message } = service;
 
-                            for (let i = 0; i < services.length; i++) {
-                                const {
-                                    id,
-                                    name,
-                                    message
-                                } = services[i];
-                                const html = `<div class="col-xl-3 col-lg-4 col-md-6">
-                                                <div class="features-item-three">
-                                                    <div class="features-icon-three">
-                                                    <i class="fas fa-calculator"></i>
-                                                    </div>
-                                                    <div class="features-content-three">
-                                                        <h2 class="title">${name}</h2>
-                                                        <p>${displayFirst20Characters(message[0].details)}</p>
-                                                        <a href="<?php echo $domain ?>service-details/?index=${id}" class="link-btn">See Details <img src="<?php echo $domain ?>assets/img/icons/right-arrow.svg" alt=""></a>
-                                                    </div>
-                                                </div>  
-                                            </div>`
+                // Create the HTML content
+                const html = `
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="features-item-three">
+                            <div class="features-icon-three">
+                              <i class="fas fa-calculator"></i>
+                            </div>
+                            <div class="features-content-three">
+                                <h2 class="title">${name}</h2>
+                                <p>${displayFirst20Characters(message)}</p> <!-- Display first 200 chars of message -->
+                                <a href="<?php echo $domain ?>service-details/?index=${id}" class="link-btn">
+                                    See Details <img src="<?php echo $domain ?>assets/img/icons/right-arrow.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>`;
 
-                                document.querySelector('#services').innerHTML += html
-                            }
+                // Append the generated HTML to the services container
+               document.getElementById("services").innerHTML += html;
+            });
+           
 
-                            function displayFirst20Characters(text) {
-                                // Ensure the text is at least 20 characters long, otherwise, just return the whole text
-                                const displayText = text.length > 200 ? text.slice(0, 200) : text;
-                                return displayText + '...';
-                            }
-                        </script>
+        })
+        .catch(error => console.error('Error fetching services:', error));
+        
+       
+        
+        
+      
+
+        function displayFirst20Characters(text) {
+            // Ensure the text is at least 20 characters long, otherwise, just return the whole text
+            const displayText = text.length > 200 ? text.slice(0, 200) : text ;
+            return displayText + '...';
+        }
+    </script>
                     </div>
                 </div>
             </div>

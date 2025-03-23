@@ -6,6 +6,7 @@ function makePayment($amount, $email, $insert_id, $who)
     $fields = [
         'email'        => $email,
         'amount'       => $amount * 100, 
+        'currency'     => 'USD',
         'callback_url' => $domain . "server/payment/callback.php?id={$connection->insert_id}&who={$who}",
         'metadata'     => ["cancel_action" => $domain ."/" . $who . "/?cancel={$connection->insert_id}"],
     ];

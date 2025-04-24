@@ -33,6 +33,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/brands.min.css">
 
+    <meta name="google-site-verification" content="LIri6YUuPjQyZeTpiI2Zz9fCtSc1B5T_doa-sXTEkgY" />
+
 
 
 
@@ -85,7 +87,7 @@
                             <p data-aos="fade-right" data-aos-delay="300">Business and Tax Consulting, Incprovides expert insights to help your business overcome challenges and thrive.</p>
                             <!-- <a href="<?php echo $domain ?>book-me/"><button type="button" class="btn btn-primary mb-4">Book Now</button></a> -->
                             <a href="<?php echo $domain ?>form/"><button type="button" class="btn btn-primary mb-4">Request Application</button></a>
-                            
+
                         </div>
                     </div>
                 </div>
@@ -118,20 +120,21 @@
 
 
                         <script type="module">
-    
-    
-    
-    fetch('<?php echo $domain ?>server/admin/api/getService.php')
-        .then(response => response.json())  // Parse the JSON response
-        .then(services => {
-        
-           console.log(services);
-           
-            services.forEach(service => {
-                const { id, name, message } = service;
+                            fetch('<?php echo $domain ?>server/admin/api/getService.php')
+                                .then(response => response.json()) // Parse the JSON response
+                                .then(services => {
 
-                // Create the HTML content
-                const html = `
+                                    console.log(services);
+
+                                    services.forEach(service => {
+                                        const {
+                                            id,
+                                            name,
+                                            message
+                                        } = service;
+
+                                        // Create the HTML content
+                                        const html = `
                     <div class="col-xl-3 col-lg-4 col-md-6">
                         <div class="features-item-three">
                             <div class="features-icon-three">
@@ -147,25 +150,25 @@
                         </div>
                     </div>`;
 
-                // Append the generated HTML to the services container
-               document.getElementById("services").innerHTML += html;
-            });
-           
+                                        // Append the generated HTML to the services container
+                                        document.getElementById("services").innerHTML += html;
+                                    });
 
-        })
-        .catch(error => console.error('Error fetching services:', error));
-        
-       
-        
-        
-      
 
-        function displayFirst20Characters(text) {
-            // Ensure the text is at least 20 characters long, otherwise, just return the whole text
-            const displayText = text.length > 200 ? text.slice(0, 200) : text ;
-            return displayText + '...';
-        }
-    </script>
+                                })
+                                .catch(error => console.error('Error fetching services:', error));
+
+
+
+
+
+
+                            function displayFirst20Characters(text) {
+                                // Ensure the text is at least 20 characters long, otherwise, just return the whole text
+                                const displayText = text.length > 200 ? text.slice(0, 200) : text;
+                                return displayText + '...';
+                            }
+                        </script>
                     </div>
                 </div>
             </div>
@@ -334,7 +337,7 @@
         <!-- project-area-end -->
 
         <!-- counter-area -->
-       
+
 
         <!-- counter-area-end -->
 
@@ -449,7 +452,7 @@
         <section class="testimonial-area-three">
             <div class="container">
                 <div class="row g-0 align-items-end">
-                    
+
                     <div class="col-73">
                         <div class="testimonial-item-wrap-three" data-background="<?php echo $domain ?>assets/img/bg/h3_testimonial_bg.png">
                             <div class="testimonial-active-three">
@@ -463,10 +466,10 @@
                                             <i class="fas fa-star"></i>
                                             <i class="fas fa-star"></i>
                                         </div>
-                                        <p>“ Business and Tax Consulting  Inc has been a game-changer for our finances. Their dedication and professionalism helped streamline our accounting processes seamlessly. Highly recommended!”</p>
+                                        <p>“ Business and Tax Consulting Inc has been a game-changer for our finances. Their dedication and professionalism helped streamline our accounting processes seamlessly. Highly recommended!”</p>
                                         <div class="testimonial-info">
                                             <h2 class="title">Ifeanyi Ewoh</h2>
-                                            
+
                                         </div>
                                     </div>
                                 </div>
@@ -483,7 +486,7 @@
                                         <p>“The team at Business and Tax Consulting, Inc made our tax preparation effortless. They’re detail-oriented and responsive, which makes them a pleasure to work with every tax season.”</p>
                                         <div class="testimonial-info">
                                             <h2 class="title">John Nsude</h2>
-                                           
+
                                         </div>
                                     </div>
                                 </div>
@@ -552,7 +555,7 @@
                                 <h2 class="title"><a href="blog-details.html">Maximize Your Business Potential with Smart Tax Strategies</a></h2>
                                 <p>Discover how effective tax planning can save your business money and fuel its growth.</p>
                                 <div class="blog-meta">
-                                  
+
                                 </div>
                             </div>
                         </div>
@@ -568,7 +571,7 @@
                                 <p>Explore the importance of professional tax guidance and how it can lead to long-term financial success.</p>
                                 <div class="blog-meta">
                                     <ul class="list-wrap">
-                                        
+
                                     </ul>
                                 </div>
                             </div>

@@ -62,17 +62,34 @@
                 <div data-i18n="Analytics">View all Users</div>
             </a>
         </li>
-
         
-
-
         <li class="menu-item">
             <a href="book.php" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-layout"></i>
                 <div data-i18n="Analytics">Booking</div>
             </a>
         </li>
-      
+
+        
+        <li class="menu-item">
+            <a href="add_sevices.php" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-home-circle"></i>
+                <div data-i18n="Analytics">Add Sevices</div>
+            </a>
+        </li>
+        
+        
+        <li class="menu-item">
+            <a href="sevices_list.php" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-home-circle"></i>
+                <div data-i18n="Analytics">Sevices List</div>
+            </a>
+        </li>
+
+        
+
+
+              
       
 
         <!-- Layouts -->

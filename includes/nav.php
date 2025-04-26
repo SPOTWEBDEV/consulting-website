@@ -32,6 +32,8 @@
                                                                                  </li>
                                                                                  <li><a href="<?php echo $domain ?>contact/">Contacts</a>
                                                                                  </li>
+                                                                                 
+                                                                                 
                                                                         </ul>
                                                                </div>
                                                                <div class="header-action">
@@ -157,7 +159,7 @@
 
                            </div>
                   </div>
-                  <ul class="side-instagram list-wrap">
+                  <!-- <ul class="side-instagram list-wrap">
                            <li><a href="#"><img src="<?php echo $domain ?>assets/img/images/sb_insta01.jpg" alt=""></a>
                            </li>
                            <li><a href="#"><img src="<?php echo $domain ?>assets/img/images/sb_insta02.jpg" alt=""></a>
@@ -170,13 +172,13 @@
                            </li>
                            <li><a href="#"><img src="<?php echo $domain ?>assets/img/images/sb_insta06.jpg" alt=""></a>
                            </li>
-                  </ul>
-                  <div class="social-icon-right mt-30">
+                  </ul> -->
+                  <!-- <div class="social-icon-right mt-30">
                            <a href="#"><i class="fab fa-facebook-f"></i></a>
                            <a href="#"><i class="fab fa-twitter"></i></a>
                            <a href="#"><i class="fab fa-google-plus-g"></i></a>
                            <a href="#"><i class="fab fa-instagram"></i></a>
-                  </div>
+                  </div> -->
          </div>
          <div class="offcanvas-overly"></div>
          <!-- offCanvas-menu-end -->

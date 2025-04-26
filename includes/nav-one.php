@@ -56,7 +56,7 @@
 
                                                                <div class="navbar-wrap main-menu d-none d-lg-flex">
                                                                         <ul class="navigation">
-                                                                                 <li><a href="<?php echo $domain ?>">Home</a>
+                                                                                 <li><a href="<?php echo $domain ?>">Homes</a>
                                                                                  </li>
                                                                                  <li><a href="<?php echo $domain ?>about/">About</a>
                                                                                  </li>
@@ -68,13 +68,15 @@
                                                                                  </li>
                                                                                  <li><a href="<?php echo $domain ?>contact/">contacts</a>
                                                                                  </li>
+                                                                                 <!-- <li><a href="<?php echo $domain ?>book-me/">Book Now</a> -->
+                                                                                 </li>
                                                                         </ul>
                                                                </div>
                                                                <div class="header-action d-none d-md-block">
                                                                         <ul class="list-wrap">
                                                                                  <!-- <li class="header-search"><a href="#"><i class="fas fa-search"></i></a></li> Changed to Font Awesome -->
                                                                                  <li class="header-btn"><a
-                                                                                                   href="<?php echo $domain ?>book-me/"
+                                                                                                   href="<?php echo $domain ?>form/"
                                                                                                    class="btn btn-two">Request/Apply
                                                                                                    Now</a></li>
                                                                         </ul>
@@ -89,7 +91,7 @@
                                                                <!-- Changed to Font Awesome -->
                                                                <div class="nav-logo">
                                                                         <img style="height:100px !important; max:width"
-                                                                                 src="<?php echo $domain ?>logo.jpg"
+                                                                                 src="<?php echo $domain ?>logo.png"
                                                                                  alt="Logo">
 
                                                                </div>

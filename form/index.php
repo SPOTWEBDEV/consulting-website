@@ -1,11 +1,60 @@
 <?php
-include('../server/connection.php');
-include('../server/model.php');
-include('../server/payment/index.php');
+include '../server/connection.php';
+include '../server/model.php';
+include '../server/payment/index.php';
 
 
 
+// Check if the form is submitted
+if (isset($_POST['form_btn'])) {
+                                                                                // Retrieve form data
+    $membership_type = isset($_POST['membership']) ? $_POST['membership'] : ''; // Get selected membership type
+    $name            = $connection->real_escape_string($_POST['name']);
+    $occupation      = $connection->real_escape_string($_POST['occupation']);
+    $address         = $connection->real_escape_string($_POST['address']);
+    $phone           = $connection->real_escape_string($_POST['phone']);
+    $city            = $connection->real_escape_string($_POST['city']);
+    $state           = $connection->real_escape_string($_POST['state']);
+    $country         = $connection->real_escape_string($_POST['country']);
+    $email           = $connection->real_escape_string($_POST['email']);
+    $date_of_birth   = $connection->real_escape_string($_POST['datebirth']);
+    $gender          = $connection->real_escape_string($_POST['gender']);
 
+    $amount = '';
+
+    if ($membership_type == 'professional') {
+        $amount = '49.99';
+    } else {
+        $amount = '39.99';
+    }
+
+    // Check if membership type is selected
+    if (empty($membership_type)) {
+        echo "<script>Swal.fire({ icon: 'error', title: 'Oops...', text: 'Please select a membership type to apply for.'});</script>";
+    } else {
+        // Prepare the SQL query
+        $sql = "INSERT INTO `form`(`membership_type`, `name`,`occupation`, `address`, `phone`, `city`, `state`, `country`, `email`, `date_of_birth`, `gender`)
+                                         VALUES ('$membership_type', '$name','$occupation', '$address', '$phone', '$city', '$state', '$country', '$email', '$date_of_birth', '$gender')";
+
+        // Execute the query
+        if ($connection->query($sql) === true) {
+
+            $insert_id = $connection->insert_id;
+
+            makePayment($amount, $email, $insert_id , 'form');
+
+        } else {
+            echo "<script>
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Oops...',
+                        text: 'Something went wrong with your membership application. Please try again later.',
+                        confirmButtonText: 'Okay'
+                    });
+                </script>";
+        }
+    }
+}
 
 
 ?>
@@ -49,6 +98,8 @@ include('../server/payment/index.php');
 
 <body>
 
+
+
     <!-- preloader -->
     <div id="preloader">
         <div id="loading-center">
@@ -68,7 +119,7 @@ include('../server/payment/index.php');
 
     <!-- header-area -->
     <div id="header-fixed-height"></div>
-    <?php include('../includes/nav-one.php') ?>
+    <?php include '../includes/nav-one.php' ?>
     <!-- header-area-end -->
 
 
@@ -114,107 +165,52 @@ include('../server/payment/index.php');
                                 }
                             </style>
 
-                            <?php
-
-
-                            // Check if the form is submitted
-                            if (isset($_POST['form_btn'])) {
-                                // Retrieve form data
-                                $membership_type = isset($_POST['student']) ? 'Student' : (isset($_POST['professional']) ? 'Professional' : '');
-                                $name = $connection->real_escape_string($_POST['name']);
-                                $date = $connection->real_escape_string($_POST['date']);
-                                $occupation = $connection->real_escape_string($_POST['occupation']);
-                                $address = $connection->real_escape_string($_POST['address']);
-                                $phone = $connection->real_escape_string($_POST['phone']);
-                                $city = $connection->real_escape_string($_POST['city']);
-                                $state = $connection->real_escape_string($_POST['state']);
-                                $country = $connection->real_escape_string($_POST['country']);
-                                $email = $connection->real_escape_string($_POST['email']);
-                                $date_of_birth = $connection->real_escape_string($_POST['datebirth']);
-                                $gender = $connection->real_escape_string($_POST['exampleSelect']);
-
-                                // Prepare the SQL query
-                                $sql = "INSERT INTO `form`(`membership_type`, `name`, `date`, `occupation`, `address`, `phone`, `city`, `state`, `country`, `email`, `date_of_birth`, `gender`)
-                                            VALUES ('$membership_type', '$name', '$date', '$occupation', '$address', '$phone', '$city', '$state', '$country', '$email', '$date_of_birth', '$gender')";
-
-                                // Execute the query
-                                if ($connection->query($sql) === TRUE) {
-                                    echo  "
-                                      <script>
-                                        Swal.fire({
-                                            title: 'Success!',
-                                            text: 'Your operation was completed successfully.',
-                                            icon: 'success',
-                                            confirmButtonText: 'Okay',
-                                            timer: 3000, // Auto close after 3 seconds
-                                            timerProgressBar: true
-                                        });
-                                    </script>
-                                     ";
-                                } else {
-                                    echo " Swal.fire({
-  icon: 'error',
-  title: 'Oops...',
-  text: 'Something went wrong, but we’ll fix it soon! 💖',
-  confirmButtonText: 'Okay'
-});";
-                                }
-                            }
-
-
-                            ?>
+                            
 
                             <form method="POST">
                                 <!-- Name Field -->
                                 <div class="mb-3">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheckbox" name="student">
-                                    <label for="" class="form-check-label">Student Member Request ($39.99)</label>
+                                    <input type="radio" class="form-check-input" id="studentMember" name="membership" value="student">
+                                    <label for="studentMember" class="form-check-label">Student Member Request ($39.99)</label>
                                 </div>
 
                                 <div class="mb-3">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheckbox" name="professional">
-                                    <label for="exampleCheckbox" class="form-check-label">Professional Member Request ($49.99)</label>
+                                    <input type="radio" class="form-check-input" id="professionalMember" name="membership" value="professional">
+                                    <label for="professionalMember" class="form-check-label">Professional Member Request ($49.99)</label>
                                 </div>
 
+
                                 <div class="mb-3">
-                                    <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Enter Your Name">
                                 </div>
-                                <!-- Email Field -->
                                 <div class="mb-3">
-                                    <input type="date" class="form-control" id="dateInput" name="date">
+                                    <input type="text" class="form-control" id="phone" name="email" placeholder="Enter Your Email">
                                 </div>
+
+
 
                                 <div class="mb-3">
                                     <input type="text" class="form-control" id="name" name="occupation" placeholder="Enter your occupation">
                                 </div>
 
                                 <div class="mb-3">
-                                    <input type="text" class="form-control" id="name" name="address" placeholder="Enter your Address">
-                                </div>
-
-                                <!-- Phone Field -->
-                                <div class="mb-3">
-                                    <input type="text" class="form-control" id="phone" name="phone" placeholder="Enter your Phonenumber">
+                                    <input type="text" class="form-control" id="phone" name="phone" placeholder="Enter Your Phone Number">
                                 </div>
 
                                 <div class="mb-3">
-                                    <input type="text" class="form-control" id="phone" name="city" placeholder="Enter your City">
+                                    <input type="text" class="form-control" id="name" name="address" placeholder="Enter Your Home Address">
                                 </div>
 
                                 <div class="mb-3">
-                                    <input type="text" class="form-control" id="phone" name="state" placeholder="Enter your State">
+                                    <input type="text" class="form-control" id="phone" name="city" placeholder="Enter Your City">
                                 </div>
 
                                 <div class="mb-3">
-                                    <input type="text" class="form-control" id="phone" name="country" placeholder="Enter your Country">
+                                    <input type="text" class="form-control" id="phone" name="state" placeholder="Enter Your State">
                                 </div>
 
                                 <div class="mb-3">
-                                    <input type="text" class="form-control" id="phone" name="email" placeholder="Enter your Email">
-                                </div>
-
-                                <div class="mb-3">
-                                    <input type="text" class="form-control" id="phone" name="phone" placeholder="Enter your Phonenumber">
+                                    <input type="text" class="form-control" id="phone" name="country" placeholder="Enter Your Country">
                                 </div>
 
                                 <div class="mb-3">
@@ -224,7 +220,7 @@ include('../server/payment/index.php');
 
                                 <div class="mb-3">
 
-                                    <select class="form-select" id="exampleSelect" name="exampleSelect">
+                                    <select class="form-select" id="gender" name="gender">
                                         <option value="male">Male</option>
                                         <option value="female">Female</option>
 
@@ -245,17 +241,12 @@ include('../server/payment/index.php');
             </div>
         </section>
         <!-- contact-area-end -->
-
-
-
-
-
     </main>
     <!-- main-area-end -->
 
 
     <!-- footer-area -->
-    <?php include('../includes/footer.php') ?>
+    <?php include '../includes/footer.php' ?>
     <!-- footer-area-end -->
 
 

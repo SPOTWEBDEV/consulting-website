@@ -1,14 +1,15 @@
 <?php
+
 function makePayment($amount, $email, $insert_id, $who)
 {
     global $domain, $connection, $payment_key;
     $url    = "https://api.paystack.co/transaction/initialize";
     $fields = [
         'email'        => $email,
-        'amount'       => $amount * 100, 
-        'currency'     => 'USD',
+        'amount'       => $amount * 100, // Paystack requires the amount in kobo, so multiply by 100 to convert to kobo
+        'currency'     => 'USD',         // Set the currency to USD
         'callback_url' => $domain . "server/payment/callback.php?id={$connection->insert_id}&who={$who}",
-        'metadata'     => ["cancel_action" => $domain ."/" . $who . "/?cancel={$connection->insert_id}"],
+        'metadata'     => ["cancel_action" => $domain . "/" . $who . "/?cancel={$connection->insert_id}"],
     ];
 
     $fields_string = http_build_query($fields);
@@ -30,7 +31,9 @@ function makePayment($amount, $email, $insert_id, $who)
     } else {
         $response = json_decode($result);
         if (isset($response->data->authorization_url)) {
-            header("Location: " . $response->data->authorization_url); // Redirect to Paystack
+            $urlto = $response->data->authorization_url;
+            // Redirect to Paystack payment page
+            echo "<script>window.location.href = '$urlto'</script>";
             exit;
         } else {
             echo "<script>window.onload = () => Model('Paystack Error: " . $response->message . "', 'danger');</script>";
@@ -38,7 +41,6 @@ function makePayment($amount, $email, $insert_id, $who)
     }
 
     curl_close($ch);
-
 }
 
 

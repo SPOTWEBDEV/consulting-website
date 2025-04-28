@@ -96,7 +96,7 @@
                             <div class="row">
                                 <div class="col-71">
                                     <div class="project-details-thumb">
-                                        <img style="height: 500px;width:80%;" src="<?php echo $domain ?>assets/images/My Photo.jpg" alt="">
+                                        <img style="height: 500px;width:70%;" src="<?php echo $domain ?>assets/images/My Photo.jpg" alt="">
                                     </div>
                                 </div>
                                 <div class="col-29">

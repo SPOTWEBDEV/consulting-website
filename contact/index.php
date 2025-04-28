@@ -1,4 +1,4 @@
-<?php include('../server/connection.php') ?>
+~<?php include('../server/connection.php') ?>
 <!doctype html>
 <html class="no-js" lang="en">
 

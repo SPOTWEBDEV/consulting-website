@@ -254,7 +254,7 @@
                                 <span class="sub-title tg-element-title">Company Overview</span>
                                 <h2 class="title tg-element-title">Crafting Effective Strategies for Business Success</h2>
                             </div>
-                            <p>At MyBusTaxBookkeeping, we’re committed to providing strategies that help businesses navigate challenges, optimize growth, and achieve lasting success.</p>
+                            <p>At Business and Tax Consulting, Inc. , we’re committed to providing strategies that help businesses navigate challenges, optimize growth, and achieve lasting success.</p>
                             <div class="progress-wrap">
                                 <div class="progress-item">
                                     <h6 class="title">Consulting</h6>

@@ -108,7 +108,8 @@
                                     to be recognized and respected in the business world.
                                 </p>
 
-                                <h3 style="margin-bottom: 5px;">PIIB Objectives</h3>
+                                <h3 style="margin-bottom: 5px;">Professional Institute of
+                                Independent Bookkeepers Objectives</h3>
                                 <p>
                                     The fundamental objective of the PIIB is to provide training and enhance the
                                     expertise of members on their journey to understanding bookkeeping

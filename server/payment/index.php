@@ -7,7 +7,7 @@ function makePayment($amount, $email, $insert_id, $who)
     $fields = [
         'email'        => $email,
         'amount'       => $amount * 100, // Paystack requires the amount in kobo, so multiply by 100 to convert to kobo
-        'currency'     => 'USD',         // Set the currency to USD
+        'currency'     => 'NGN',         // Set the currency to USD
         'callback_url' => $domain . "server/payment/callback.php?id={$connection->insert_id}&who={$who}",
         'metadata'     => ["cancel_action" => $domain . "/" . $who . "/?cancel={$connection->insert_id}"],
     ];

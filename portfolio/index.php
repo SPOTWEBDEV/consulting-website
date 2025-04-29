@@ -30,7 +30,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/brands.min.css">
 
-           
+
 
 </head>
 
@@ -49,8 +49,8 @@
 
     <!-- Scroll-top -->
     <button class="scroll-top scroll-to-target" data-target="html">
-            <i class="fas fa-angle-up"></i>
-        </button>
+        <i class="fas fa-angle-up"></i>
+    </button>
     <!-- Scroll-top-end-->
 
     <!-- header-area -->
@@ -94,16 +94,16 @@
                     <div class="col-12">
                         <div class="project-details-wrap">
                             <div class="row">
-                                <div class="col-71">
+                                <div class="col-12 col-lg-8">
                                     <div class="project-details-thumb">
-                                        <img style="height: 500px;width:80%;" src="<?php echo $domain ?>assets/images/My Photo.jpg" alt="">
+                                        <img style="height: 500px;width:100%;" src="<?php echo $domain ?>assets/images/My Photo.jpg" alt="">
                                     </div>
                                 </div>
-                                <div class="col-29">
+                                <div class="col-12 col-lg-4">
                                     <div class="project-details-info">
                                         <h4 class="title">Personal Information</h4>
                                         <ul class="list-wrap">
-                                        
+
                                             <li><span>Name:</span>Dr. Francis Ikeokwu, Sr., Ph.D., MAC, MBA, CFC, CFS</li>
                                             <li><span>Business:</span>Business & Tax Consulting Group, Inc.</li>
                                             <li><span>Address:</span>Jacksonville, Florida 32203</li>
@@ -122,32 +122,32 @@
                             </div>
                             <div class="project-details-content">
                                 <h2 class="title">Check out our Principal Consultant Dr. Francis Ikeokwu, Sr., Ph.D., MAC, MBA, CFC, CFS</h2>
-                                <p>When it comes to bookkeeping, accounting, taxation, financial reporting, and business decision-making, no entrepreneur should be left in limbo. 
-                                As an entrepreneur, Dr. Francis Ikeokwu, Sr., confidently uses his line of consulting business— “Business & Tax Consulting Group, Inc.”, to assist all levels of businesses and individuals to become more efficient in enhancing productivity, profits, and growth, as well as good business decision-making. </p>
+                                <p>When it comes to bookkeeping, accounting, taxation, financial reporting, and business decision-making, no entrepreneur should be left in limbo.
+                                    As an entrepreneur, Dr. Francis Ikeokwu, Sr., confidently uses his line of consulting business— “Business & Tax Consulting Group, Inc.”, to assist all levels of businesses and individuals to become more efficient in enhancing productivity, profits, and growth, as well as good business decision-making. </p>
                                 <p>eed a little help from our friends from time to time. Although we offer the one-stop convenience of annery integrated range of legal, financial services under one roof, there are occasions when our clients areaneed specia-
                                     list advice beyond the scope of our own expertise. That’s why we’ve developed close working relationships with a number of strategic partner.</p>
                                 <div class="pd-optimized-wrap">
-                                    
+
                                     <p>He is an experienced business professional and educator--with diverse experience in bookkeeping, accounting, finance, sales tax, corporate tax, auditing, and entrepreneurship education. </p>
                                 </div>
                                 <div class="pd-inner-wrap">
                                     <div class="row align-items-center">
                                         <div class="">
                                             <div class="content">
-                                              
+
                                                 <h6 class="info-one">He has received several academic achievements and recognitions, and has various professional and academic qualifications, which include – </h6>
                                                 <ul class="list-wrap">
                                                     <li><img src="<?php echo $domain ?>assets/img/icons/check_icon.svg" alt="">Associate of Arts (A.A.) in Business Administration, from Hillsborough Community College, Tampa Florida. </li>
                                                     <li><img src="<?php echo $domain ?>assets/img/icons/check_icon.svg" alt="">Bachelor of Science (B.S.) in Finance from University of South Florida, Tampa Florida. </li>
                                                     <li><img src="<?php echo $domain ?>assets/img/icons/check_icon.svg" alt="">Master of Business Administration (MBA) in Business Administration from Florida Metropolitan University, Tampa, Florida. </li>
                                                     <li><img src="<?php echo $domain ?>assets/img/icons/check_icon.svg" alt="">Master’s in Forensic Accounting (MAC) in Forensic Accounting from Florida Atlantic University, Boca Raton, Florida. </li>
-                                                    <li><img src="<?php echo $domain ?>assets/img/icons/check_icon.svg" alt="">Doctor of Philosophy (Ph.D.) in Financial Management/International Business and Trade from Union Institute & University, Cincinnati, Ohio.  </li>
+                                                    <li><img src="<?php echo $domain ?>assets/img/icons/check_icon.svg" alt="">Doctor of Philosophy (Ph.D.) in Financial Management/International Business and Trade from Union Institute & University, Cincinnati, Ohio. </li>
                                                 </ul>
                                                 <p class="info-two">Dr. Ikeokwu derives satisfaction in helping others achieve business and financial success. He believes that knowledge is not an inheritance but learned. His utmost goal is to share and impact his wealth of business and financial knowledge with others, especially small business entrepreneurs, so they can remain profitable in their business operations.
-                                                In addition to his academic training and leadership, he served as Senior Tax Specialist with the Florida Department of Revenue for thirteen years, specializing in tax laws, auditing, sales & use tax, intangible tax, corporate tax, local option tax, and documentary stamp tax.</p>
+                                                    In addition to his academic training and leadership, he served as Senior Tax Specialist with the Florida Department of Revenue for thirteen years, specializing in tax laws, auditing, sales & use tax, intangible tax, corporate tax, local option tax, and documentary stamp tax.</p>
                                             </div>
                                         </div>
-                                       
+
                                     </div>
                                 </div>
                             </div>
@@ -158,16 +158,16 @@
                     <div class="col-12 mt-4 pt-120">
                         <div class="project-details-wrap">
                             <div class="row">
-                                <div class="col-71">
+                                <div class="col-12 col-lg-8">
                                     <div class="project-details-thumb">
-                                        <img style="height: 500px;width:80%;" src="https://media.licdn.com/dms/image/v2/D4E03AQHA5TphX6JRaA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1732176778140?e=1745452800&v=beta&t=vY_pDqXul9zSMME39ZZHXwZs7vWQ8ho7pdWJBQNkH7k" alt="">
+                                        <img style="height: 500px;width:100%;" src="<?php echo $domain ?>assets/images/1.jpg" alt="">
                                     </div>
                                 </div>
-                                <div class="col-29">
+                                <div class="col-12 col-lg-4">
                                     <div class="project-details-info">
                                         <h4 class="title">Personal Information</h4>
                                         <ul class="list-wrap">
-                                        
+
                                             <li><span>Name:</span> Francis Ikeokwu</li>
                                             <li><span>Business:</span>Ikeokwu Financial Network</li>
                                             <li><span>Address:</span>Miami, Florida, United States</li>
@@ -185,15 +185,15 @@
                                 </div>
                             </div>
                             <div class="project-details-content">
-                               
+
                                 <p>
-                                 My proficiency as a candidate lies in my capacity to apply the logic and reasoning of accounting with the flexibility of financial analysis, allowing for driving forces that evoke change and innovation within organizations. I have excellent team work and leadership skills as well as the ability to prioritize work responsibilities above academic work and research. I possess the ability to provide accounting and financial literacy advice as a financial advisor when analyzing goals, managing portfolios, and offering guidance on financial strategies and risk management. 
+                                    My proficiency as a candidate lies in my capacity to apply the logic and reasoning of accounting with the flexibility of financial analysis, allowing for driving forces that evoke change and innovation within organizations. I have excellent team work and leadership skills as well as the ability to prioritize work responsibilities above academic work and research. I possess the ability to provide accounting and financial literacy advice as a financial advisor when analyzing goals, managing portfolios, and offering guidance on financial strategies and risk management.
                                 </p>
                                 <p>
-                                 As an accountant, integrity is a consistent achievement of mine, as I work closely with clients to educate them on their financial options, help them make informed decisions, and ensure that their financial plans align with their long-term objectives. Federal tax laws and accounting principles must be adhered to as accounting is a crucial dynamic to a company’s financial wellness across various capacities.
+                                    As an accountant, integrity is a consistent achievement of mine, as I work closely with clients to educate them on their financial options, help them make informed decisions, and ensure that their financial plans align with their long-term objectives. Federal tax laws and accounting principles must be adhered to as accounting is a crucial dynamic to a company’s financial wellness across various capacities.
                                 </p>
-                                
-                               
+
+
                             </div>
                         </div>
                     </div>

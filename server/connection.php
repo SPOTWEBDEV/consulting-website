@@ -39,7 +39,7 @@ if ($isLocalhost) {
     }
 } else {
     // Online (Live Server)
-    $domain = "http://bustaxbookkeeping.com/";
+    $domain = "https://bustaxbookkeeping.com/";
 
     define("USER", "quanstof_bustax");
     define("PASSWORD", "quanstof_bustax");

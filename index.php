@@ -330,6 +330,20 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="project-item-three">
+                            <div class="project-thumb-three">
+                                <a href="project-details.html"><img src="<?php echo $domain ?>assets/images/Photo H.jpg" alt="Project Image 4"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="project-item-three">
+                            <div class="project-thumb-three">
+                                <a href="project-details.html"><img src="<?php echo $domain ?>assets/images/Photo I.jpg" alt="Project Image 4"></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -468,7 +482,7 @@
                                         </div>
                                         <p>“ Business and Tax Consulting Inc has been a game-changer for our finances. Their dedication and professionalism helped streamline our accounting processes seamlessly. Highly recommended!”</p>
                                         <div class="testimonial-info">
-                                            <h2 class="title">Ifeanyi Ewoh</h2>
+                                            <!-- <h2 class="title">Ifeanyi Ewoh</h2> -->
 
                                         </div>
                                     </div>
@@ -485,7 +499,7 @@
                                         </div>
                                         <p>“The team at Business and Tax Consulting, Inc made our tax preparation effortless. They’re detail-oriented and responsive, which makes them a pleasure to work with every tax season.”</p>
                                         <div class="testimonial-info">
-                                            <h2 class="title">John Nsude</h2>
+                                            <!-- <h2 class="title">John Nsude</h2> -->
 
                                         </div>
                                     </div>

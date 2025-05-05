@@ -562,11 +562,11 @@
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="blog-post-item-two">
                             <div class="blog-post-thumb-two">
-                                <a href="#"><img src="<?php echo $domain ?>assets/images/Photo K.jpg" alt=""></a>
+                                <a ><img src="<?php echo $domain ?>assets/images/Photo K.jpg" alt=""></a>
                                 <a href="blog.html" class="tag tag-two">Business Growth</a>
                             </div>
                             <div class="blog-post-content-two">
-                                <h2 class="title"><a href="#">Maximize Your Business Potential with Smart Tax Strategies</a></h2>
+                                <h2 class="title"><a >Maximize Your Business Potential with Smart Tax Strategies</a></h2>
                                 <p>Discover how effective tax planning can save your business money and fuel its growth.</p>
                                 <div class="blog-meta">
 
@@ -577,11 +577,11 @@
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="blog-post-item-two">
                             <div class="blog-post-thumb-two">
-                                <a href="#"><img src="<?php echo $domain ?>assets/images/Photo L.jpg" alt=""></a>
+                                <a ><img src="<?php echo $domain ?>assets/images/Photo L.jpg" alt=""></a>
                                 <a href="blog.html" class="tag tag-two">Tax Advisory</a>
                             </div>
                             <div class="blog-post-content-two">
-                                <h2 class="title"><a href="#">Why Effective Tax Advice is Crucial for Your Business</a></h2>
+                                <h2 class="title"><a >Why Effective Tax Advice is Crucial for Your Business</a></h2>
                                 <p>Explore the importance of professional tax guidance and how it can lead to long-term financial success.</p>
                                 <div class="blog-meta">
                                     <ul class="list-wrap">
@@ -594,16 +594,16 @@
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="blog-post-item-two">
                             <div class="blog-post-thumb-two">
-                                <a href="#"><img src="<?php echo $domain ?>assets/images/Photo M.jpg" alt=""></a>
+                                <a ><img src="<?php echo $domain ?>assets/images/Photo M.jpg" alt=""></a>
                                 <a href="blog.html" class="tag tag-two">Finance Tips</a>
                             </div>
                             <div class="blog-post-content-two">
-                                <h2 class="title"><a href="#">How to Optimize Your Business Tax Filing</a></h2>
+                                <h2 class="title"><a >How to Optimize Your Business Tax Filing</a></h2>
                                 <p>Learn best practices to streamline your tax filing process and avoid common pitfalls.</p>
                                 <!-- <div class="blog-meta">
                                     <ul class="list-wrap">
                                         <li>
-                                            <a href="#"><img src="<?php echo $domain ?>assets/img/blog/blog_avatar01.png" alt="">Kat Doven</a>
+                                            <a ><img src="<?php echo $domain ?>assets/img/blog/blog_avatar01.png" alt="">Kat Doven</a>
                                         </li>
                                         <li><i class="far fa-calendar"></i>22 Jan, 2023</li>
                                     </ul>

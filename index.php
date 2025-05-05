@@ -563,7 +563,7 @@
                         <div class="blog-post-item-two">
                             <div class="blog-post-thumb-two">
                                 <a ><img src="<?php echo $domain ?>assets/images/Photo K.jpg" alt=""></a>
-                                <a href="blog.html" class="tag tag-two">Business Growth</a>
+                                <a  class="tag tag-two">Business Growth</a>
                             </div>
                             <div class="blog-post-content-two">
                                 <h2 class="title"><a >Maximize Your Business Potential with Smart Tax Strategies</a></h2>
@@ -578,7 +578,7 @@
                         <div class="blog-post-item-two">
                             <div class="blog-post-thumb-two">
                                 <a ><img src="<?php echo $domain ?>assets/images/Photo L.jpg" alt=""></a>
-                                <a href="blog.html" class="tag tag-two">Tax Advisory</a>
+                                <a  class="tag tag-two">Tax Advisory</a>
                             </div>
                             <div class="blog-post-content-two">
                                 <h2 class="title"><a >Why Effective Tax Advice is Crucial for Your Business</a></h2>
@@ -595,7 +595,7 @@
                         <div class="blog-post-item-two">
                             <div class="blog-post-thumb-two">
                                 <a ><img src="<?php echo $domain ?>assets/images/Photo M.jpg" alt=""></a>
-                                <a href="blog.html" class="tag tag-two">Finance Tips</a>
+                                <a  class="tag tag-two">Finance Tips</a>
                             </div>
                             <div class="blog-post-content-two">
                                 <h2 class="title"><a >How to Optimize Your Business Tax Filing</a></h2>

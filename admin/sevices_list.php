@@ -179,6 +179,7 @@ if(isset($_GET['del_id'])){
                       <th>Title</th> 
                       <th>Date</th>
                       <th>Action</th>
+                      <th>Edit</th>
                      
                       
                       
@@ -193,7 +194,7 @@ if(isset($_GET['del_id'])){
                   
 
                     
-                    $sql = mysqli_query($connection, "SELECT * FROM `services`");
+                    $sql = mysqli_query($connection, "SELECT * FROM `services` ");
                     if (mysqli_num_rows($sql)) {
                       $count = 1;
                       while ($details = mysqli_fetch_assoc($sql)) {
@@ -205,6 +206,7 @@ if(isset($_GET['del_id'])){
                           <td><?php echo $details['title']?></td>   
                           <td><?php echo $details['created_at']?></td> 
                           <td><a href="?del_id=<?php echo $details['id'] ?>"><button>Delete Service</button></a></td>
+                         <td><a href="./add_sevices.php?edit_id=<?php echo $details['id'] ?>"><button type="edit" class="btn btn-primary" name="insert_service">EDIT SERVICE</button></a></td>
                           
                          
                           

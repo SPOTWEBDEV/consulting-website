@@ -1,5 +1,19 @@
 <?php
-include('../server/connection.php');;
+include('../server/connection.php');
+
+$edit_id  = '';
+$title = '';
+$content = '';
+if (isset($_GET['edit_id'])) {
+  $edit_id = $_GET['edit_id'];
+  $query = mysqli_query($connection, "SELECT * FROM services WHERE id='$edit_id'");
+  $row = mysqli_fetch_assoc($query);
+
+  if ($row) {
+    $title = $row['title'];
+    $content = $row['content'];
+  }
+}
 
 
 
@@ -13,7 +27,7 @@ include('../server/connection.php');;
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
   <title>Create A Users</title>
- 
+
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="assets/img/favicon/favicon.ico" />
 
@@ -60,11 +74,21 @@ include('../server/connection.php');;
   <!-- Custom notification for demo -->
   <!-- beautify ignore:end -->
   <script src="jquery-3.6.0.min.js"></script>
-    <script src="sweetalert2.all.min.js"></script>
+  <script src="sweetalert2.all.min.js"></script>
 
 </head>
 
 <body>
+
+  <?php
+
+
+  // If edit is requested
+
+
+
+  ?>
+
 
   <!-- Layout wrapper -->
   <div class="layout-wrapper layout-content-navbar  ">
@@ -100,7 +124,7 @@ include('../server/connection.php');;
             <!-- /Search -->
 
 
-           
+
           </div>
 
 
@@ -129,66 +153,83 @@ include('../server/connection.php');;
                     <h5 class="mb-0">create Service</h5> <small class="text-muted float-end"></small>
                   </div>
                   <div class="card-body">
-                  
-                  <?php
-if (isset($_POST['insert_service'])) {
-    // Sanitize the form input
-   
-    $title = mysqli_real_escape_string($connection, $_POST['title']);
-    $content = mysqli_real_escape_string($connection, $_POST['content']); // This is the content with HTML tags
 
-    // Insert the service into the database
-    $insert_service = mysqli_query($connection,"INSERT INTO services (title, content) VALUES ('$title', '$content')");
+                    <?php
+                    if (isset($_POST['save'])) {
+                      // Sanitize the form input
 
-    if ($insert_service) {
-        echo "<script>alert('Service Created => Your service has been successfully created')</script>";
-    } else {
-        echo "<script>alert('Error=>Failed to create service')</script>";
-    }
-}
-?>
-
-                  
-                  <form method="POST" id="service-form">
-    <div class="mb-3">
-        <label class="form-label" for="basic-default-title">Service Title</label>
-        <input type="text" class="form-control" name="title" id="basic-default-title" placeholder="Enter Service Title" required />
-    </div>
-
-    <div class="mb-3">
-        <label class="form-label" for="basic-default-content">Service Content</label>
-        <!-- This textarea will be replaced by CKEditor -->
-        <textarea class="form-control" name="content" id="basic-default-content" rows="5" placeholder="Enter service content (HTML allowed)" ></textarea>
-    </div>
+                      $title = mysqli_real_escape_string($connection, $_POST['title']);
+                      $content = mysqli_real_escape_string($connection, $_POST['content']); // This is the content with HTML tags
 
 
-    <button type="submit" class="btn btn-primary" name="insert_service">INSERT SERVICE</button>
-</form>
-
-<!-- CKEditor integration -->
-<script src="https://cdn.ckeditor.com/ckeditor5/36.0.1/classic/ckeditor.js"></script>
-<script>
-    ClassicEditor
-        .create(document.querySelector('#basic-default-content'))
-        .then(editor => {
-            // Make sure the CKEditor content is updated in the textarea on form submission
-            const form = document.getElementById('service-form');
-            form.addEventListener('submit', function(event) {
-                // Set the value of the textarea to the CKEditor content before submitting
-                console.log(editor.getData())
-                const contentField = document.querySelector('textarea[name="content"]');
-                contentField.value = editor.getData();
-                contentField.innnerHTML = editor.getData();
-            });
-        })
-        .catch(error => {
-            console.error(error);
-        });
-</script>
+                      if ($edit_id == '') {
+                        // Insert the service into the database
+                        $query = mysqli_query($connection, "INSERT INTO services (title, content) VALUES ('$title', '$content')");
+                      } else {
+                        $query = mysqli_query($connection, "UPDATE services SET title='$title', content='$content' WHERE id='$edit_id'");
+                      }
 
 
 
-                    
+
+
+                      if ($query) {
+                        echo "<script>alert('Service Created => Your service has been successfully created or save')</script>";
+                      } else {
+                        echo "<script>alert('Error=>Failed to create service or update service')</script>";
+                      }
+                    }
+
+
+
+
+                    ?>
+
+
+                    <form method="POST" id="service-form">
+                      <div class="mb-3">
+                        <label class="form-label" for="basic-default-title">Service Title</label>
+                        <input type="text" class="form-control" value="<?php echo ($title != '') ? $title : '' ?>" name="title" id="basic-default-title" placeholder="Enter Service Title" required />
+                      </div>
+
+                      <div class="mb-3">
+                        <label class="form-label" for="basic-default-content">Service Content</label>
+                        <!-- This textarea will be replaced by CKEditor -->
+                        <textarea style="min-height: 500px;"
+                        class="form-control" value name="content" id="basic-default-content" rows="10" placeholder="Enter service content (HTML allowed)"><?php echo $content ?></textarea>
+                      </div>
+
+
+                      <button type="submit" class="btn btn-primary" name="save">SAVE</button>
+
+
+                    </form>
+
+                    <!-- CKEditor integration -->
+                    <script src="https://cdn.ckeditor.com/ckeditor5/36.0.1/classic/ckeditor.js"></script>
+                    <script>
+                      ClassicEditor
+                        .create(document.querySelector('#basic-default-content'))
+                        .then(editor => {
+                          editor.ui.view.editable.element.style.minHeight = '300px'; // or 400px, etc.
+                          // Make sure the CKEditor content is updated in the textarea on form submission
+                          const form = document.getElementById('service-form');
+                          form.addEventListener('submit', function(event) {
+                            // Set the value of the textarea to the CKEditor content before submitting
+                            console.log(editor.getData())
+                            const contentField = document.querySelector('textarea[name="content"]');
+                            contentField.value = editor.getData();
+                            contentField.innnerHTML = editor.getData();
+                          });
+                        })
+                        .catch(error => {
+                          console.error(error);
+                        });
+                    </script>
+
+
+
+
                   </div>
                 </div>
               </div>

@@ -116,7 +116,7 @@
                                                       <div class="copyright-text-two text-center">
                                                                <p>Copyright © <?php echo date('Y') . ' '  .  $sitename?>
                                                                         - All Right Reserved | Design and Develop by <a
-                                                                                 href="https://mywebsite-firstclass.vercel.app/">SPOTWEBDEV</a>
+                                                                                 href="https://spotwebtech.vercel.app/">SPOTWEBDEV</a>
                                                                </p>
 
                                                       </div>
